@@ -1,0 +1,43 @@
+#first-header {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  position: relative;
+
+  .logoName {
+    display: flex;
+
+    i {
+      color: $accent;
+      font-size: 2rem;
+    }
+    .header.h2 {
+      padding: 0;
+      font-size: 1.5rem;
+    }
+  }
+
+  .header-nav {
+    width: 50%;
+    top: 0;
+    right: 0;
+
+    .nav-links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+      position: relative;
+
+      li a {
+        font-size: 1.2rem;
+        font-weight: lighter;
+        color: $fontColor;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+  }
+}

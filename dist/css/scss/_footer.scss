@@ -1,0 +1,49 @@
+footer {
+  min-height: 100vh;
+  padding: 0 2rem;
+  
+  .footer.h2 {
+    text-align: center;
+    
+  }
+  #personal-form {
+    color: $fontColor;
+    position: relative;
+    border-radius: 25px;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  
+    label {
+      color: $accent;
+    }
+
+    input {
+      font-family: "Roboto", sans-serif;
+      color: $primary;
+      font-size: 1rem;
+      padding-left: 1rem;
+      border-radius: 15px;
+      border: none;
+      margin: 1rem auto;
+      width: 100%;
+      background-color: $fontColor;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    }
+    .message-field {
+      font-family: "Roboto", sans-serif;
+      color: $primary;
+      font-size: 1rem;
+      padding-left: 1rem;
+      border-radius: 15px;
+      border: none;
+      margin: 1rem auto;
+      width: 100%;
+      background-color: $fontColor;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    }
+
+
+  }
+
+}

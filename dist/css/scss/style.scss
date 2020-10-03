@@ -1,0 +1,51 @@
+/*Colors*/
+$primary: #262828;
+$accent: #2bc6ae;
+$fontColor: #ffffff;
+$textColor: #a8a8a8;
+
+/*Imports*/
+@import "header";
+@import "main";
+@import "media-queries";
+@import "hover";
+@import "footer";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+    background-color: $primary;
+  }
+
+  /* h2 default*/
+  
+  .h2 {
+      text-transform: uppercase;
+      color: $fontColor;
+      font-size: 2rem;
+      padding: 3rem;
+  }
+
+  /* Button */
+  .btn {
+    background-color: $accent;
+    color: $fontColor;
+    width: 16rem;
+    height: 3rem;
+    margin: 2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 27px;
+    cursor: pointer;
+    transition: 0.5s;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    position: relative;
+  }

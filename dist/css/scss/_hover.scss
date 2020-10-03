@@ -1,0 +1,43 @@
+/* Nav-Hover*/
+.nav-links li a::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 0;
+  height: 3px;
+  background: $fontColor;
+  transition: width 0.3s;
+  margin: 5px 0px;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+/* socialmedia-icons hover*/
+
+.fab:hover,
+        .far:hover {
+          background: $primary;
+          border: 2px solid #333;
+          opacity: 9;
+          transform: rotate(360deg);
+          box-shadow: 2px 2px 10px $textColor;
+        }
+
+/* Button Hover */
+
+.btn::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(90deg, transparent, #ffffff, transparent);
+  transition: 0.7s;
+  height: 100%;
+  left: -100%;
+  width: 100%;
+  top: 0;
+}
+.btn:hover::before {
+  left: 100%;
+}
