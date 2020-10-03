@@ -108,6 +108,7 @@
 /* About me - Section*/
 #about {
   min-height: 100vh;
+  width: 100%;
 }
 
 #about .about.h2 {
@@ -118,14 +119,29 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin: 5rem 2rem;
+  width: 100%;
+  overflow: auto;
 }
 
 #about .about-container .aboutText {
   width: 50%;
-  padding: 5rem 4rem;
+  padding: 5rem 2rem;
   text-align: center;
   color: #a8a8a8;
+}
+
+#about .about-container .aboutText h4 {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+#about .about-container .resume.btn {
+  margin-top: 3rem;
 }
 
 #about .about-container .aboutIcons {
@@ -155,7 +171,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 2rem;
+  margin: 2rem 1rem;
+  margin-right: 4rem;
 }
 
 /* Projects - Section */
@@ -174,6 +191,9 @@
 /* Media Queries*/
 /*  Tablet start*/
 @media screen and (max-width: 1150px) {
+  #first-header {
+    width: 100%;
+  }
   #first-header .logoName {
     padding: 0.5rem;
   }
@@ -264,6 +284,99 @@
     -webkit-transform: rotateZ(405deg) translate(-16px, -12px);
             transform: rotateZ(405deg) translate(-16px, -12px);
   }
+  /*  Hero - Main */
+  .hero-main .hero-text {
+    font-size: 3rem;
+  }
+  /* About me - Section*/
+  #about {
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+  }
+  #about .about.h2 {
+    text-align: center;
+  }
+  #about .about-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0rem 2rem;
+    width: 100%;
+  }
+  #about .about-container .aboutText {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+  #about .about-container .aboutIcons {
+    width: 100%;
+  }
+  #about .about-container .aboutIcons .coding-icons .codingIcons {
+    font-size: 3rem;
+  }
+  /* Projects - Section */
+  #myProjects {
+    text-align: center;
+    min-height: 100vh;
+    width: 100%;
+  }
+  #myProjects .projects-h2 {
+    text-align: center;
+  }
+  footer {
+    height: 100vh;
+    width: 100%;
+  }
+}
+
+/* Smartphone starts */
+@media screen and (max-width: 630px) {
+  #first-header {
+    width: 100%;
+  }
+  #first-header .logoName {
+    display: none;
+  }
+  .hero-main {
+    width: 100%;
+  }
+  .hero-main .hero-text {
+    font-size: 2.5rem;
+  }
+  /* About me - Section*/
+  #about {
+    min-height: 100vh;
+    width: 100%;
+  }
+  #about .about.h2 {
+    text-align: center;
+  }
+  #about .about-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0rem 2rem;
+    width: 100%;
+  }
+  #about .about-container .aboutText {
+    width: 100%;
+    padding: 2rem 4rem;
+  }
+  #about .about-container .aboutIcons {
+    width: 100%;
+  }
+  #about .about-container .aboutIcons .coding-icons .codingIcons {
+    font-size: 2rem;
+    margin: 1rem;
+  }
 }
 
 /* Nav-Hover*/
@@ -317,7 +430,18 @@
 
 footer {
   min-height: 100vh;
+  width: 100%;
   padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer .footer.h2 {
@@ -325,6 +449,9 @@ footer .footer.h2 {
 }
 
 footer #personal-form {
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
   color: #ffffff;
   position: relative;
   border-radius: 25px;
@@ -332,38 +459,35 @@ footer #personal-form {
   background: rgba(255, 255, 255, 0.2);
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
+}
+
+footer #personal-form .formgroup,
+footer #personal-form .input,
+footer #personal-form .formgroup,
+footer #personal-form .message-field {
+  padding: 0.7rem;
+  font-family: "Roboto", sans-serif;
+  color: #262828;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  border: none;
+  margin: 1rem 0;
+  width: 100%;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+footer #personal-form .formgroup .message-field,
+footer #personal-form .input .message-field,
+footer #personal-form .formgroup .message-field,
+footer #personal-form .message-field .message-field {
+  resize: vertical;
 }
 
 footer #personal-form label {
   color: #2bc6ae;
-}
-
-footer #personal-form input {
-  font-family: "Roboto", sans-serif;
-  color: #262828;
-  font-size: 1rem;
-  padding-left: 1rem;
-  border-radius: 15px;
-  border: none;
-  margin: 1rem auto;
-  width: 100%;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-}
-
-footer #personal-form .message-field {
-  font-family: "Roboto", sans-serif;
-  color: #262828;
-  font-size: 1rem;
-  padding-left: 1rem;
-  border-radius: 15px;
-  border: none;
-  margin: 1rem auto;
-  width: 100%;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
 }
 
 * {
@@ -377,6 +501,7 @@ footer #personal-form .message-field {
 body {
   font-family: "Roboto", sans-serif;
   background-color: #262828;
+  position: absolute;
 }
 
 /* h2 default*/
@@ -406,5 +531,10 @@ body {
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
   position: relative;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */

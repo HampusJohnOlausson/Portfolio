@@ -3,6 +3,8 @@
 /*  Tablet start*/
 @media screen and (max-width: 1150px) {
   #first-header {
+    width: 100%;
+
     .logoName {
       padding: 0.5rem;
     }
@@ -80,5 +82,116 @@
   }
   .open .line-3 {
     transform: rotateZ(405deg) translate(-16px, -12px);
+  }
+
+  /*  Hero - Main */
+
+  .hero-main {
+    .hero-text {
+      font-size: 3rem;
+    }
+  }
+
+  /* About me - Section*/
+
+  #about {
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+
+    .about.h2 {
+      text-align: center;
+    }
+    .about-container {
+      display: flex;
+      flex-direction: column;
+      margin: 0rem 2rem;
+      width: 100%;
+
+      .aboutText {
+        width: 100%;
+        padding: 1rem 2rem;
+      }
+
+      .aboutIcons {
+        width: 100%;
+
+        .coding-icons {
+          .codingIcons {
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+  }
+
+  /* Projects - Section */
+
+  #myProjects {
+    text-align: center;
+    min-height: 100vh;
+    width: 100%;
+
+    .projects-h2 {
+      text-align: center;
+    }
+  }
+
+  footer {
+    height: 100vh;
+    width: 100%;
+  }
+}
+
+/* Smartphone starts */
+
+@media screen and (max-width: 630px) {
+  #first-header {
+    width: 100%;
+
+    .logoName {
+      display: none;
+    }
+  }
+
+  .hero-main {
+    width: 100%;
+
+    .hero-text {
+      font-size: 2.5rem;
+    }
+  }
+
+  /* About me - Section*/
+
+  #about {
+    min-height: 100vh;
+    width: 100%;
+
+    .about.h2 {
+      text-align: center;
+    }
+    .about-container {
+      display: flex;
+      flex-direction: column;
+      margin: 0rem 2rem;
+      width: 100%;
+
+      .aboutText {
+        width: 100%;
+        padding: 2rem 4rem;
+      }
+
+      .aboutIcons {
+        width: 100%;
+
+        .coding-icons {
+          .codingIcons {
+            font-size: 2rem;
+            margin: 1rem;
+          }
+        }
+      }
+    }
   }
 }

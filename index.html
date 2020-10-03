@@ -38,7 +38,7 @@
         <ul class="nav-links">
           <li><a href="#about">Om mig</a></li>
           <li><a href="#myProjects">Mina Projekt</a></li>
-          <li><a href="#personal-form">Kontakta mig</a></li>   
+          <li><a href="#personal-form">Kontakta mig</a></li>
         </ul>
       </nav>
     </header>
@@ -82,23 +82,21 @@
         <div class="about-container">
           <div class="aboutText">
             <p class="personal-info">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-              excepturi tempore saepe necessitatibus? Cumque labore repudiandae
-              maxime libero voluptates fugit praesentium suscipit ratione
-              cupiditate modi quis, quaerat dolorum similique beatae? Eos minus
-              ea dolores placeat dicta veritatis reprehenderit expedita labore
-              maxime iusto commodi recusandae harum corporis cumque, non
-              possimus, odit eum repellendus magnam. Quidem optio quis, corrupti
-              consequuntur nisi quaerat. Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Doloremque quibusdam illum quas nemo, sed
-              adipisci magnam sunt ab rem deserunt perferendis laudantium quidem
-              repellendus atque cum nam at praesentium nihil!Laboriosam tenetur
-              molestiae facilis optio similique soluta temporibus ipsum nihil
-              ipsa aspernatur repudiandae earum fugit, dolorum quo cumque quasi
-              voluptates? Impedit voluptatem natus officia consectetur iste,
-              esse officiis aut vel.
+              <h4>Mitt namn är Hampus och jag studerar till Front-End Utvecklare på Medieinstitutet i Göteborg. 
+              Jag har en stor passion för webbutveckling. Snygg och välstrukturerad kod värdesätter jag högt och att skapa liv genom animationer och design är något som jag älskar.</h4>
+              <br>
+              Min resa började för cirka ett år sedan med att jag började studera en kvälls kurs inom programmering 
+              och blev helt tagen. Sedan dess har jag utforskat mer och mer av webbutvecklingens värld och tycker det 
+              är otroligt spännande. Det finns alltid något nytt att lära sig och branschen förändras hela tiden. 
+              Det jag älskar med programmering och design är att det är väldigt kreativt och ger en slags frihet fast man
+              håller sig inom vissa ramar såklart. Mitt mål är att få djupare kunskap inom Front-End utveckling och även 
+              dyka mer ner i Back-End världen. På så sätt tar det mig närmare att bli den bästa webbutvecklaren jag kan bli.
             </p>
-            <button class="resume btn">Ladda ner CV</button>
+            <button class="resume btn">
+              <a href="" download=".pdf"
+                ><i class="fas fa-download"></i> Ladda ner CV</a
+              >
+            </button>
           </div>
           <div class="aboutIcons">
             <ul class="coding-icons 1">
@@ -179,12 +177,6 @@
       <section id="myProjects">
         <h2 class="projects-h2">Mina Projekt</h2>
         <div class="project-container">
-          <ul class="codingProjects">
-            <li class="project-1"></li>
-            <li class="project-2"></li>
-            <li class="project-3"></li>
-            <li class="project-4"></li>
-          </ul>
         </div>
       </section>
     </main>
@@ -197,29 +189,39 @@
       <h2 class="footer h2">Kontakta mig</h2>
       <div id="personal-form">
         <form action="">
+
+          <div class="form-group">
           <label for="firstName">Förnamn:</label>
-          <input type="text" name="firstName-field" />
+          <input class="input" type="text" name="firstName-field" />
+        </div>
 
+        <div class="form-group">
           <label for="lastName">Efternamn:</label>
-          <input type="text" name="lastName-field" />
+          <input class="input" type="text" name="lastName-field"/>
+        </div>
 
+        <div class="form-group">
           <label for="phoneNumber">Telefon:</label>
-          <input type="text" name="phoneNumber-field" />
+          <input class="input" type="text" name="phoneNumber-field"/>
+        </div>
 
+          <div class="form-group">
           <label for="mail">Mail:</label>
-          <input type="text" name="mail-field" />
+          <input class="input" type="text" name="mail-field"/>
+        </div>
 
+          <div class="form-group">
           <label for="message">Meddelande:</label>
           <textarea
             name="message-field"
             class="message-field"
-            rows="10"
+            rows="8"
           ></textarea>
+        </div>
           <button type="submit" class="submit btn">Skicka</button>
         </form>
       </div>
     </footer>
-
     <script src="app.js"></script>
   </body>
 </html>

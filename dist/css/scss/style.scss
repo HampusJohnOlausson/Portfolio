@@ -12,40 +12,46 @@ $textColor: #a8a8a8;
 @import "footer";
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    letter-spacing: 2px;
-  }
-  body {
-    font-family: "Roboto", sans-serif;
-    background-color: $primary;
-  }
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 2px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: $primary;
+  position: absolute;
+}
 
-  /* h2 default*/
-  
-  .h2 {
-      text-transform: uppercase;
-      color: $fontColor;
-      font-size: 2rem;
-      padding: 3rem;
-  }
+/* h2 default*/
 
-  /* Button */
-  .btn {
-    background-color: $accent;
+.h2 {
+  text-transform: uppercase;
+  color: $fontColor;
+  font-size: 2rem;
+  padding: 3rem;
+}
+
+/* Button */
+.btn {
+  background-color: $accent;
+  color: $fontColor;
+  width: 16rem;
+  height: 3rem;
+  margin: 2rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 27px;
+  cursor: pointer;
+  transition: 0.5s;
+  overflow: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  position: relative;
+
+  & a {
+    text-decoration: none;
     color: $fontColor;
-    width: 16rem;
-    height: 3rem;
-    margin: 2rem;
-    font-size: 1.2rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 27px;
-    cursor: pointer;
-    transition: 0.5s;
-    overflow: hidden;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-    position: relative;
   }
+}
