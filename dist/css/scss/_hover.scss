@@ -18,13 +18,13 @@
 /* socialmedia-icons hover*/
 
 .fab:hover,
-        .far:hover {
-          background: $primary;
-          border: 2px solid #333;
-          opacity: 9;
-          transform: rotate(360deg);
-          box-shadow: 2px 2px 10px $textColor;
-        }
+.far:hover {
+  background: $primary;
+  border: 2px solid #333;
+  opacity: 9;
+  transform: rotate(360deg);
+  box-shadow: 2px 2px 10px $textColor;
+}
 
 /* Button Hover */
 
@@ -40,5 +40,4 @@
 }
 .btn:hover::before {
   left: 100%;
-  
 }

@@ -108,7 +108,6 @@
 /* About me - Section*/
 #about {
   min-height: 100vh;
-  width: 100%;
 }
 
 #about .about.h2 {
@@ -124,14 +123,21 @@
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 5rem 2rem;
-  width: 100%;
-  overflow: auto;
 }
 
 #about .about-container .aboutText {
-  width: 50%;
-  padding: 5rem 2rem;
+  padding: 2rem;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #a8a8a8;
 }
 
@@ -142,10 +148,6 @@
 
 #about .about-container .resume.btn {
   margin-top: 3rem;
-}
-
-#about .about-container .aboutIcons {
-  width: 50%;
 }
 
 #about .about-container .aboutIcons .coding-icons {
@@ -171,8 +173,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 2rem 1rem;
-  margin-right: 4rem;
+  margin: 2rem 2rem;
 }
 
 /* Projects - Section */
@@ -193,6 +194,7 @@
 @media screen and (max-width: 1150px) {
   #first-header {
     width: 100%;
+    height: 10vh;
   }
   #first-header .logoName {
     padding: 0.5rem;
@@ -227,7 +229,7 @@
     opacity: 0;
   }
   #first-header .header-nav .nav-links li a {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   #first-header .header-nav .nav-links li:nth-child(1) {
     -webkit-transition: all 0.5s ease 0.2s;
@@ -285,17 +287,16 @@
             transform: rotateZ(405deg) translate(-16px, -12px);
   }
   /*  Hero - Main */
+  .hero-main {
+    min-height: 90vh;
+  }
   .hero-main .hero-text {
     font-size: 3rem;
   }
   /* About me - Section*/
   #about {
+    text-align: center;
     min-height: 100vh;
-    width: 100%;
-    text-align: center;
-  }
-  #about .about.h2 {
-    text-align: center;
   }
   #about .about-container {
     display: -webkit-box;
@@ -305,44 +306,33 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 0rem 2rem;
-    width: 100%;
+    margin-top: 0;
   }
   #about .about-container .aboutText {
-    width: 100%;
-    padding: 1rem 2rem;
-  }
-  #about .about-container .aboutIcons {
-    width: 100%;
+    padding: 0rem 1rem;
   }
   #about .about-container .aboutIcons .coding-icons .codingIcons {
     font-size: 3rem;
   }
   /* Projects - Section */
   #myProjects {
-    text-align: center;
     min-height: 100vh;
-    width: 100%;
   }
   #myProjects .projects-h2 {
     text-align: center;
-  }
-  footer {
-    height: 100vh;
-    width: 100%;
   }
 }
 
 /* Smartphone starts */
 @media screen and (max-width: 630px) {
   #first-header {
-    width: 100%;
+    height: 10vh;
   }
   #first-header .logoName {
     display: none;
   }
   .hero-main {
-    width: 100%;
+    min-height: 90vh;
   }
   .hero-main .hero-text {
     font-size: 2.5rem;
@@ -350,32 +340,20 @@
   /* About me - Section*/
   #about {
     min-height: 100vh;
-    width: 100%;
-  }
-  #about .about.h2 {
-    text-align: center;
-  }
-  #about .about-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 0rem 2rem;
-    width: 100%;
   }
   #about .about-container .aboutText {
-    width: 100%;
-    padding: 2rem 4rem;
-  }
-  #about .about-container .aboutIcons {
-    width: 100%;
+    padding: 0rem 1rem;
   }
   #about .about-container .aboutIcons .coding-icons .codingIcons {
     font-size: 2rem;
+    padding: 1rem;
     margin: 1rem;
+  }
+  #myProjects {
+    min-height: 100vh;
+  }
+  footer {
+    min-height: 100vh;
   }
 }
 
@@ -430,7 +408,6 @@
 
 footer {
   min-height: 100vh;
-  width: 100%;
   padding: 0 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -442,6 +419,9 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .footer.h2 {
@@ -450,7 +430,6 @@ footer .footer.h2 {
 
 footer #personal-form {
   width: 100%;
-  max-width: 50rem;
   margin: 0 auto;
   color: #ffffff;
   position: relative;
@@ -477,6 +456,7 @@ footer #personal-form .message-field {
   background-color: #ffffff;
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  outline: none;
 }
 
 footer #personal-form .formgroup .message-field,
@@ -498,10 +478,12 @@ footer #personal-form label {
   letter-spacing: 2px;
 }
 
-body {
+.wrapper {
   font-family: "Roboto", sans-serif;
   background-color: #262828;
-  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /* h2 default*/
@@ -531,6 +513,9 @@ body {
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
   position: relative;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .btn a {

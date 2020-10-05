@@ -17,10 +17,12 @@ $textColor: #a8a8a8;
   margin: 0;
   letter-spacing: 2px;
 }
-body {
+.wrapper {
   font-family: "Roboto", sans-serif;
   background-color: $primary;
-  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /* h2 default*/
@@ -49,6 +51,7 @@ body {
   overflow: hidden;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
   position: relative;
+  align-self: center;
 
   & a {
     text-decoration: none;
