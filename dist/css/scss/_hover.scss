@@ -40,4 +40,26 @@
 }
 .btn:hover::before {
   left: 100%;
+  
+}
+
+/* Animationer för slide in */
+
+.hero-text:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 120%;
+  height: 100%;
+  background-color: #ffffff;
+  animation: animate 5.5s linear forwards;
+}
+@keyframes animate {
+  
+  0%{
+    left: 110%;
+  }
+  100% {
+    left: 110%;
+  }
 }

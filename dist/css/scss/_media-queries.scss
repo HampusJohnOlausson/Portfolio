@@ -1,5 +1,41 @@
 /* Media Queries*/
 
+@media screen and (max-width: 1380px) {
+  #myProjects {
+    min-height: 100vh;
+
+    .project-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .card {
+        background-color: transparent;
+        width: 50rem;
+        height: 30rem;
+        border: none;
+        perspective: 90rem;
+        color: $fontColor;
+        margin: 0rem 3rem 5rem;
+
+        img {
+          width: 50rem;
+          height: 30rem;
+        }
+
+        .card-h2 {
+          font-size: 1rem;
+        }
+
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
 /*  Tablet start*/
 @media screen and (max-width: 1150px) {
   #first-header {
@@ -10,8 +46,9 @@
       padding: 0.5rem;
     }
     .header-nav {
-      height: 10vh;
+      height: 11vh;
       width: 100%;
+
       z-index: 100;
       position: fixed;
 
@@ -21,7 +58,7 @@
         height: 100vh;
         width: 100%;
         flex-direction: column;
-        clip-path: circle(100px at 90% -5%);
+        clip-path: circle(30px at 90% -5%);
         -webkit-clip-path: circle(100px at 90% 90% -100%);
         transition: all 1s ease-out;
         pointer-events: none;
@@ -127,14 +164,34 @@
     .projects-h2 {
       text-align: center;
     }
+    .project-container {
+      .card {
+        width: 35rem;
+        height: 20rem;
+        border: none;
+        margin: 0rem 2rem 2rem;
+
+        img {
+          width: 35rem;
+          height: 20rem;
+        }
+
+        .card-h2 {
+          font-size: 2rem;
+        }
+        .project.btn{
+          width: 10rem;
+          height: 2rem;
+          font-size: 0.7rem;
+        }
+      }
+    }
   }
 }
 
 /* Smartphone starts */
 
 @media screen and (max-width: 630px) {
-
-  
   #first-header {
     height: 10vh;
 
@@ -173,6 +230,24 @@
 
   #myProjects {
     min-height: 100vh;
+
+    .project-container {
+      .card {
+        width: 20rem;
+        height: 12rem;
+        border: none;
+        margin: 0rem 1rem 2rem;
+
+        img {
+          width: 20rem;
+          height: 12rem;
+        }
+
+        .card-h2 {
+          font-size: 2rem;
+        }
+      }
+    }
   }
 
   footer {

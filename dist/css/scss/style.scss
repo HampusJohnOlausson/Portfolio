@@ -20,6 +20,7 @@ $textColor: #a8a8a8;
 .wrapper {
   font-family: "Roboto", sans-serif;
   background-color: $primary;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
@@ -50,8 +51,10 @@ $textColor: #a8a8a8;
   transition: 0.5s;
   overflow: hidden;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   position: relative;
   align-self: center;
+
 
   & a {
     text-decoration: none;

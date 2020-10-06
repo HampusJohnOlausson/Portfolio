@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Colors*/
 /*Imports*/
 #first-header {
@@ -79,6 +80,9 @@
   text-align: center;
   color: #a8a8a8;
   padding: 0rem 5rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .hero-main .hero-text span {
@@ -189,7 +193,133 @@
   text-transform: uppercase;
 }
 
+#myProjects .project-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#myProjects .project-container .card {
+  background-color: transparent;
+  width: 40rem;
+  height: 25rem;
+  border: none;
+  -webkit-perspective: 90rem;
+          perspective: 90rem;
+  color: #ffffff;
+  margin: 0rem 2rem 2rem;
+}
+
+#myProjects .project-container .card img {
+  width: 40rem;
+  height: 25rem;
+}
+
+#myProjects .project-container .card .card-h2 {
+  font-size: 3rem;
+}
+
+#myProjects .project-container .card p {
+  font-size: 1.7rem;
+  padding: 1rem 4rem 0rem;
+}
+
+#myProjects .project-container .card .project.btn {
+  background-color: #FFB52A;
+  color: #ffffff;
+}
+
+#myProjects .project-container .card .card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+#myProjects .project-container .card .card-front, #myProjects .project-container .card .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#myProjects .project-container .card .card-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: linear-gradient(20deg, #57c9d1, #5142fa);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+#myProjects .project-container .card:hover .card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
 /* Media Queries*/
+@media screen and (max-width: 1380px) {
+  #myProjects {
+    min-height: 100vh;
+  }
+  #myProjects .project-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #myProjects .project-container .card {
+    background-color: transparent;
+    width: 50rem;
+    height: 30rem;
+    border: none;
+    -webkit-perspective: 90rem;
+            perspective: 90rem;
+    color: #ffffff;
+    margin: 0rem 3rem 5rem;
+  }
+  #myProjects .project-container .card img {
+    width: 50rem;
+    height: 30rem;
+  }
+  #myProjects .project-container .card .card-h2 {
+    font-size: 1rem;
+  }
+  #myProjects .project-container .card p {
+    display: none;
+  }
+}
+
 /*  Tablet start*/
 @media screen and (max-width: 1150px) {
   #first-header {
@@ -200,7 +330,7 @@
     padding: 0.5rem;
   }
   #first-header .header-nav {
-    height: 10vh;
+    height: 11vh;
     width: 100%;
     z-index: 100;
     position: fixed;
@@ -214,7 +344,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    clip-path: circle(100px at 90% -5%);
+    clip-path: circle(30px at 90% -5%);
     -webkit-clip-path: circle(100px at 90% 90% -100%);
     -webkit-transition: all 1s ease-out;
     transition: all 1s ease-out;
@@ -321,6 +451,24 @@
   #myProjects .projects-h2 {
     text-align: center;
   }
+  #myProjects .project-container .card {
+    width: 35rem;
+    height: 20rem;
+    border: none;
+    margin: 0rem 2rem 2rem;
+  }
+  #myProjects .project-container .card img {
+    width: 35rem;
+    height: 20rem;
+  }
+  #myProjects .project-container .card .card-h2 {
+    font-size: 2rem;
+  }
+  #myProjects .project-container .card .project.btn {
+    width: 10rem;
+    height: 2rem;
+    font-size: 0.7rem;
+  }
 }
 
 /* Smartphone starts */
@@ -351,6 +499,19 @@
   }
   #myProjects {
     min-height: 100vh;
+  }
+  #myProjects .project-container .card {
+    width: 20rem;
+    height: 12rem;
+    border: none;
+    margin: 0rem 1rem 2rem;
+  }
+  #myProjects .project-container .card img {
+    width: 20rem;
+    height: 12rem;
+  }
+  #myProjects .project-container .card .card-h2 {
+    font-size: 2rem;
   }
   footer {
     min-height: 100vh;
@@ -404,6 +565,36 @@
 
 .btn:hover::before {
   left: 100%;
+}
+
+/* Animationer för slide in */
+.hero-text:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 120%;
+  height: 100%;
+  background-color: #ffffff;
+  -webkit-animation: animate 5.5s linear forwards;
+          animation: animate 5.5s linear forwards;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    left: 110%;
+  }
+  100% {
+    left: 110%;
+  }
+}
+
+@keyframes animate {
+  0% {
+    left: 110%;
+  }
+  100% {
+    left: 110%;
+  }
 }
 
 footer {
@@ -481,6 +672,7 @@ footer #personal-form label {
 .wrapper {
   font-family: "Roboto", sans-serif;
   background-color: #262828;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
@@ -512,6 +704,7 @@ footer #personal-form label {
   overflow: hidden;
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   position: relative;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
