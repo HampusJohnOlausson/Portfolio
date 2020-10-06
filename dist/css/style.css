@@ -261,6 +261,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: linear-gradient(20deg, #57c9d1, #5142fa);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -268,7 +269,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: linear-gradient(20deg, #57c9d1, #5142fa);
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
@@ -313,7 +313,7 @@
     height: 30rem;
   }
   #myProjects .project-container .card .card-h2 {
-    font-size: 1rem;
+    font-size: 3rem;
   }
   #myProjects .project-container .card p {
     display: none;

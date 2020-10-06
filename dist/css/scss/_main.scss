@@ -163,15 +163,16 @@
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
       }
-      .card-back {
+      .card-back{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background: linear-gradient(
+        background:linear-gradient(
           20deg,
           rgb(87, 201, 209),
           rgb(81, 66, 250)
         );
+        flex-direction: column;
+        justify-content: center;
+        
         transform: rotateY(180deg);
 
       }
