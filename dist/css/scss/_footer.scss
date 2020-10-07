@@ -1,3 +1,4 @@
+
 footer {
   min-height: 100vh;
   padding: 0 2rem;
@@ -9,6 +10,8 @@ footer {
   .footer.h2 {
     text-align: center;
   }
+
+  /* Personal Form*/
   #personal-form {
     width: 100%;
     margin: 0 auto;
@@ -19,8 +22,6 @@ footer {
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
     margin-bottom: 2rem;
-    
-    
 
     .formgroup,
     .input,

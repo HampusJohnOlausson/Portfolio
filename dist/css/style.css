@@ -11,6 +11,8 @@
           justify-content: space-between;
   padding: 3rem;
   position: relative;
+  /* Logo */
+  /* Nav */
 }
 
 #first-header .logoName {
@@ -73,6 +75,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Social media icons */
 }
 
 .hero-main .hero-text {
@@ -80,9 +83,6 @@
   text-align: center;
   color: #a8a8a8;
   padding: 0rem 5rem;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
 }
 
 .hero-main .hero-text span {
@@ -127,6 +127,9 @@
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 5rem 2rem;
+  /* About Text*/
+  /* Resume Button*/
+  /* Coding Icons*/
 }
 
 #about .about-container .aboutText {
@@ -204,6 +207,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  /* Card */
 }
 
 #myProjects .project-container .card {
@@ -215,6 +219,7 @@
           perspective: 90rem;
   color: #ffffff;
   margin: 0rem 2rem 2rem;
+  /* Project Button*/
 }
 
 #myProjects .project-container .card img {
@@ -226,13 +231,8 @@
   font-size: 3rem;
 }
 
-#myProjects .project-container .card p {
-  font-size: 1.7rem;
-  padding: 1rem 4rem 0rem;
-}
-
 #myProjects .project-container .card .project.btn {
-  background-color: #FFB52A;
+  background-color: #ffb52a;
   color: #ffffff;
 }
 
@@ -249,7 +249,8 @@
           transform-style: preserve-3d;
 }
 
-#myProjects .project-container .card .card-front, #myProjects .project-container .card .card-back {
+#myProjects .project-container .card .card-front,
+#myProjects .project-container .card .card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -261,7 +262,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: linear-gradient(20deg, #57c9d1, #5142fa);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -269,6 +269,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: linear-gradient(20deg, #57c9d1, #5142fa);
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
@@ -280,6 +281,7 @@
 
 /* Media Queries*/
 @media screen and (max-width: 1380px) {
+  /* Projects */
   #myProjects {
     min-height: 100vh;
   }
@@ -297,6 +299,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    /* Card */
   }
   #myProjects .project-container .card {
     background-color: transparent;
@@ -315,16 +318,16 @@
   #myProjects .project-container .card .card-h2 {
     font-size: 3rem;
   }
-  #myProjects .project-container .card p {
-    display: none;
-  }
 }
 
-/*  Tablet start*/
+/*  Tablet start */
 @media screen and (max-width: 1150px) {
+  /* Header */
   #first-header {
     width: 100%;
     height: 10vh;
+    /* Logo */
+    /* Nav */
   }
   #first-header .logoName {
     padding: 0.5rem;
@@ -396,6 +399,7 @@
     -webkit-transform: translate(-50%, -5%);
             transform: translate(-50%, -5%);
     z-index: 2;
+    /* Line Hamburger*/
   }
   .hamburger .line {
     width: 100%;
@@ -405,6 +409,7 @@
     -webkit-transition: all 0.8s;
     transition: all 0.8s;
   }
+  /* Rotation of lines*/
   .open .line-1 {
     -webkit-transform: rotateZ(-405deg) translate(-16px, 12px);
             transform: rotateZ(-405deg) translate(-16px, 12px);
@@ -497,6 +502,7 @@
     padding: 1rem;
     margin: 1rem;
   }
+  /* Projects */
   #myProjects {
     min-height: 100vh;
   }
@@ -513,6 +519,7 @@
   #myProjects .project-container .card .card-h2 {
     font-size: 2rem;
   }
+  /* Footer */
   footer {
     min-height: 100vh;
   }
@@ -579,24 +586,6 @@
           animation: animate 5.5s linear forwards;
 }
 
-@-webkit-keyframes animate {
-  0% {
-    left: 110%;
-  }
-  100% {
-    left: 110%;
-  }
-}
-
-@keyframes animate {
-  0% {
-    left: 110%;
-  }
-  100% {
-    left: 110%;
-  }
-}
-
 footer {
   min-height: 100vh;
   padding: 0 2rem;
@@ -613,6 +602,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Personal Form*/
 }
 
 footer .footer.h2 {

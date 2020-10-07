@@ -1,4 +1,5 @@
 /* Nav-Hover*/
+
 .nav-links li a::after {
   content: "";
   position: relative;
@@ -40,7 +41,6 @@
 }
 .btn:hover::before {
   left: 100%;
-  
 }
 
 /* Animationer för slide in */
@@ -53,13 +53,4 @@
   height: 100%;
   background-color: #ffffff;
   animation: animate 5.5s linear forwards;
-}
-@keyframes animate {
-  
-  0%{
-    left: 110%;
-  }
-  100% {
-    left: 110%;
-  }
 }
