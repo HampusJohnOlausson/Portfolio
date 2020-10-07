@@ -1,33 +1,22 @@
 /*  Hero - Main */
 
-.hero-main {
+.hero-main.flex-center {
   min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
-  .hero-textMobile{
-    display: none;
-  }
-
-  .hero-text{
+  .hero-text {
     font-size: 4rem;
     text-align: center;
     color: $textColor;
     padding: 0rem 5rem;
     animation: slideUp 1.4s ease;
+
     & span {
       color: $fontColor;
     }
-
-    
   }
-
   .english {
     animation: slideUp 2.1s ease;
   }
-
 
   /* Social media icons */
   .socialmedia-icons {
@@ -55,26 +44,22 @@
 
 /* About me - Section*/
 
-#about {
+#about,
+.flex-center {
   min-height: 100vh;
 
-  .about.h2 {
+  .about h2 {
     text-align: center;
-    
   }
-  .about-container {
-    display: flex;
-    flex-direction: row;
-    margin: 5rem 2rem;
+
+  .about-container.flex-center-row {
+    margin: 0rem 2rem;
 
     /* About Text*/
 
     .aboutText {
       padding: 2rem;
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
       color: $textColor;
 
       h4 {
@@ -86,17 +71,10 @@
       }
     }
 
-    /* Resume Button*/
-    .resume.btn {
-      margin-top: 3rem;
-    }
-
     /* Coding Icons*/
     .aboutIcons {
-      .coding-icons {
+      .coding-icons.flex-spaceAround {
         list-style-type: none;
-        display: flex;
-        justify-content: space-around;
 
         .codingIcons {
           font-size: 4rem;
@@ -120,70 +98,55 @@
   min-height: 100vh;
 
   .projects-h2 {
-    color: $fontColor;
     font-size: 2rem;
     padding: 3rem;
     text-align: center;
     text-transform: uppercase;
   }
-  .project-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 
-    /* Card */
+  /* Card */
 
-    .card {
-      background-color: transparent;
+  .card {
+    background-color: transparent;
+    width: 40rem;
+    height: 25rem;
+    border: none;
+    perspective: 90rem;
+    margin: 0rem 2rem 2rem;
+    img {
       width: 40rem;
       height: 25rem;
-      border: none;
-      perspective: 90rem;
-      color: $fontColor;
-      margin: 0rem 2rem 2rem;
-
-      img {
-        width: 40rem;
-        height: 25rem;
-      }
-
-      .card-h2 {
-        font-size: 3rem;
-      }
-
-      /* Project Button*/
-      .project.btn {
-        background-color: #ffb52a;
-        color: $fontColor;
-      }
-
-      .card-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.8s;
-        transform-style: preserve-3d;
-      }
-      .card-front,
-      .card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-      }
-      .card-back {
-        display: flex;
-
-        flex-direction: column;
-        justify-content: center;
-        background: linear-gradient(20deg, rgb(87, 201, 209), rgb(81, 66, 250));
-        transform: rotateY(180deg);
-      }
     }
-    .card:hover .card-inner {
+    .card-h2 {
+      font-size: 3rem;
+    }
+
+    /* Project Button*/
+    .project.btn {
+      background-color: #ffb52a;
+    }
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+    .card-front,
+    .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+    .card-back.flex-center-column {
+      background: linear-gradient(20deg, rgb(87, 201, 209), rgb(81, 66, 250));
       transform: rotateY(180deg);
     }
+  }
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
   }
 }

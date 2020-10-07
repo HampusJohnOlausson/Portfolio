@@ -1,9 +1,6 @@
-#first-header {
+#first-header,.flex-spaceBetween{
   height: 10vh;
-  display: flex;
-  justify-content: space-between;
   padding: 4rem;
-  position: relative;
 
   /* Logo */
   .logoName {
@@ -18,29 +15,25 @@
       font-size: 1.5rem;
     }
   }
-
   /* Nav */
   .header-nav {
     width: 50%;
-    top: 0;
+    top: 0%;
     right: 0;
+    
 
-    .nav-links {
-      display: flex;
-      justify-content: space-around;
+    .nav-links, .flex-spaceAround {
       align-items: center;
       list-style: none;
       position: relative;
 
-      li a {
+      li a{
         font-size: 1.2rem;
         font-weight: lighter;
         color: $fontColor;
         text-decoration: none;
         text-transform: uppercase;
         cursor: pointer;
-        
-        
 
         .fas{
           padding-right: 0.7rem;

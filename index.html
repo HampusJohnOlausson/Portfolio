@@ -29,7 +29,7 @@
     <div class="wrapper">
 
     <!--Header-->
-    <header id="first-header">
+    <header id="first-header" class="flex-spaceBetween">
       <div class="logoName">
         <i class="fas fa-laptop-code"></i>
         <h2 class="header h2">&nbsp;&nbsp;Hampus Olausson</h2>
@@ -44,7 +44,7 @@
         </div>
 
         <!--Nav-->
-        <ul class="nav-links">
+        <ul class="nav-links flex-spaceAround">
           <li><a href="/"><i class="fas fa-home"></i>Hem</a></li>
           <li><a href="#about"><i class="fas fa-user"></i>Om mig</a></li>
           <li><a href="#myProjects"><i class="fas fa-briefcase"></i>Projekt</a></li>
@@ -57,11 +57,7 @@
     <main>
 
       <!--First page hero-->
-      <div class="hero-main">
-        <h4 class="hero-textMobile">
-          <span>Hampus Olausson</span>
-          Front-End Utvecklare
-        </h4>
+      <div class="hero-main flex-center" >
         <h1 class="hero-text">
           <span>Hej!</span> Mitt namn är <span>Hampus.</span><br>
           Jag är en <span>Front-End </span>Utvecklare
@@ -94,9 +90,9 @@
 
       <!--About me section-->
 
-      <section id="about">
+      <section id="about" class="flex-center">
         <h2 class="about h2">Om mig</h2>
-        <div class="about-container">
+        <div class="about-container flex-center-row">
           <div class="aboutText">
               <h4>Mitt namn är Hampus och jag studerar till Front-End Utvecklare på Medieinstitutet i Göteborg. 
                 Jag har en passion för webbutveckling och ett stort intresse för UI/UX Design.
@@ -117,7 +113,7 @@
 
           <!--Coding Icons-->
           <div class="aboutIcons">
-            <ul class="coding-icons 1">
+            <ul class="coding-icons flex-spaceAround">
               <li class="codingIcons">
                 <span
                   class="iconify"
@@ -140,7 +136,7 @@
                 ></span>
               </li>
             </ul>
-            <ul class="coding-icons 2">
+            <ul class="coding-icons flex-spaceAround">
               <li class="codingIcons">
                 <span
                   class="iconify"
@@ -163,7 +159,7 @@
                 ></span>
               </li>
             </ul>
-            <ul class="coding-icons 3">
+            <ul class="coding-icons flex-spaceAround">
               <li class="codingIcons">
                 <span
                   class="iconify"
@@ -197,7 +193,9 @@
         <h2 class="projects-h2">Mina Projekt</h2>
 
         <!--Project map-->
-        <div class="project-container">
+        <div class="project-container flex-center-row">
+
+       
           
           <!--Project 1-->
           <div class="card">
@@ -205,7 +203,7 @@
              <div class="card-front">
                <a href=""><img src="./images/Skärmavbild 2020-10-07 kl. 00.15.54.png" alt="weather"></a>
             </div>
-            <div class="card-back">
+            <div class="card-back flex-center-column">
               <h2 class="card-h2">Väder App</h2>
               <button class="project btn"><a href="">Titta Närmare</a></button>
             </div>
@@ -218,7 +216,7 @@
              <div class="card-front">
                <a href=""><img src="images/Bengans resor.png" alt="TravelAgency"></a>
             </div>
-            <div class="card-back">
+            <div class="card-back flex-center-column">
               <h2 class="card-h2">Resebyrå</h2>
               <button class="project btn"><a href="">Titta Närmare</a></button>
             </div>
@@ -231,15 +229,16 @@
 
     <!--Footer-->
 
-    <footer>
+    <footer class="footer flex-center">
 
       <!--Personal submit form-->
 
-      <section class="form-section">
-      <h2 class="footer h2">Kontakta mig</h2>
+      <section class="form-section flex-center">
+        <h2 class="footer h2">Kontakta mig</h2>
 
       <div id="personal-form">
         <form action="">
+          
 
           <div class="form-group">
           <label for="firstName">Förnamn:</label>

@@ -22,7 +22,3 @@ links.addEventListener("click", () => {
     link.classList.toggle("fade");
   });
 });
-
-// Media Query Phone
-
-
