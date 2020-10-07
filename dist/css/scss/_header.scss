@@ -2,7 +2,7 @@
   height: 10vh;
   display: flex;
   justify-content: space-between;
-  padding: 3rem;
+  padding: 4rem;
   position: relative;
 
   /* Logo */
@@ -40,6 +40,12 @@
         text-transform: uppercase;
         cursor: pointer;
         
+        
+
+        .fas{
+          padding-right: 0.7rem;
+          
+        }
       }
     }
   }

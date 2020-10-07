@@ -7,15 +7,28 @@
   justify-content: center;
   align-items: center;
 
-  .hero-text {
+  .hero-textMobile{
+    display: none;
+  }
+
+  .hero-text{
     font-size: 4rem;
     text-align: center;
     color: $textColor;
     padding: 0rem 5rem;
+    animation: slideUp 1.4s ease;
     & span {
       color: $fontColor;
     }
+
+    
   }
+
+  .english {
+    animation: slideUp 2.1s ease;
+  }
+
+
   /* Social media icons */
   .socialmedia-icons {
     & ul li {
@@ -23,6 +36,7 @@
       text-align: center;
       font-size: 2.5rem;
       text-decoration: none;
+      animation: slideUp 2.4s ease;
 
       .fab,
       .far {
@@ -46,6 +60,7 @@
 
   .about.h2 {
     text-align: center;
+    
   }
   .about-container {
     display: flex;
@@ -64,6 +79,9 @@
 
       h4 {
         color: $fontColor;
+        font-size: 2rem;
+      }
+      p {
         font-size: 1.5rem;
       }
     }

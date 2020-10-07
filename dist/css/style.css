@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*Colors*/
 /*Imports*/
 #first-header {
@@ -9,7 +8,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 3rem;
+  padding: 4rem;
   position: relative;
   /* Logo */
   /* Nav */
@@ -59,6 +58,10 @@
   cursor: pointer;
 }
 
+#first-header .header-nav .nav-links li a .fas {
+  padding-right: 0.7rem;
+}
+
 /*  Hero - Main */
 .hero-main {
   min-height: 90vh;
@@ -78,15 +81,26 @@
   /* Social media icons */
 }
 
+.hero-main .hero-textMobile {
+  display: none;
+}
+
 .hero-main .hero-text {
   font-size: 4rem;
   text-align: center;
   color: #a8a8a8;
   padding: 0rem 5rem;
+  -webkit-animation: slideUp 1.4s ease;
+          animation: slideUp 1.4s ease;
 }
 
 .hero-main .hero-text span {
   color: #ffffff;
+}
+
+.hero-main .english {
+  -webkit-animation: slideUp 2.1s ease;
+          animation: slideUp 2.1s ease;
 }
 
 .hero-main .socialmedia-icons ul li {
@@ -94,6 +108,8 @@
   text-align: center;
   font-size: 2.5rem;
   text-decoration: none;
+  -webkit-animation: slideUp 2.4s ease;
+          animation: slideUp 2.4s ease;
 }
 
 .hero-main .socialmedia-icons ul li .fab,
@@ -150,6 +166,10 @@
 
 #about .about-container .aboutText h4 {
   color: #ffffff;
+  font-size: 2rem;
+}
+
+#about .about-container .aboutText p {
   font-size: 1.5rem;
 }
 
@@ -485,17 +505,41 @@
     display: none;
   }
   .hero-main {
-    min-height: 90vh;
+    min-height: 80vh;
+  }
+  .hero-main .hero-textMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 2rem;
+    text-align: center;
+    color: #a8a8a8;
+    padding: 0rem 1rem;
+    -webkit-animation: slideUp 1.4s ease;
+            animation: slideUp 1.4s ease;
+  }
+  .hero-main .hero-textMobile span {
+    color: #ffffff;
   }
   .hero-main .hero-text {
-    font-size: 2.5rem;
+    display: none;
   }
   /* About me - Section*/
   #about {
     min-height: 100vh;
   }
+  #about .about-container {
+    margin: 1rem;
+  }
   #about .about-container .aboutText {
-    padding: 0rem 1rem;
+    padding: 0rem rem;
+  }
+  #about .about-container .aboutText p {
+    display: none;
   }
   #about .about-container .aboutIcons .coding-icons .codingIcons {
     font-size: 2rem;
@@ -574,16 +618,26 @@
   left: 100%;
 }
 
-/* Animationer för slide in */
-.hero-text:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 120%;
-  height: 100%;
-  background-color: #ffffff;
-  -webkit-animation: animate 5.5s linear forwards;
-          animation: animate 5.5s linear forwards;
+/* Hero animation */
+@-webkit-keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(250px);
+            transform: translateY(250px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(250px);
+            transform: translateY(250px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 footer {
@@ -609,11 +663,29 @@ footer .footer.h2 {
   text-align: center;
 }
 
-footer #personal-form {
+footer .form-section {
+  height: 80vh;
   width: 100%;
-  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .form-section #personal-form {
+  width: 90%;
+  max-width: 50rem;
+  margin: 0rem auto;
   color: #ffffff;
-  position: relative;
   border-radius: 25px;
   padding: 2rem;
   background: rgba(255, 255, 255, 0.2);
@@ -622,33 +694,34 @@ footer #personal-form {
   margin-bottom: 2rem;
 }
 
-footer #personal-form .formgroup,
-footer #personal-form .input,
-footer #personal-form .formgroup,
-footer #personal-form .message-field {
-  padding: 0.7rem;
-  font-family: "Roboto", sans-serif;
-  color: #262828;
-  font-size: 1.2rem;
-  border-radius: 1rem;
-  border: none;
-  margin: 1rem 0;
+footer .form-section #personal-form .form-group {
   width: 100%;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+
+footer .form-section #personal-form .form-group .input, footer .form-section #personal-form .form-group .message-field {
+  width: 100%;
+  padding: 0.3rem;
+  margin: 1rem 0rem 0rem;
+  font-size: 1.6rem;
+  border-radius: 15px;
+  border: none;
   outline: none;
 }
 
-footer #personal-form .formgroup .message-field,
-footer #personal-form .input .message-field,
-footer #personal-form .formgroup .message-field,
-footer #personal-form .message-field .message-field {
+footer .form-section #personal-form .message-field {
   resize: vertical;
 }
 
-footer #personal-form label {
+footer .form-section #personal-form label {
   color: #2bc6ae;
+}
+
+footer .form-section .submit.btn {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 * {

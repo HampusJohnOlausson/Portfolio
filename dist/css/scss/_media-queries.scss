@@ -1,7 +1,6 @@
 /* Media Queries*/
 
 @media screen and (max-width: 1380px) {
-  
   /* Projects */
   #myProjects {
     min-height: 100vh;
@@ -205,9 +204,22 @@
   }
 
   .hero-main {
-    min-height: 90vh;
+    min-height: 80vh;
+
+    .hero-textMobile {
+      display: flex;
+      flex-direction: column;
+      font-size: 2rem;
+      text-align: center;
+      color: $textColor;
+      padding: 0rem 1rem;
+      animation: slideUp 1.4s ease;
+      & span {
+        color: $fontColor;
+      }
+    }
     .hero-text {
-      font-size: 2.5rem;
+      display: none;
     }
   }
   /* About me - Section*/
@@ -216,8 +228,13 @@
     min-height: 100vh;
 
     .about-container {
+      margin: 1rem;
+
       .aboutText {
-        padding: 0rem 1rem;
+        padding: 0rem rem;
+        & p {
+          display: none;
+        }
       }
 
       .aboutIcons {

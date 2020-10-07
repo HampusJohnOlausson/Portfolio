@@ -12,39 +12,53 @@ footer {
   }
 
   /* Personal Form*/
-  #personal-form {
+  
+  .form-section {
+    height: 80vh;
     width: 100%;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  #personal-form {
+    width: 90%;
+    max-width: 50rem;
+    margin: 0rem auto;
     color: $fontColor;
-    position: relative;
     border-radius: 25px;
     padding: 2rem;
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
     margin-bottom: 2rem;
 
-    .formgroup,
-    .input,
-    .formgroup,
-    .message-field {
-      padding: 0.7rem;
-      font-family: "Roboto", sans-serif;
-      color: $primary;
-      font-size: 1.2rem;
-      border-radius: 1rem;
-      border: none;
-      margin: 1rem 0;
+    .form-group {
       width: 100%;
-      background-color: $fontColor;
-      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+      margin-top: 1.5rem;
+      font-size: 1.2rem;
+    }
+
+    .form-group .input,.form-group .message-field{
+      width: 100%;
+      padding: 0.3rem;
+      margin: 1rem 0rem 0rem;
+      font-size: 1.6rem;
+      border-radius: 15px;
+      border: none;
       outline: none;
 
-      .message-field {
-        resize: vertical;
-      }
+    } 
+    .message-field {
+      resize: vertical;
     }
     label {
       color: $accent;
     }
   }
+  .submit.btn {
+    align-self: center;
+  }
+ }
+
 }
+

@@ -43,14 +43,19 @@
   left: 100%;
 }
 
-/* Animationer för slide in */
+/* Hero animation */
 
-.hero-text:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 120%;
-  height: 100%;
-  background-color: #ffffff;
-  animation: animate 5.5s linear forwards;
+@keyframes slideUp {
+  0% {
+    transform: translateY(250px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
+
+
+
+
+
+
