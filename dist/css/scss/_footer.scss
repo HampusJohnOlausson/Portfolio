@@ -31,12 +31,18 @@
       .form-group .input,
       .form-group .message-field {
         width: 100%;
-        padding: 0.3rem;
+        padding: 0.3rem 1rem;
         margin: 1rem 0rem 0rem;
         font-size: 1.6rem;
         border-radius: 15px;
         border: none;
         outline: none;
+        font-family: "Roboto", sans-serif;
+      }
+      .input::placeholder,
+      .message-field::placeholder {
+        font-size: 1rem;
+        color: $textColor;
       }
       .message-field {
         resize: vertical;

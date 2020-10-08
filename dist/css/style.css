@@ -1,4 +1,5 @@
 /*Colors*/
+/* #1f2233  #242434 #232433*/
 /*Imports*/
 #first-header, .flex-spaceBetween {
   height: 10vh;
@@ -266,7 +267,7 @@
   }
   #first-header .header-nav .nav-links {
     position: fixed;
-    background: #262828;
+    background: #242527;
     height: 100vh;
     width: 100%;
     -webkit-box-orient: vertical;
@@ -476,7 +477,7 @@
 /* Socialmedia-icons hover*/
 .fab:hover,
 .far:hover {
-  background: #262828;
+  background: #242527;
   border: 2px solid #333;
   opacity: 9;
   -webkit-transform: rotate(360deg);
@@ -561,12 +562,37 @@
 .footer.flex-center .form-section.flex-center #personal-form .form-group .input,
 .footer.flex-center .form-section.flex-center #personal-form .form-group .message-field {
   width: 100%;
-  padding: 0.3rem;
+  padding: 0.3rem 1rem;
   margin: 1rem 0rem 0rem;
   font-size: 1.6rem;
   border-radius: 15px;
   border: none;
   outline: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer.flex-center .form-section.flex-center #personal-form .input::-webkit-input-placeholder,
+.footer.flex-center .form-section.flex-center #personal-form .message-field::-webkit-input-placeholder {
+  font-size: 1rem;
+  color: #a8a8a8;
+}
+
+.footer.flex-center .form-section.flex-center #personal-form .input:-ms-input-placeholder,
+.footer.flex-center .form-section.flex-center #personal-form .message-field:-ms-input-placeholder {
+  font-size: 1rem;
+  color: #a8a8a8;
+}
+
+.footer.flex-center .form-section.flex-center #personal-form .input::-ms-input-placeholder,
+.footer.flex-center .form-section.flex-center #personal-form .message-field::-ms-input-placeholder {
+  font-size: 1rem;
+  color: #a8a8a8;
+}
+
+.footer.flex-center .form-section.flex-center #personal-form .input::placeholder,
+.footer.flex-center .form-section.flex-center #personal-form .message-field::placeholder {
+  font-size: 1rem;
+  color: #a8a8a8;
 }
 
 .footer.flex-center .form-section.flex-center #personal-form .message-field {
@@ -588,7 +614,7 @@
 
 .wrapper {
   font-family: "Roboto", sans-serif;
-  background-color: #262828;
+  background-color: #242527;
   color: #ffffff;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   width: 100%;
