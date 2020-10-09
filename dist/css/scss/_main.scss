@@ -5,11 +5,11 @@
 
   .hero-text {
     font-size: 4rem;
+    font-weight: 600;
     text-align: center;
     color: $textColor;
     padding: 0rem 5rem;
     animation: slideUp 1.4s ease;
-
     & span {
       color: $fontColor;
     }

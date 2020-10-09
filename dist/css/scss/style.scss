@@ -1,7 +1,7 @@
 /*Colors*/
-$primary: #242527;  /* #1f2233  #242434 #232433*/ 
+$primary: #23292D;  /* #1f2233  #242434 #232433*/ 
 $accent: #2bc6ae;
-$fontColor: #ffffff;
+$fontColor: #fff;
 $textColor: #a8a8a8;
 
 /*Imports*/
@@ -21,6 +21,8 @@ $textColor: #a8a8a8;
 .wrapper {
   font-family: "Roboto", sans-serif;
   background-color: $primary;
+  background-attachment: fixed;
+  background-size: cover;
   color: $fontColor;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   width: 100%;
@@ -50,6 +52,7 @@ $textColor: #a8a8a8;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   position: relative;
   align-self: center;
+  
 
 
   & a {
