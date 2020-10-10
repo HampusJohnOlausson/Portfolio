@@ -20,9 +20,7 @@ $textColor: #a8a8a8;
 }
 .wrapper {
   font-family: "Roboto", sans-serif;
-  background-color: $primary;
-  background-attachment: fixed;
-  background-size: cover;
+  background: $primary;
   color: $fontColor;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   width: 100%;
