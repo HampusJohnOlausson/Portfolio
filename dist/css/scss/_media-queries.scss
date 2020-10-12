@@ -121,25 +121,17 @@
   /* About me - Section*/
 
   #about {
-    text-align: center;
     min-height: 100vh;
 
-    .about-container.flex-center-row {
-      flex-direction: column;
-      margin-top: 0;
-
       .aboutText {
-        padding: 0rem 1rem;
+        padding: 0rem 4rem;
       }
-      .profile-container {
+      
         .profile-pic {
           width: 15rem;
           height: 13rem;
-          justify-content: center;
-          margin: 2rem 12rem;
         }
-      }
-    }
+    
   }
 
   /* Projects - Section */
@@ -198,18 +190,17 @@
   #about {
     min-height: 100vh;
 
-    .about-container.flex-center-row {
-      margin: 1rem;
-
       .aboutText {
-        padding: 0rem 10rem;
+        padding: 0rem 2rem;
 
-        & p {
+        h4{
+          font-size: 1.5rem;
+        }
+        p {
           display: none;
-          padding: 8rem;
+          
         }
       }
-    }
   }
 
   /* Projects */
@@ -249,6 +240,7 @@
         }
   
       }
-
   }
+
 }
+

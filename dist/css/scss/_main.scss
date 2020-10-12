@@ -2,6 +2,12 @@
 
 .hero-main.flex-center {
   min-height: 90vh;
+  .phone-hero.flex-center-row{
+    
+    
+    font-size: 2rem;
+    
+  }
 
   .hero-text {
     font-size: 4rem;
@@ -14,6 +20,7 @@
       color: $fontColor;
     }
   }
+
   .english {
     animation: slideUp 2.1s ease;
   }
@@ -46,19 +53,16 @@
 
 #about,
 .flex-center {
-  min-height: 100vh;
-
-  .about-container.flex-center-row {
-    margin: 2rem 4rem;
-    align-items: center;
+    min-height: 100vh;
 
     /* About Text*/
-
     .aboutText {
+      text-align: center;
+      padding: 2rem 12rem;
+
       .about.h2 {
         color: $fontColor;
       }
-      text-align: center;
       color: $textColor;
 
       h4 {
@@ -69,22 +73,16 @@
         font-size: 1.5rem;
       }
     }
-
     /* Profile image*/
-
-    .profile-container {
-      align-items: center;
-
       .profile-pic {
-        width: 22rem;
-        height: 20rem;
+        width: 18rem;
+        height: 16rem;
         border-radius: 50%;
-        margin: 4rem 12rem;
+        margin: 2rem 12rem;
         box-shadow: 0 13px 26px rgba(#000, 0.2), 0 3px 6px rgba(#000, 0.2);
       }
-    }
   }
-}
+
 
 /* Projects - Section */
 

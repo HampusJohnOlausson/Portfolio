@@ -57,6 +57,10 @@
   /* Social media icons */
 }
 
+.hero-main.flex-center .phone-hero.flex-center-row {
+  font-size: 2rem;
+}
+
 .hero-main.flex-center .hero-text {
   font-size: 4rem;
   font-weight: 600;
@@ -102,53 +106,39 @@
 #about,
 .flex-center {
   min-height: 100vh;
-}
-
-#about .about-container.flex-center-row,
-.flex-center .about-container.flex-center-row {
-  margin: 2rem 4rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   /* About Text*/
   /* Profile image*/
 }
 
-#about .about-container.flex-center-row .aboutText,
-.flex-center .about-container.flex-center-row .aboutText {
+#about .aboutText,
+.flex-center .aboutText {
   text-align: center;
+  padding: 2rem 12rem;
   color: #a8a8a8;
 }
 
-#about .about-container.flex-center-row .aboutText .about.h2,
-.flex-center .about-container.flex-center-row .aboutText .about.h2 {
+#about .aboutText .about.h2,
+.flex-center .aboutText .about.h2 {
   color: #fff;
 }
 
-#about .about-container.flex-center-row .aboutText h4,
-.flex-center .about-container.flex-center-row .aboutText h4 {
+#about .aboutText h4,
+.flex-center .aboutText h4 {
   color: #fff;
   font-size: 2rem;
 }
 
-#about .about-container.flex-center-row .aboutText p,
-.flex-center .about-container.flex-center-row .aboutText p {
+#about .aboutText p,
+.flex-center .aboutText p {
   font-size: 1.5rem;
 }
 
-#about .about-container.flex-center-row .profile-container,
-.flex-center .about-container.flex-center-row .profile-container {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#about .about-container.flex-center-row .profile-container .profile-pic,
-.flex-center .about-container.flex-center-row .profile-container .profile-pic {
-  width: 22rem;
-  height: 20rem;
+#about .profile-pic,
+.flex-center .profile-pic {
+  width: 18rem;
+  height: 16rem;
   border-radius: 50%;
-  margin: 4rem 12rem;
+  margin: 2rem 12rem;
   -webkit-box-shadow: 0 13px 26px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 0 13px 26px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
 }
@@ -355,26 +345,14 @@
   }
   /* About me - Section*/
   #about {
-    text-align: center;
     min-height: 100vh;
   }
-  #about .about-container.flex-center-row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 0;
+  #about .aboutText {
+    padding: 0rem 4rem;
   }
-  #about .about-container.flex-center-row .aboutText {
-    padding: 0rem 1rem;
-  }
-  #about .about-container.flex-center-row .profile-container .profile-pic {
+  #about .profile-pic {
     width: 15rem;
     height: 13rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 2rem 12rem;
   }
   /* Projects - Section */
   #myProjects {
@@ -421,15 +399,14 @@
   #about {
     min-height: 100vh;
   }
-  #about .about-container.flex-center-row {
-    margin: 1rem;
+  #about .aboutText {
+    padding: 0rem 2rem;
   }
-  #about .about-container.flex-center-row .aboutText {
-    padding: 0rem 10rem;
+  #about .aboutText h4 {
+    font-size: 1.5rem;
   }
-  #about .about-container.flex-center-row .aboutText p {
+  #about .aboutText p {
     display: none;
-    padding: 8rem;
   }
   /* Projects */
   #myProjects {
