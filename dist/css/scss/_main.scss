@@ -3,8 +3,6 @@
 .hero-main.flex-center {
   min-height: 90vh;
 
-
-
   .hero-text {
     font-size: 4rem;
     font-weight: 600;
@@ -58,7 +56,7 @@
 
     .aboutText {
       .about.h2 {
-        color:$fontColor;
+        color: $fontColor;
       }
       text-align: center;
       color: $textColor;
@@ -74,18 +72,17 @@
 
     /* Profile image*/
 
-    .profile-container{
+    .profile-container {
       align-items: center;
 
-      .profile-pic{
+      .profile-pic {
         width: 22rem;
         height: 20rem;
         border-radius: 50%;
         margin: 4rem 12rem;
-        box-shadow: 0 13px 26px rgba(#000, .2), 0 3px 6px rgba(#000, .2);
+        box-shadow: 0 13px 26px rgba(#000, 0.2), 0 3px 6px rgba(#000, 0.2);
       }
     }
-   
   }
 }
 
@@ -115,13 +112,9 @@
       height: 25rem;
     }
     .card-h2 {
-      font-size: 3rem;
+      font-size: 2rem;
     }
 
-    /* Project Button*/
-    .project.btn {
-      background-color: #ffb52a;
-    }
     .card-inner {
       position: relative;
       width: 100%;
@@ -138,7 +131,32 @@
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
     }
-    .card-back.flex-center-column {
+    .card-back.flex-center-column.skur {
+      background-image: radial-gradient(
+          circle at 17% 77%,
+          rgba(17, 17, 17, 0.04) 0%,
+          rgba(17, 17, 17, 0.04) 50%,
+          rgba(197, 197, 197, 0.04) 50%,
+          rgba(197, 197, 197, 0.04) 100%
+        ),
+        radial-gradient(
+          circle at 26% 17%,
+          rgba(64, 64, 64, 0.04) 0%,
+          rgba(64, 64, 64, 0.04) 50%,
+          rgba(244, 244, 244, 0.04) 50%,
+          rgba(244, 244, 244, 0.04) 100%
+        ),
+        radial-gradient(
+          circle at 44% 60%,
+          rgba(177, 177, 177, 0.04) 0%,
+          rgba(177, 177, 177, 0.04) 50%,
+          rgba(187, 187, 187, 0.04) 50%,
+          rgba(187, 187, 187, 0.04) 100%
+        ),
+        linear-gradient(19deg, rgb(28, 117, 250), rgb(34, 2, 159));
+      transform: rotateY(180deg);
+    }
+    .card-back.flex-center-column.bengans {
       background: linear-gradient(20deg, rgb(87, 201, 209), rgb(81, 66, 250));
       transform: rotateY(180deg);
     }

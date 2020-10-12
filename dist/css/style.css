@@ -174,7 +174,6 @@
   -webkit-perspective: 90rem;
           perspective: 90rem;
   margin: 0rem 2rem 2rem;
-  /* Project Button*/
 }
 
 #myProjects .card img {
@@ -183,11 +182,7 @@
 }
 
 #myProjects .card .card-h2 {
-  font-size: 3rem;
-}
-
-#myProjects .card .project.btn {
-  background-color: #ffb52a;
+  font-size: 2rem;
 }
 
 #myProjects .card .card-inner {
@@ -212,7 +207,13 @@
   backface-visibility: hidden;
 }
 
-#myProjects .card .card-back.flex-center-column {
+#myProjects .card .card-back.flex-center-column.skur {
+  background-image: radial-gradient(circle at 17% 77%, rgba(17, 17, 17, 0.04) 0%, rgba(17, 17, 17, 0.04) 50%, rgba(197, 197, 197, 0.04) 50%, rgba(197, 197, 197, 0.04) 100%), radial-gradient(circle at 26% 17%, rgba(64, 64, 64, 0.04) 0%, rgba(64, 64, 64, 0.04) 50%, rgba(244, 244, 244, 0.04) 50%, rgba(244, 244, 244, 0.04) 100%), radial-gradient(circle at 44% 60%, rgba(177, 177, 177, 0.04) 0%, rgba(177, 177, 177, 0.04) 50%, rgba(187, 187, 187, 0.04) 50%, rgba(187, 187, 187, 0.04) 100%), linear-gradient(19deg, #1c75fa, #22029f);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+#myProjects .card .card-back.flex-center-column.bengans {
   background: linear-gradient(20deg, #57c9d1, #5142fa);
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
@@ -445,11 +446,19 @@
     height: 12rem;
   }
   #myProjects .project-container.flex-center-row .card .card-h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   /* Footer */
-  footer {
+  .footer.flex-center {
     min-height: 100vh;
+    padding: 0rem;
+  }
+  .footer.flex-center #personal-form {
+    width: 100%;
+    margin: 0rem auto;
+  }
+  .footer.flex-center #personal-form .submit.btn {
+    width: 12rem;
   }
 }
 
@@ -546,7 +555,7 @@
   max-width: 50rem;
   margin: 0rem auto;
   border-radius: 25px;
-  padding: 1rem 2rem;
+  padding: 0rem 2rem;
   background: rgba(255, 255, 255, 0.2);
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
@@ -557,6 +566,13 @@
   width: 100%;
   margin-top: 1.5rem;
   font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer.flex-center .form-section.flex-center #personal-form .form-group .input,
