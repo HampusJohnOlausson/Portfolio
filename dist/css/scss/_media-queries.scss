@@ -124,19 +124,19 @@
     text-align: center;
     min-height: 100vh;
 
-    .about-container {
+    .about-container.flex-center-row {
       flex-direction: column;
       margin-top: 0;
 
       .aboutText {
         padding: 0rem 1rem;
       }
-
-      .aboutIcons {
-        .coding-icons {
-          .codingIcons {
-            font-size: 3rem;
-          }
+      .profile-container {
+        .profile-pic {
+          width: 15rem;
+          height: 13rem;
+          justify-content: center;
+          margin: 2rem 12rem;
         }
       }
     }
@@ -202,19 +202,11 @@
       margin: 1rem;
 
       .aboutText {
-        padding: 0rem rem;
+        padding: 0rem 10rem;
+
         & p {
           display: none;
-        }
-      }
-
-      .aboutIcons {
-        .coding-icons.flex-spaceAround {
-          .codingIcons {
-            font-size: 2rem;
-            padding: 1rem;
-            margin: 1rem;
-          }
+          padding: 8rem;
         }
       }
     }
