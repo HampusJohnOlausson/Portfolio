@@ -2,7 +2,7 @@
 
 const hamburger = document.querySelector(".hamburger");
 const navbar = document.querySelector(".header-nav");
-const navLinks = document.querySelector(".nav-links");
+const navLinks = document.querySelector(".header-nav .nav-links");
 const links = document.querySelectorAll(".nav-links li");
 
 
