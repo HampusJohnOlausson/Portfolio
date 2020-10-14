@@ -52,8 +52,9 @@
         clip-path: circle(1000px at 100% -10%);
         -webkit-clip-path: circle(1000px at 50% 50%);
         pointer-events: all;
+
       }
-      .nav-links li {
+      .nav-links li a{
         opacity: 0;
       }
       .nav-links li a {

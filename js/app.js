@@ -16,5 +16,3 @@ hamburger.addEventListener("click", () => {
 hamburger.addEventListener("click", () => {
   navbar.classList.toggle("open");
 });
-
-
