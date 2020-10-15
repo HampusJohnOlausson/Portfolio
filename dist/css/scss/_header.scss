@@ -1,4 +1,5 @@
-#first-header,.flex-spaceBetween{
+#first-header,
+.flex-spaceBetween {
   height: 10vh;
   padding: 4rem;
 
@@ -20,22 +21,21 @@
     width: 50%;
     top: 0%;
     right: 0;
-    
 
-    .nav-links, .flex-spaceAround {
+    .nav-links,
+    .flex-spaceAround {
       align-items: center;
       list-style: none;
       position: relative;
 
-      li a{
-        
+      li a {
         font-size: 1.2rem;
         font-weight: lighter;
         color: $fontColor;
         text-decoration: none;
         text-transform: uppercase;
         cursor: pointer;
-        .fas{
+        .fas {
           padding-right: 0.7rem;
         }
       }
