@@ -57,10 +57,6 @@
   /* Social media icons */
 }
 
-.hero-main.flex-center .phone-hero.flex-center-row {
-  font-size: 2rem;
-}
-
 .hero-main.flex-center .hero-text {
   font-size: 4rem;
   font-weight: 600;
@@ -73,6 +69,10 @@
 
 .hero-main.flex-center .hero-text span {
   color: #fff;
+}
+
+.hero-main.flex-center .mobile-hero {
+  display: none;
 }
 
 .hero-main.flex-center .english {
@@ -233,7 +233,7 @@
     /* Nav */
   }
   #first-header .logoName {
-    padding: 0.5rem;
+    padding: 0.5em;
   }
   #first-header .header-nav {
     height: 10vh;
@@ -265,7 +265,7 @@
     opacity: 0;
   }
   #first-header .header-nav .nav-links li a {
-    font-size: 2rem;
+    font-size: 2em;
   }
   #first-header .header-nav .nav-links li:nth-child(1) {
     -webkit-transition: all 0.5s ease 0.2s;
@@ -279,7 +279,7 @@
     -webkit-transition: all 0.5s ease 0.6s;
     transition: all 0.5s ease 0.6s;
   }
-  #first-header .header-nav li.fade {
+  #first-header .header-nav li.open {
     opacity: 1;
   }
   /* Hamburger Menyn */
@@ -293,8 +293,8 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 4.37rem;
-    height: 3.75rem;
+    width: 4.37em;
+    height: 3.75em;
     position: absolute;
     cursor: pointer;
     right: 2%;
@@ -306,71 +306,83 @@
   }
   .hamburger .line {
     width: 100%;
-    height: 0.37rem;
-    border-radius: 1rem;
+    height: 0.37em;
+    border-radius: 1em;
     background-color: #2bc6ae;
     -webkit-transition: all 0.8s;
     transition: all 0.8s;
   }
-  /* Rotation of lines*/
-  .open .line-1 {
-    -webkit-transform: rotateZ(-405deg) translate(-16px, 12px);
-            transform: rotateZ(-405deg) translate(-16px, 12px);
-  }
-  .open .line-2 {
-    opacity: 0;
-  }
-  .open .line-3 {
-    -webkit-transform: rotateZ(405deg) translate(-16px, -12px);
-            transform: rotateZ(405deg) translate(-16px, -12px);
-  }
   /*  Hero - Main */
-  .hero-main {
+  .hero-main.flex-center {
     min-height: 90vh;
   }
-  .hero-main .hero-text {
-    font-size: 3rem;
+  .hero-main.flex-center .hero-text {
+    font-size: 3em;
   }
   /* About me - Section*/
   #about {
     min-height: 100vh;
   }
   #about .aboutText {
-    padding: 0rem 4rem;
+    padding: 0em 4em;
   }
   #about .profile-pic {
-    width: 15rem;
-    height: 13rem;
+    width: 15em;
+    height: 13em;
   }
   /* Projects - Section */
   #myProjects {
     min-height: 100vh;
   }
+  footer .home {
+    display: none;
+  }
 }
 
-/* Smartphone starts */
-@media screen and (max-width: 630px) {
+/* Ipad */
+@media screen and (max-width: 770px) {
   #first-header {
     height: 10vh;
   }
   #first-header .logoName {
     display: none;
   }
+  .hero-main.flex-center .hero-text {
+    display: none;
+  }
+  .hero-main.flex-center .mobile-hero {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 3em;
+  }
+  .hero-main.flex-center .mobile-hero span {
+    color: #a8a8a8;
+  }
+}
+
+/* Smartphone starts */
+@media screen and (max-width: 630px) {
   .hero-main.flex-center {
     min-height: 80vh;
   }
-  .hero-main.flex-center .hero-text {
-    font-size: 2rem;
+  .hero-main.flex-center .mobile-hero {
+    font-size: 2em;
   }
   /* About me - Section*/
   #about {
     min-height: 100vh;
   }
   #about .aboutText {
-    padding: 0rem 2rem;
+    padding: 0em 2em;
   }
   #about .aboutText h4 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
   }
   #about .aboutText p {
     display: none;
@@ -385,18 +397,18 @@
     border: none;
   }
   #myProjects .project-container .card img {
-    width: 20rem;
-    height: 12rem;
+    width: 20em;
+    height: 12em;
   }
   #myProjects .project-container .card .card-h2 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
   }
   /* Footer */
   .footer.flex-center {
     min-height: 100vh;
   }
   .footer.flex-center .submit.btn {
-    width: 15rem;
+    width: 15em;
   }
 }
 
@@ -530,30 +542,37 @@
   background-color: transparent;
   color: #fff;
   font-family: "Roboto", sans-serif;
+  border-bottom: 2px solid #fff;
 }
 
 .footer.flex-center .form-section.flex-center #personal-form .input::-webkit-input-placeholder,
 .footer.flex-center .form-section.flex-center #personal-form .message-field::-webkit-input-placeholder {
-  color: #fff;
+  color: #2bc6ae;
 }
 
 .footer.flex-center .form-section.flex-center #personal-form .input:-ms-input-placeholder,
 .footer.flex-center .form-section.flex-center #personal-form .message-field:-ms-input-placeholder {
-  color: #fff;
+  color: #2bc6ae;
 }
 
 .footer.flex-center .form-section.flex-center #personal-form .input::-ms-input-placeholder,
 .footer.flex-center .form-section.flex-center #personal-form .message-field::-ms-input-placeholder {
-  color: #fff;
+  color: #2bc6ae;
 }
 
 .footer.flex-center .form-section.flex-center #personal-form .input::placeholder,
 .footer.flex-center .form-section.flex-center #personal-form .message-field::placeholder {
-  color: #fff;
+  color: #2bc6ae;
 }
 
 .footer.flex-center .form-section.flex-center #personal-form .message-field {
   resize: vertical;
+}
+
+.footer.flex-center .home a {
+  color: #2bc6ae;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
 }
 
 * {

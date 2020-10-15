@@ -34,16 +34,22 @@
         background-color: transparent;
         color: $fontColor;
         font-family: "Roboto", sans-serif;
-        
+        border-bottom: 2px solid $fontColor;
         
       }
       .input::placeholder,
       .message-field::placeholder {
-        color: $fontColor;
+        color: $accent;
       }
       .message-field {
         resize: vertical;
       }
     }
+  }
+
+  .home a{
+    color: $accent;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
   }
 }

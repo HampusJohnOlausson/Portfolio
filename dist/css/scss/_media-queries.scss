@@ -18,7 +18,7 @@
 
     /* Logo */
     .logoName {
-      padding: 0.5rem;
+      padding: 0.5em;
     }
     /* Nav */
     .header-nav {
@@ -47,7 +47,7 @@
         opacity: 0;
       }
       .nav-links li a {
-        font-size: 2rem;
+        font-size: 2em;
       }
       .nav-links li:nth-child(1) {
         transition: all 0.5s ease 0.2s;
@@ -58,7 +58,7 @@
       .nav-links li:nth-child(3) {
         transition: all 0.5s ease 0.6s;
       }
-      li.fade {
+      li.open {
         opacity: 1;
       }
     }
@@ -70,8 +70,8 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    width: 4.37rem;
-    height: 3.75rem;
+    width: 4.37em;
+    height: 3.75em;
     position: absolute;
     cursor: pointer;
     right: 2%;
@@ -82,29 +82,19 @@
     /* Line Hamburger*/
     .line {
       width: 100%;
-      height: 0.37rem;
-      border-radius: 1rem;
+      height: 0.37em;
+      border-radius: 1em;
       background-color: $accent;
       transition: all 0.8s;
     }
   }
-  /* Rotation of lines*/
-  .open .line-1 {
-    transform: rotateZ(-405deg) translate(-16px, 12px);
-  }
-  .open .line-2 {
-    opacity: 0;
-  }
-  .open .line-3 {
-    transform: rotateZ(405deg) translate(-16px, -12px);
-  }
 
   /*  Hero - Main */
 
-  .hero-main {
+  .hero-main.flex-center {
     min-height: 90vh;
-    .hero-text {
-      font-size: 3rem;
+    .hero-text{
+      font-size: 3em;
     }
   }
 
@@ -114,12 +104,12 @@
     min-height: 100vh;
 
     .aboutText {
-      padding: 0rem 4rem;
+      padding: 0em 4em;
     }
 
     .profile-pic {
-      width: 15rem;
-      height: 13rem;
+      width: 15em;
+      height: 13em;
     }
   }
 
@@ -128,11 +118,17 @@
   #myProjects {
     min-height: 100vh;
   }
+  footer {
+    .home{
+      display: none;
+    }
+  }
 }
 
-/* Smartphone starts */
+/* Ipad */
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 770px){
+
   #first-header {
     height: 10vh;
 
@@ -140,12 +136,33 @@
       display: none;
     }
   }
+  .hero-main.flex-center{
+    .hero-text{
+      display: none;
+    }
+    .mobile-hero{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      font-size: 3em;
+      span{
+        color: $textColor;
+      }
+    }
+
+  }
+ 
+}
+
+/* Smartphone starts */
+
+@media screen and (max-width: 630px) {
 
   .hero-main.flex-center {
     min-height: 80vh;
 
-    .hero-text {
-      font-size: 2rem;
+    .mobile-hero{
+      font-size: 2em;
     }
   }
   /* About me - Section*/
@@ -154,10 +171,10 @@
     min-height: 100vh;
 
     .aboutText {
-      padding: 0rem 2rem;
+      padding: 0em 2em;
 
       h4 {
-        font-size: 1.5rem;
+        font-size: 1.5em;
       }
       p {
         display: none;
@@ -177,12 +194,12 @@
         border: none;
 
         img {
-          width: 20rem;
-          height: 12rem;
+          width: 20em;
+          height: 12em;
         }
 
         .card-h2 {
-          font-size: 1.5rem;
+          font-size: 1.5em;
         }
       }
     }
@@ -191,7 +208,7 @@
   .footer.flex-center {
     min-height: 100vh;
     .submit.btn {
-      width: 15rem;
+      width: 15em;
     }
   }
 }

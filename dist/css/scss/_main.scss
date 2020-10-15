@@ -2,12 +2,7 @@
 
 .hero-main.flex-center {
   min-height: 90vh;
-  .phone-hero.flex-center-row{
-    
-    
-    font-size: 2rem;
-    
-  }
+  
 
   .hero-text {
     font-size: 4rem;
@@ -19,6 +14,9 @@
     & span {
       color: $fontColor;
     }
+  }
+  .mobile-hero {
+    display: none;
   }
 
   .english {
