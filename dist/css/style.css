@@ -220,18 +220,6 @@
   #myProjects {
     min-height: 100vh;
   }
-  #myProjects .project-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    /* Card */
-  }
-  #myProjects .project-container .card {
-    -webkit-perspective: 90rem;
-            perspective: 90rem;
-    margin: 0rem 3rem 5rem;
-  }
 }
 
 /*  Tablet start */
@@ -358,27 +346,6 @@
   #myProjects {
     min-height: 100vh;
   }
-  #myProjects .projects-h2 {
-    text-align: center;
-  }
-  #myProjects .project-container .card {
-    width: 35rem;
-    height: 20rem;
-    border: none;
-    margin: 0rem 2rem 2rem;
-  }
-  #myProjects .project-container .card img {
-    width: 35rem;
-    height: 20rem;
-  }
-  #myProjects .project-container .card .card-h2 {
-    font-size: 2rem;
-  }
-  #myProjects .project-container .card .project.btn {
-    width: 10rem;
-    height: 2rem;
-    font-size: 0.7rem;
-  }
 }
 
 /* Smartphone starts */
@@ -412,30 +379,24 @@
   #myProjects {
     min-height: 100vh;
   }
-  #myProjects .project-container.flex-center-row .card {
+  #myProjects .project-container .card {
     width: 20rem;
     height: 12rem;
     border: none;
-    margin: 0rem 1rem 2rem;
   }
-  #myProjects .project-container.flex-center-row .card img {
+  #myProjects .project-container .card img {
     width: 20rem;
     height: 12rem;
   }
-  #myProjects .project-container.flex-center-row .card .card-h2 {
+  #myProjects .project-container .card .card-h2 {
     font-size: 1.5rem;
   }
   /* Footer */
   .footer.flex-center {
     min-height: 100vh;
-    padding: 0rem;
   }
-  .footer.flex-center #personal-form {
-    width: 100%;
-    margin: 0rem auto;
-  }
-  .footer.flex-center #personal-form .submit.btn {
-    width: 12rem;
+  .footer.flex-center .submit.btn {
+    width: 15rem;
   }
 }
 
@@ -458,6 +419,21 @@
   -webkit-transition: width 0.3s;
   transition: width 0.3s;
   color: #2bc6ae;
+}
+
+/* Hamburger Rotation of lines*/
+.open .line-1 {
+  -webkit-transform: rotateZ(-405deg) translate(-16px, 12px);
+          transform: rotateZ(-405deg) translate(-16px, 12px);
+}
+
+.open .line-2 {
+  opacity: 0;
+}
+
+.open .line-3 {
+  -webkit-transform: rotateZ(405deg) translate(-16px, -12px);
+          transform: rotateZ(405deg) translate(-16px, -12px);
 }
 
 /* Socialmedia-icons hover*/
@@ -528,21 +504,14 @@
 }
 
 .footer.flex-center .form-section.flex-center #personal-form {
-  width: 90%;
+  width: 100%;
   max-width: 50rem;
   margin: 0rem auto;
-  border-radius: 25px;
-  padding: 0rem 2rem;
-  background: rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-  margin-bottom: 1rem;
 }
 
 .footer.flex-center .form-section.flex-center #personal-form .form-group {
   width: 100%;
   margin-top: 1.5rem;
-  font-size: 1.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -554,46 +523,37 @@
 
 .footer.flex-center .form-section.flex-center #personal-form .form-group .input,
 .footer.flex-center .form-section.flex-center #personal-form .form-group .message-field {
-  width: 100%;
-  padding: 0.3rem 1rem;
-  margin: 1rem 0rem 0rem;
-  font-size: 1.6rem;
-  border-radius: 15px;
-  border: none;
+  padding: 0.5rem 0rem;
+  border: 0;
+  font-size: 1.2rem;
   outline: none;
+  background-color: transparent;
+  color: #fff;
   font-family: "Roboto", sans-serif;
 }
 
 .footer.flex-center .form-section.flex-center #personal-form .input::-webkit-input-placeholder,
 .footer.flex-center .form-section.flex-center #personal-form .message-field::-webkit-input-placeholder {
-  font-size: 1rem;
-  color: #a8a8a8;
+  color: #fff;
 }
 
 .footer.flex-center .form-section.flex-center #personal-form .input:-ms-input-placeholder,
 .footer.flex-center .form-section.flex-center #personal-form .message-field:-ms-input-placeholder {
-  font-size: 1rem;
-  color: #a8a8a8;
+  color: #fff;
 }
 
 .footer.flex-center .form-section.flex-center #personal-form .input::-ms-input-placeholder,
 .footer.flex-center .form-section.flex-center #personal-form .message-field::-ms-input-placeholder {
-  font-size: 1rem;
-  color: #a8a8a8;
+  color: #fff;
 }
 
 .footer.flex-center .form-section.flex-center #personal-form .input::placeholder,
 .footer.flex-center .form-section.flex-center #personal-form .message-field::placeholder {
-  font-size: 1rem;
-  color: #a8a8a8;
+  color: #fff;
 }
 
 .footer.flex-center .form-section.flex-center #personal-form .message-field {
   resize: vertical;
-}
-
-.footer.flex-center .form-section.flex-center #personal-form label {
-  color: #2bc6ae;
 }
 
 * {

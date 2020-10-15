@@ -13,44 +13,36 @@
     width: 100%;
 
     #personal-form {
-      width: 90%;
+      width: 100%;
       max-width: 50rem;
       margin: 0rem auto;
-      border-radius: 25px;
-      padding: 0rem 2rem;
-      background: rgba(0, 0, 0, 0.1);
-      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-      margin-bottom: 1rem;
-
+      
       .form-group {
         width: 100%;
         margin-top: 1.5rem;
-        font-size: 1.2rem;
         display: flex;
         flex-direction: column;
       }
 
       .form-group .input,
       .form-group .message-field {
-        width: 100%;
-        padding: 0.3rem 1rem;
-        margin: 1rem 0rem 0rem;
-        font-size: 1.6rem;
-        border-radius: 15px;
-        border: none;
+        
+        padding: 0.5rem 0rem;
+        border: 0;
+        font-size: 1.2rem;
         outline: none;
+        background-color: transparent;
+        color: $fontColor;
         font-family: "Roboto", sans-serif;
+        
+        
       }
       .input::placeholder,
       .message-field::placeholder {
-        font-size: 1rem;
-        color: $textColor;
+        color: $fontColor;
       }
       .message-field {
         resize: vertical;
-      }
-      label {
-        color: $accent;
       }
     }
   }

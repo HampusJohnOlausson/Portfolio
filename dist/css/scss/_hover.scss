@@ -18,6 +18,17 @@
   color: $accent;
 }
 
+  /* Hamburger Rotation of lines*/
+  .open .line-1 {
+    transform: rotateZ(-405deg) translate(-16px, 12px);
+  }
+  .open .line-2 {
+    opacity: 0;
+  }
+  .open .line-3 {
+    transform: rotateZ(405deg) translate(-16px, -12px);
+  }
+
 /* Socialmedia-icons hover*/
 
 .fab:hover,

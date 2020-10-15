@@ -4,16 +4,6 @@
   /* Projects */
   #myProjects {
     min-height: 100vh;
-
-    .project-container {
-      flex-direction: column;
-
-      /* Card */
-      .card {
-        perspective: 90rem;
-        margin: 0rem 3rem 5rem;
-      }
-    }
   }
 }
 
@@ -52,9 +42,8 @@
         clip-path: circle(1000px at 100% -10%);
         -webkit-clip-path: circle(1000px at 50% 50%);
         pointer-events: all;
-
       }
-      .nav-links li{
+      .nav-links li {
         opacity: 0;
       }
       .nav-links li a {
@@ -124,47 +113,20 @@
   #about {
     min-height: 100vh;
 
-      .aboutText {
-        padding: 0rem 4rem;
-      }
-      
-        .profile-pic {
-          width: 15rem;
-          height: 13rem;
-        }
-    
+    .aboutText {
+      padding: 0rem 4rem;
+    }
+
+    .profile-pic {
+      width: 15rem;
+      height: 13rem;
+    }
   }
 
   /* Projects - Section */
 
   #myProjects {
     min-height: 100vh;
-
-    .projects-h2 {
-      text-align: center;
-    }
-    .project-container {
-      .card {
-        width: 35rem;
-        height: 20rem;
-        border: none;
-        margin: 0rem 2rem 2rem;
-
-        img {
-          width: 35rem;
-          height: 20rem;
-        }
-
-        .card-h2 {
-          font-size: 2rem;
-        }
-        .project.btn {
-          width: 10rem;
-          height: 2rem;
-          font-size: 0.7rem;
-        }
-      }
-    }
   }
 }
 
@@ -191,17 +153,16 @@
   #about {
     min-height: 100vh;
 
-      .aboutText {
-        padding: 0rem 2rem;
+    .aboutText {
+      padding: 0rem 2rem;
 
-        h4{
-          font-size: 1.5rem;
-        }
-        p {
-          display: none;
-          
-        }
+      h4 {
+        font-size: 1.5rem;
       }
+      p {
+        display: none;
+      }
+    }
   }
 
   /* Projects */
@@ -209,12 +170,11 @@
   #myProjects {
     min-height: 100vh;
 
-    .project-container.flex-center-row {
+    .project-container {
       .card {
         width: 20rem;
         height: 12rem;
         border: none;
-        margin: 0rem 1rem 2rem;
 
         img {
           width: 20rem;
@@ -228,20 +188,10 @@
     }
   }
   /* Footer */
-  .footer.flex-center{
+  .footer.flex-center {
     min-height: 100vh;
-    padding: 0rem;
-
-      #personal-form {
-        width: 100%;
-        margin: 0rem auto;
-  
-        .submit.btn{
-          width: 12rem;
-        }
-  
-      }
+    .submit.btn {
+      width: 15rem;
+    }
   }
-
 }
-
