@@ -25,12 +25,15 @@
 
   /* Social media icons */
   .socialmedia-icons {
+    
     & ul li {
       display: inline-block;
       text-align: center;
       font-size: 2.5rem;
       text-decoration: none;
       animation: slideUp 2.4s ease;
+      position: relative;
+      
 
       .fab,
       .far {
