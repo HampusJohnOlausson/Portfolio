@@ -26,7 +26,6 @@
       width: 100%;
       z-index: 100;
       position: fixed;
-
       .nav-links {
         position: absolute;
         background: $primary;
@@ -41,9 +40,9 @@
       .nav-links.open {
         clip-path: circle(1000px at 100% -10%);
         -webkit-clip-path: circle(1000px at 50% 50%);
-        pointer-events: all;
-      }
-      .nav-links li {
+        pointer-events: all;    
+      }  
+       .nav-links li {
         opacity: 0;
       }
       .nav-links li a {
@@ -58,14 +57,17 @@
       .nav-links li:nth-child(3) {
         transition: all 0.5s ease 0.6s;
       }
+      .nav-links li:nth-child(4){
+        transition: all 0.5s ease 0.8s;
+      }
       li.open {
         opacity: 1;
       }
     }
   }
 
-  /* Hamburger Menyn */
 
+  /* Hamburger Menyn */
   .hamburger {
     display: flex;
     justify-content: space-around;
@@ -102,11 +104,9 @@
 
   #about {
     min-height: 100vh;
-
     .aboutText {
       padding: 0em 4em;
     }
-
     .profile-pic {
       width: 15em;
       height: 13em;

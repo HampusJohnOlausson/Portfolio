@@ -1,5 +1,4 @@
 /* Nav-Hover*/
-
 .nav-links li a::after {
   content: "";
   position: relative;
@@ -30,7 +29,6 @@
   }
 
 /* Socialmedia-icons hover*/
-
 .fab:hover,
 .far:hover {
   background: $primary;
@@ -41,7 +39,6 @@
 }
 
 /* Button Hover */
-
 .btn::before {
   content: "";
   position: absolute;
@@ -57,7 +54,6 @@
 }
 
 /* Hero animation */
-
 @keyframes slideUp {
   0% {
     transform: translateY(250px);
