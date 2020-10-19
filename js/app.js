@@ -1,4 +1,16 @@
+const navSlide = () => {
+
+const burger = document.querySelector('.hamburger');
+const nav = document.querySelector('.nav-links');
+const navLinks = document.querySelectorAll('.nav-links li')
+
+
+
+}
+
 //Nav-Meny & Hamburger Meny
+
+/*
 
 const hamburger = document.querySelector(".hamburger");
 const navbar = document.querySelector(".header-nav");
@@ -14,5 +26,7 @@ hamburger.addEventListener("click", () => {
 });
 
 hamburger.addEventListener("click", () => {
-    navbar.classList.toggle("open");
-  });
+  navbar.classList.toggle("open");
+});
+
+*/
