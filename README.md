@@ -1,2 +1,3 @@
 # Portfolio
-My portfolio/website where I show my experiences and my skills in web developement.
+My portfolio,  where I show my projects and my skills in web developement.
+
