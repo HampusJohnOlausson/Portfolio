@@ -1,14 +1,38 @@
-.background-animation {
-  .squares {
+.background-animation, .background-animationSecond, .background-animationThird, .background-animationFourth{
+  .squares{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .squares2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200vh;
+    overflow: hidden;
+  }
+  .squares3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300vh;
+    overflow: hidden;
+  }
+  .squares4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400vh;
     overflow: hidden;
   }
 
-  .squares li {
+  .squares li,.squares2 li, .squares3 li,.squares4 li {
     position: absolute;
     display: block;
     list-style: none;
@@ -19,14 +43,14 @@
     bottom: -150px;
   }
 
-  .squares li:nth-child(1) {
+  .squares li:nth-child(1),.squares2 li:nth-child(1),.squares3 li:nth-child(1),.squares4 li:nth-child(1){
     left: 25%;
     width: 80px;
     height: 80px;
     animation-delay: 0s;
   }
 
-  .squares li:nth-child(2) {
+  .squares li:nth-child(2), .squares2 li:nth-child(2),.squares3 li:nth-child(2),.squares4 li:nth-child(2){
     left: 10%;
     width: 20px;
     height: 20px;
@@ -34,14 +58,14 @@
     animation-duration: 12s;
   }
 
-  .squares li:nth-child(3) {
+  .squares li:nth-child(3), .squares2 li:nth-child(3),.squares3 li:nth-child(3),.squares4 li:nth-child(3){
     left: 70%;
     width: 20px;
     height: 20px;
     animation-delay: 4s;
   }
 
-  .squares li:nth-child(4) {
+  .squares li:nth-child(4), .squares2 li:nth-child(4),.squares3 li:nth-child(4),.squares4 li:nth-child(4){
     left: 40%;
     width: 60px;
     height: 60px;
@@ -49,28 +73,28 @@
     animation-duration: 18s;
   }
 
-  .squares li:nth-child(5) {
+  .squares li:nth-child(5),.squares2 li:nth-child(5),.squares3 li:nth-child(5),.squares4 li:nth-child(5) {
     left: 65%;
     width: 20px;
     height: 20px;
     animation-delay: 0s;
   }
 
-  .squares li:nth-child(6) {
+  .squares li:nth-child(6), .squares2 li:nth-child(6),.squares3 li:nth-child(6),.squares4 li:nth-child(6){
     left: 75%;
     width: 110px;
     height: 110px;
     animation-delay: 3s;
   }
 
-  .squares li:nth-child(7) {
+  .squares li:nth-child(7), .squares2 li:nth-child(7),.squares3 li:nth-child(7),.squares4 li:nth-child(7){
     left: 35%;
     width: 150px;
     height: 150px;
     animation-delay: 7s;
   }
 
-  .squares li:nth-child(8) {
+  .squares li:nth-child(8), .squares2 li:nth-child(8),.squares3 li:nth-child(8),.squares4 li:nth-child(8){
     left: 50%;
     width: 15px;
     height: 25px;
@@ -78,7 +102,7 @@
     animation-duration: 45s;
   }
 
-  .squares li:nth-child(9) {
+  .squares li:nth-child(9),.squares2 li:nth-child(9),.squares3 li:nth-child(9),.squares4 li:nth-child(9) {
     left: 20%;
     width: 20px;
     height: 15px;
@@ -86,7 +110,7 @@
     animation-duration: 35s;
   }
 
-  .squares li:nth-child(10) {
+  .squares li:nth-child(10), .squares2 li:nth-child(10),.squares3 li:nth-child(10),.squares4 li:nth-child(10) {
     left: 85%;
     width: 150px;
     height: 150px;

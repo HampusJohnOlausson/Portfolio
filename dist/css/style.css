@@ -538,6 +538,7 @@
   width: 100%;
   max-width: 50rem;
   margin: 0rem auto;
+  position: relative;
 }
 
 .footer.flex-center .form-section.flex-center #personal-form .form-group {
@@ -593,18 +594,46 @@
   color: #2bc6ae;
   font-size: 2.5rem;
   padding-bottom: 1rem;
+  position: relative;
 }
 
-.background-animation .squares {
+.background-animation .squares, .background-animationSecond .squares, .background-animationThird .squares, .background-animationFourth .squares {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
 }
 
-.background-animation .squares li {
+.background-animation .squares2, .background-animationSecond .squares2, .background-animationThird .squares2, .background-animationFourth .squares2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200vh;
+  overflow: hidden;
+}
+
+.background-animation .squares3, .background-animationSecond .squares3, .background-animationThird .squares3, .background-animationFourth .squares3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300vh;
+  overflow: hidden;
+}
+
+.background-animation .squares4, .background-animationSecond .squares4, .background-animationThird .squares4, .background-animationFourth .squares4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400vh;
+  overflow: hidden;
+}
+
+.background-animation .squares li, .background-animation .squares2 li, .background-animation .squares3 li, .background-animation .squares4 li, .background-animationSecond .squares li, .background-animationSecond .squares2 li, .background-animationSecond .squares3 li, .background-animationSecond .squares4 li, .background-animationThird .squares li, .background-animationThird .squares2 li, .background-animationThird .squares3 li, .background-animationThird .squares4 li, .background-animationFourth .squares li, .background-animationFourth .squares2 li, .background-animationFourth .squares3 li, .background-animationFourth .squares4 li {
   position: absolute;
   display: block;
   list-style: none;
@@ -616,7 +645,7 @@
   bottom: -150px;
 }
 
-.background-animation .squares li:nth-child(1) {
+.background-animation .squares li:nth-child(1), .background-animation .squares2 li:nth-child(1), .background-animation .squares3 li:nth-child(1), .background-animation .squares4 li:nth-child(1), .background-animationSecond .squares li:nth-child(1), .background-animationSecond .squares2 li:nth-child(1), .background-animationSecond .squares3 li:nth-child(1), .background-animationSecond .squares4 li:nth-child(1), .background-animationThird .squares li:nth-child(1), .background-animationThird .squares2 li:nth-child(1), .background-animationThird .squares3 li:nth-child(1), .background-animationThird .squares4 li:nth-child(1), .background-animationFourth .squares li:nth-child(1), .background-animationFourth .squares2 li:nth-child(1), .background-animationFourth .squares3 li:nth-child(1), .background-animationFourth .squares4 li:nth-child(1) {
   left: 25%;
   width: 80px;
   height: 80px;
@@ -624,7 +653,7 @@
           animation-delay: 0s;
 }
 
-.background-animation .squares li:nth-child(2) {
+.background-animation .squares li:nth-child(2), .background-animation .squares2 li:nth-child(2), .background-animation .squares3 li:nth-child(2), .background-animation .squares4 li:nth-child(2), .background-animationSecond .squares li:nth-child(2), .background-animationSecond .squares2 li:nth-child(2), .background-animationSecond .squares3 li:nth-child(2), .background-animationSecond .squares4 li:nth-child(2), .background-animationThird .squares li:nth-child(2), .background-animationThird .squares2 li:nth-child(2), .background-animationThird .squares3 li:nth-child(2), .background-animationThird .squares4 li:nth-child(2), .background-animationFourth .squares li:nth-child(2), .background-animationFourth .squares2 li:nth-child(2), .background-animationFourth .squares3 li:nth-child(2), .background-animationFourth .squares4 li:nth-child(2) {
   left: 10%;
   width: 20px;
   height: 20px;
@@ -634,7 +663,7 @@
           animation-duration: 12s;
 }
 
-.background-animation .squares li:nth-child(3) {
+.background-animation .squares li:nth-child(3), .background-animation .squares2 li:nth-child(3), .background-animation .squares3 li:nth-child(3), .background-animation .squares4 li:nth-child(3), .background-animationSecond .squares li:nth-child(3), .background-animationSecond .squares2 li:nth-child(3), .background-animationSecond .squares3 li:nth-child(3), .background-animationSecond .squares4 li:nth-child(3), .background-animationThird .squares li:nth-child(3), .background-animationThird .squares2 li:nth-child(3), .background-animationThird .squares3 li:nth-child(3), .background-animationThird .squares4 li:nth-child(3), .background-animationFourth .squares li:nth-child(3), .background-animationFourth .squares2 li:nth-child(3), .background-animationFourth .squares3 li:nth-child(3), .background-animationFourth .squares4 li:nth-child(3) {
   left: 70%;
   width: 20px;
   height: 20px;
@@ -642,7 +671,7 @@
           animation-delay: 4s;
 }
 
-.background-animation .squares li:nth-child(4) {
+.background-animation .squares li:nth-child(4), .background-animation .squares2 li:nth-child(4), .background-animation .squares3 li:nth-child(4), .background-animation .squares4 li:nth-child(4), .background-animationSecond .squares li:nth-child(4), .background-animationSecond .squares2 li:nth-child(4), .background-animationSecond .squares3 li:nth-child(4), .background-animationSecond .squares4 li:nth-child(4), .background-animationThird .squares li:nth-child(4), .background-animationThird .squares2 li:nth-child(4), .background-animationThird .squares3 li:nth-child(4), .background-animationThird .squares4 li:nth-child(4), .background-animationFourth .squares li:nth-child(4), .background-animationFourth .squares2 li:nth-child(4), .background-animationFourth .squares3 li:nth-child(4), .background-animationFourth .squares4 li:nth-child(4) {
   left: 40%;
   width: 60px;
   height: 60px;
@@ -652,7 +681,7 @@
           animation-duration: 18s;
 }
 
-.background-animation .squares li:nth-child(5) {
+.background-animation .squares li:nth-child(5), .background-animation .squares2 li:nth-child(5), .background-animation .squares3 li:nth-child(5), .background-animation .squares4 li:nth-child(5), .background-animationSecond .squares li:nth-child(5), .background-animationSecond .squares2 li:nth-child(5), .background-animationSecond .squares3 li:nth-child(5), .background-animationSecond .squares4 li:nth-child(5), .background-animationThird .squares li:nth-child(5), .background-animationThird .squares2 li:nth-child(5), .background-animationThird .squares3 li:nth-child(5), .background-animationThird .squares4 li:nth-child(5), .background-animationFourth .squares li:nth-child(5), .background-animationFourth .squares2 li:nth-child(5), .background-animationFourth .squares3 li:nth-child(5), .background-animationFourth .squares4 li:nth-child(5) {
   left: 65%;
   width: 20px;
   height: 20px;
@@ -660,7 +689,7 @@
           animation-delay: 0s;
 }
 
-.background-animation .squares li:nth-child(6) {
+.background-animation .squares li:nth-child(6), .background-animation .squares2 li:nth-child(6), .background-animation .squares3 li:nth-child(6), .background-animation .squares4 li:nth-child(6), .background-animationSecond .squares li:nth-child(6), .background-animationSecond .squares2 li:nth-child(6), .background-animationSecond .squares3 li:nth-child(6), .background-animationSecond .squares4 li:nth-child(6), .background-animationThird .squares li:nth-child(6), .background-animationThird .squares2 li:nth-child(6), .background-animationThird .squares3 li:nth-child(6), .background-animationThird .squares4 li:nth-child(6), .background-animationFourth .squares li:nth-child(6), .background-animationFourth .squares2 li:nth-child(6), .background-animationFourth .squares3 li:nth-child(6), .background-animationFourth .squares4 li:nth-child(6) {
   left: 75%;
   width: 110px;
   height: 110px;
@@ -668,7 +697,7 @@
           animation-delay: 3s;
 }
 
-.background-animation .squares li:nth-child(7) {
+.background-animation .squares li:nth-child(7), .background-animation .squares2 li:nth-child(7), .background-animation .squares3 li:nth-child(7), .background-animation .squares4 li:nth-child(7), .background-animationSecond .squares li:nth-child(7), .background-animationSecond .squares2 li:nth-child(7), .background-animationSecond .squares3 li:nth-child(7), .background-animationSecond .squares4 li:nth-child(7), .background-animationThird .squares li:nth-child(7), .background-animationThird .squares2 li:nth-child(7), .background-animationThird .squares3 li:nth-child(7), .background-animationThird .squares4 li:nth-child(7), .background-animationFourth .squares li:nth-child(7), .background-animationFourth .squares2 li:nth-child(7), .background-animationFourth .squares3 li:nth-child(7), .background-animationFourth .squares4 li:nth-child(7) {
   left: 35%;
   width: 150px;
   height: 150px;
@@ -676,7 +705,7 @@
           animation-delay: 7s;
 }
 
-.background-animation .squares li:nth-child(8) {
+.background-animation .squares li:nth-child(8), .background-animation .squares2 li:nth-child(8), .background-animation .squares3 li:nth-child(8), .background-animation .squares4 li:nth-child(8), .background-animationSecond .squares li:nth-child(8), .background-animationSecond .squares2 li:nth-child(8), .background-animationSecond .squares3 li:nth-child(8), .background-animationSecond .squares4 li:nth-child(8), .background-animationThird .squares li:nth-child(8), .background-animationThird .squares2 li:nth-child(8), .background-animationThird .squares3 li:nth-child(8), .background-animationThird .squares4 li:nth-child(8), .background-animationFourth .squares li:nth-child(8), .background-animationFourth .squares2 li:nth-child(8), .background-animationFourth .squares3 li:nth-child(8), .background-animationFourth .squares4 li:nth-child(8) {
   left: 50%;
   width: 15px;
   height: 25px;
@@ -686,7 +715,7 @@
           animation-duration: 45s;
 }
 
-.background-animation .squares li:nth-child(9) {
+.background-animation .squares li:nth-child(9), .background-animation .squares2 li:nth-child(9), .background-animation .squares3 li:nth-child(9), .background-animation .squares4 li:nth-child(9), .background-animationSecond .squares li:nth-child(9), .background-animationSecond .squares2 li:nth-child(9), .background-animationSecond .squares3 li:nth-child(9), .background-animationSecond .squares4 li:nth-child(9), .background-animationThird .squares li:nth-child(9), .background-animationThird .squares2 li:nth-child(9), .background-animationThird .squares3 li:nth-child(9), .background-animationThird .squares4 li:nth-child(9), .background-animationFourth .squares li:nth-child(9), .background-animationFourth .squares2 li:nth-child(9), .background-animationFourth .squares3 li:nth-child(9), .background-animationFourth .squares4 li:nth-child(9) {
   left: 20%;
   width: 20px;
   height: 15px;
@@ -696,7 +725,7 @@
           animation-duration: 35s;
 }
 
-.background-animation .squares li:nth-child(10) {
+.background-animation .squares li:nth-child(10), .background-animation .squares2 li:nth-child(10), .background-animation .squares3 li:nth-child(10), .background-animation .squares4 li:nth-child(10), .background-animationSecond .squares li:nth-child(10), .background-animationSecond .squares2 li:nth-child(10), .background-animationSecond .squares3 li:nth-child(10), .background-animationSecond .squares4 li:nth-child(10), .background-animationThird .squares li:nth-child(10), .background-animationThird .squares2 li:nth-child(10), .background-animationThird .squares3 li:nth-child(10), .background-animationThird .squares4 li:nth-child(10), .background-animationFourth .squares li:nth-child(10), .background-animationFourth .squares2 li:nth-child(10), .background-animationFourth .squares3 li:nth-child(10), .background-animationFourth .squares4 li:nth-child(10) {
   left: 85%;
   width: 150px;
   height: 150px;
