@@ -188,6 +188,16 @@
     min-height: 100vh;
 
     .project-container {
+
+      .project-para{
+        display: none;
+      }
+      .project-link {
+        font-size: 1rem;
+        margin-top: 1rem;
+
+        
+      }
       .card {
         width: 20rem;
         height: 12rem;

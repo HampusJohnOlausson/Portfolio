@@ -421,6 +421,13 @@
   #myProjects {
     min-height: 100vh;
   }
+  #myProjects .project-container .project-para {
+    display: none;
+  }
+  #myProjects .project-container .project-link {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
   #myProjects .project-container .card {
     width: 20rem;
     height: 12rem;
