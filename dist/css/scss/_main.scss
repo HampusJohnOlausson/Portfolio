@@ -110,6 +110,16 @@
       width: 40rem;
       height: 25rem;
     }
+    .project-para{
+      padding: 2rem;
+      font-size: 1.2rem;
+    }
+    .project-link {
+      
+      color: $fontColor;
+      font-size: 1.3rem;
+      padding-bottom: 0.4rem;
+    }
     .card-h2 {
       font-size: 2rem;
     }
@@ -129,29 +139,8 @@
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
     }
-    .card-back.flex-center-column.skur {
-      background-image: radial-gradient(
-          circle at 17% 77%,
-          rgba(17, 17, 17, 0.04) 0%,
-          rgba(17, 17, 17, 0.04) 50%,
-          rgba(197, 197, 197, 0.04) 50%,
-          rgba(197, 197, 197, 0.04) 100%
-        ),
-        radial-gradient(
-          circle at 26% 17%,
-          rgba(64, 64, 64, 0.04) 0%,
-          rgba(64, 64, 64, 0.04) 50%,
-          rgba(244, 244, 244, 0.04) 50%,
-          rgba(244, 244, 244, 0.04) 100%
-        ),
-        radial-gradient(
-          circle at 44% 60%,
-          rgba(177, 177, 177, 0.04) 0%,
-          rgba(177, 177, 177, 0.04) 50%,
-          rgba(187, 187, 187, 0.04) 50%,
-          rgba(187, 187, 187, 0.04) 100%
-        ),
-        linear-gradient(19deg, rgb(28, 117, 250), rgb(34, 2, 159));
+    .card-back.flex-center-column.findKey {
+      background: #ad1457;
       transform: rotateY(180deg);
     }
     .card-back.flex-center-column.bengans {
