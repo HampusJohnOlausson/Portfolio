@@ -1,5 +1,4 @@
 /*Colors*/
-/* #1f2233  #242434 #232433*/
 /*Imports*/
 #first-header,
 .flex-spaceBetween {
@@ -165,6 +164,7 @@
   font-size: 1.5rem;
   margin-top: 1rem;
   cursor: pointer;
+  position: relative;
 }
 
 /* Projects - Section */
