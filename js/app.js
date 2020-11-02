@@ -33,22 +33,25 @@ navToggle();
 
 
 
-
-
-
+/*
 //change language button
+const englishBtn = document.querySelector('.english');
 
 function changeLanguage() {
 
-  const linkHome = document.querySelector('.homeLI');
-  linkHome.innerHTML = 'Home'; 
 
-  const englishBtn = document.querySelector('.english');
-  englishBtn.innerHTML = 'Svenska';
+  englishBtn.addEventListener('click', () => {
+
+    const linkHome = document.querySelector('.homeLI');
+    linkHome.innerHTML = 'Home'; 
+  
+    englishBtn.innerHTML = 'Svenska';
+
+  });
 
 }
 
-
+*/
 
 
 
