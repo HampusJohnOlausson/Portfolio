@@ -36,5 +36,19 @@ navToggle();
 
 
 
+//change language button
+
+function changeLanguage() {
+
+  const linkHome = document.querySelector('.homeLI');
+  linkHome.innerHTML = 'Home'; 
+
+  const englishBtn = document.querySelector('.english');
+  englishBtn.innerHTML = 'Svenska';
+
+}
+
+
+
 
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hampus Olausson | Svenska</title>
+    <title>Hampus Olausson | Frontend Developer</title>
     <link rel="stylesheet" href="/dist/css/style.css" />
 
 
@@ -101,10 +101,10 @@
 
         <!--Nav-->
         <ul class="nav-links flex-spaceAround">
-          <li><a href="#first-header"><i class="fas fa-home"></i>Hem</a></li>
-          <li><a href="#about"><i class="fas fa-user"></i>Om mig</a></li>
-          <li><a href="#myProjects"><i class="fas fa-briefcase"></i>Projekt</a></li>
-          <li><a href="#personal-form"><i class="fas fa-id-card"></i>Kontakt</a></li>
+          <li class="homeLi"><a href="#first-header"><i class="fas fa-home"></i>Hem</a></li>
+          <li class="aboutLi"><a href="#about"><i class="fas fa-user"></i>Om mig</a></li>
+          <li class="projectLi"><a href="#myProjects"><i class="fas fa-briefcase"></i>Projekt</a></li>
+          <li class="contactLi"><a href="#personal-form"><i class="fas fa-id-card"></i>Kontakt</a></li>
         </ul>
       </nav>
     </header>
@@ -124,7 +124,7 @@
         </h2
 
         <!--english button-->
-        <a href="/html/english.html"><button class="english btn">English</button></a>
+        <button class="english btn" onclick="changeLanguage()">English</button>
         <div class="socialmedia-icons">
           <ul class="socialmedia-list">
             <li>
