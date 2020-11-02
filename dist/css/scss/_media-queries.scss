@@ -158,6 +158,10 @@
 
 @media screen and (max-width: 630px) {
 
+  #first-header {
+    min-height: 20vh;
+  }
+
   .hero-main.flex-center {
     min-height: 80vh;
 
@@ -185,18 +189,16 @@
   /* Projects */
 
   #myProjects {
-    min-height: 100vh;
+    min-height:100vh;
 
     .project-container {
-
+      
       .project-para{
         display: none;
       }
       .project-link {
         font-size: 1rem;
         margin-top: 1rem;
-
-        
       }
       .card {
         width: 20rem;
@@ -216,9 +218,22 @@
   }
   /* Footer */
   .footer.flex-center {
-    min-height: 100vh;
+    height: 100vh;
+    
     .submit.btn {
       width: 15em;
+    }
+  }
+}
+
+/* Desktop: no display on home icon or li cause its not necsessary */
+@media screen and (min-width: 1150px) {
+  .wrapper {
+    .homeLi{
+      display: none;
+    }
+    .fas .fa-home{
+      display: none;
     }
   }
 }

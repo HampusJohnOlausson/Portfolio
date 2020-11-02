@@ -123,6 +123,7 @@
   min-height: 100vh;
   /* About Text*/
   /* Profile image*/
+  /* Cv link*/
 }
 
 #about .aboutText,
@@ -158,6 +159,14 @@
           box-shadow: 0 13px 26px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
+#about .cvLink,
+.flex-center .cvLink {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
 /* Projects - Section */
 #myProjects {
   min-height: 100vh;
@@ -179,6 +188,7 @@
   -webkit-perspective: 90rem;
           perspective: 90rem;
   margin: 0rem 2rem 2rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 #myProjects .card img {
@@ -398,6 +408,9 @@
 
 /* Smartphone starts */
 @media screen and (max-width: 630px) {
+  #first-header {
+    min-height: 20vh;
+  }
   .hero-main.flex-center {
     min-height: 80vh;
   }
@@ -442,10 +455,20 @@
   }
   /* Footer */
   .footer.flex-center {
-    min-height: 100vh;
+    height: 100vh;
   }
   .footer.flex-center .submit.btn {
     width: 15em;
+  }
+}
+
+/* Desktop: no display on home icon or li cause its not necsessary */
+@media screen and (min-width: 1150px) {
+  .wrapper .homeLi {
+    display: none;
+  }
+  .wrapper .fas .fa-home {
+    display: none;
   }
 }
 

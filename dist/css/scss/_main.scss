@@ -82,6 +82,14 @@
         margin: 2rem 12rem;
         box-shadow: 0 13px 26px rgba(#000, 0.2), 0 3px 6px rgba(#000, 0.2);
       }
+
+      /* Cv link*/
+      .cvLink{
+        color: $fontColor;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        cursor: pointer;
+      }
   }
 
 
@@ -106,6 +114,8 @@
     border: none;
     perspective: 90rem;
     margin: 0rem 2rem 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    
     img {
       width: 40rem;
       height: 25rem;
@@ -115,7 +125,6 @@
       font-size: 1.2rem;
     }
     .project-link {
-      
       color: $fontColor;
       font-size: 1.3rem;
       padding-bottom: 0.4rem;
