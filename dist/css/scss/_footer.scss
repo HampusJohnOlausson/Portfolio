@@ -55,5 +55,9 @@
     font-size: 2.5rem;
     padding-bottom: 1rem;
     position: relative;
+    transition: 0.7s all ease;
+  }
+  .home a:hover {
+    color: $fontColor;
   }
 }

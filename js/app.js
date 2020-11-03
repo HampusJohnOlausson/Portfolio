@@ -36,16 +36,14 @@ navToggle();
 
 //change language button
 const englishBtn = document.querySelector('.english');
+const home = document.querySelector('.homeLi');
 
   englishBtn.addEventListener('click', () => {
 
+    home.innerHTML = 'Home';
+    
+});
 
-    const home = document.querySelector('.homeLi');
-    
-    
-    
-
-  });
 
   
 
