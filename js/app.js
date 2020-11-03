@@ -33,25 +33,27 @@ navToggle();
 
 
 
-/*
+
 //change language button
 const englishBtn = document.querySelector('.english');
 
-function changeLanguage() {
-
-
   englishBtn.addEventListener('click', () => {
 
-    const linkHome = document.querySelector('.homeLI');
-    linkHome.innerHTML = 'Home'; 
-  
-    englishBtn.innerHTML = 'Svenska';
+
+    const home = document.querySelector('.homeLi');
+    
+    
+    
 
   });
 
-}
+  
 
-*/
+
+
+
+
+
 
 
 

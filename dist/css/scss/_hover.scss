@@ -49,6 +49,13 @@
   width: 100%;
   top: 0;
 }
+.btn:hover{
+  background: $primary;
+  border: 3px solid $accent;
+  color:$accent ;
+  
+  
+}
 .btn:hover::before {
   left: 100%;
 }
