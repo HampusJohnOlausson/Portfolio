@@ -153,9 +153,15 @@
   width: 18rem;
   height: 16rem;
   border-radius: 50%;
+  position: relative;
   margin: 2rem 12rem;
   -webkit-box-shadow: 0 13px 26px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 0 13px 26px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+#about .fa-download,
+.flex-center .fa-download {
+  margin-right: 1rem;
 }
 
 #about .cvLink,
@@ -165,6 +171,13 @@
   margin-top: 1rem;
   cursor: pointer;
   position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#about .cvLink:hover,
+.flex-center .cvLink:hover {
+  color: #2bc6ae;
 }
 
 /* Projects - Section */
@@ -197,6 +210,7 @@
 }
 
 #myProjects .card .project-para {
+  text-align: center;
   padding: 2rem;
   font-size: 1.2rem;
 }
@@ -205,6 +219,12 @@
   color: #fff;
   font-size: 1.3rem;
   padding-bottom: 0.4rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#myProjects .card .project-link:hover {
+  color: #2bc6ae;
 }
 
 #myProjects .card .card-h2 {
@@ -604,12 +624,12 @@
 .footer.flex-center .form-section.flex-center #personal-form .form-group .input,
 .footer.flex-center .form-section.flex-center #personal-form .form-group .message-field {
   padding: 0.5rem 0rem;
-  border: 0;
   font-size: 1.2rem;
   outline: none;
   background-color: transparent;
   color: #fff;
   font-family: "Roboto", sans-serif;
+  border: none;
   border-bottom: 2px solid #fff;
 }
 
@@ -840,13 +860,14 @@
 /* Reused Classes*/
 /* Button */
 .btn {
+  text-decoration: none;
   background-color: #2bc6ae;
   color: #fff;
   width: 16rem;
   height: 3rem;
   margin: 2rem;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 200;
   text-transform: uppercase;
   border: none;
   border-radius: 27px;
@@ -885,6 +906,18 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flexCenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

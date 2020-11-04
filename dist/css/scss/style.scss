@@ -35,13 +35,14 @@ $textColor: #a8a8a8;
 /* Button */
 
 .btn {
+  text-decoration: none;
   background-color: $accent;
   color: $fontColor;
   width: 16rem;
   height: 3rem;
   margin: 2rem;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 200;
   text-transform: uppercase;
   border: none;
   border-radius: 27px;
@@ -74,6 +75,12 @@ $textColor: #a8a8a8;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.flexCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 .flex-center-row {
     display: flex;

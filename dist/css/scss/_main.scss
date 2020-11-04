@@ -79,8 +79,13 @@
         width: 18rem;
         height: 16rem;
         border-radius: 50%;
+        position: relative;
         margin: 2rem 12rem;
         box-shadow: 0 13px 26px rgba(#000, 0.2), 0 3px 6px rgba(#000, 0.2);
+      }
+
+      .fa-download{
+        margin-right: 1rem;
       }
 
       /* Cv link*/
@@ -90,6 +95,10 @@
         margin-top: 1rem;
         cursor: pointer;
         position: relative;
+        transition: 0.5s;
+      }
+      .cvLink:hover{
+        color: $accent;
       }
   }
 
@@ -122,6 +131,7 @@
       height: 25rem;
     }
     .project-para{
+      text-align: center;
       padding: 2rem;
       font-size: 1.2rem;
     }
@@ -129,6 +139,10 @@
       color: $fontColor;
       font-size: 1.3rem;
       padding-bottom: 0.4rem;
+      transition: 0.5s;
+    }
+    .project-link:hover{
+      color: $accent;
     }
     .card-h2 {
       font-size: 2rem;
