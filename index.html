@@ -174,16 +174,18 @@
               </h4>
               <br>
               <p>
-              Min resa började för cirka ett år sedan med att jag började studera en kvälls kurs inom programmering 
-              och fastnade för det. Sedan dess har jag utforskat mer och mer av webbutvecklingens värld och tycker det 
+              Min resa började för cirka ett år sedan med att jag började studera en kvällskurs inom programmering 
+              och det blev startskottet. Sedan dess har jag utforskat mer och mer av webbutvecklingens värld och tycker det 
               är otroligt spännande. Jag har kunskaper inom HTML, CSS/SCSS, Javascript, Adobe XD med mera.
             </p>
+            <br>
+            <p>Annars skulle jag beskriva mig själv som en driven och social person. Jag gillar struktur och hålla saker i sin ordning. </p>
           </div>
           
             <!-- CV link-->
             <a href="/HampusOlaussonCV.pdf" target="_blank" class="cvLink"> Gå till CV</a>
             <!--CV-Button--> 
-              <a href="/HampusOlaussonCV.pdf" download=".pdf" class="resume btn btn flexCenter"><i class="fas fa-download "></i> Ladda ner CV</a>
+              <a href="/HampusOlaussonCV.pdf" download=".pdf" class="resume btn flexCenter"><i class="fas fa-download "></i> Ladda ner CV</a>
             
 
              <!--Image-->
@@ -195,51 +197,54 @@
 
       <!--Projects Section-->
 
-      <section id="myProjects" class="flex-center">
+      <section id="myProjects">
 
         <h2 class="projects-h2">Mina Projekt</h2>
 
-        <!--Project map-->
-        <div class="project-container">
+        <!--Project map 1-->
+        <div class="project-container flex-center-row">
 
-          
-          <!--Project 1-->
-          <div class="card">
-            <div class="card-inner">
-             <div class="card-front">
-               <a href=""><img src="/images/findKey.jpg" alt="findKeyGame" class="findKey" ></a>
-            </div>
-            <div class="card-back flex-center-column findKey">
-              <h2 class="card-h2">Text Baserat Spel</h2>
-              <p class="project-para">Ett text baserat spel där användaren kan interagera genom att svara på frågor, På så sätt tar sig användaren vidare i spelet. 
-                Följ med på en resa för att hitta ett par försvunna nycklar, där det händer ett event i varje rum.
-                Spelet är resonsivt. 
-              Det är byggt med verktyg så som HTML, CSS/SASS och Javascript</p>
-              <a href="https://hampusjohnolausson.github.io/textBasedAdventureGame/" target="_blank" class="project-link">Gå till demo</a>
-              <a href="https://github.com/HampusJohnOlausson/textBasedAdventureGame" target="_blank" class="project-link">Gå till kod</a>
-            </div>
-          </div>
+        <!--Project 1-->          
+          <div class="project flex-center-column textBasedGame">
+            <h2 class="project-h2">Text Baserat Spel</h2>
+            <img src="/images/findKey.jpg" alt="findKeyGame" class="projectImages findKey">
+            <p class="project-para">Ett text baserat spel där användaren kan interagera genom att svara på frågor, På så sätt tar sig användaren vidare i spelet. 
+              Följ med på en resa för att hitta ett par försvunna nycklar, där det händer ett event i varje rum.
+              Spelet är responsivt.</p>
+              <ul class="projectList">
+                <li class="projectListLi">HTML</li>
+                <li class="projectListLi">CSS / SASS</li>
+                <li class="projectListLi">Javascript</li>
+              </ul>
+            <a href="https://hampusjohnolausson.github.io/textBasedAdventureGame/" target="_blank" class="project-link btn flexCenter">Gå till demo</a>
+            <a href="https://github.com/HampusJohnOlausson/textBasedAdventureGame" target="_blank" class="project-link btn flexCenter">Gå till kod</a>
           </div>
 
           <!--Project 2-->
-          <div class="card">
-            <div class="card-inner">
-             <div class="card-front">
-               <a href=""><img src="/images/bengansResor.jpg" alt="TravelAgency" class="Bengans"></a>
-            </div>
-            <div class="card-back flex-center-column bengans">
-              <h2 class="card-h2">Resebyrå</h2>
-              <p class="project-para">Ett skolprojekt där Andreas Stanggren och jag gjorde om en startsida för en resebyrå. 
-                Detta var bara en simpel layout av startsidan och har därmed inga funktioner.
-                Skapat med verktyg så som HTML och CSS
-              </p>
-             <a href="https://hampusjohnolausson.github.io/Bengts-Resor/index" target="_blank" class="project-link">Gå till demo</a>
-             <a href="https://github.com/HampusJohnOlausson/Bengts-Resor" target="_blank" class="project-link">Gå till kod</a>
-            </div>
-          </div>
+
+          <div class="project flex-center-column travelAgency">
+            <h2 class="project-h2">Resebyrå</h2>
+            <img src="/images/bengansResor.jpg" alt="travelAgency" class="projectImages travelAgency">
+            <p class="project-para bengans">Ett skolprojekt där Andreas Stanggren och jag gjorde om en startsida för en resebyrå. 
+              Detta var bara en simpel layout av startsidan och har därmed inga funktioner.</p>
+              <ul class="projectList">
+                <li class="projectListLi">HTML</li>
+                <li class="projectListLi">CSS</li>
+              </ul>
+              <a href="https://hampusjohnolausson.github.io/Bengts-Resor/index" target="_blank" class="project-link btn flexCenter">Gå till demo</a>
+             <a href="https://github.com/HampusJohnOlausson/Bengts-Resor" target="_blank" class="project-link btn flexCenter">Gå till kod</a>
           </div>
 
         </div>
+
+        <!--Project map 2-->
+        <div class="project-container flex-center-row">
+
+          </div>
+
+
+
+
       </section>
     </main>
 
@@ -253,7 +258,7 @@
         <h2 class="footer h2">Kontakta mig</h2>
 
       <div id="personal-form">
-        <form name="contact" method="POST" data-netlifly="true">
+        <form name="contact" method="POST" data-netlify="true">
 
           <div class="form-group">
           <input class="input" type="text" name="firstName" placeholder="Förnamn"/>
@@ -277,6 +282,7 @@
             class="message-field"
             rows="8"
           placeholder="Meddelande"></textarea>
+          <div data-netlify-recaptcha="true"></div>
             <button type="submit" value="submit" class="submit btn">Skicka</button>
         </div>
         </form>

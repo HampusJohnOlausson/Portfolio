@@ -2,9 +2,18 @@
 
 @media screen and (max-width: 1380px) {
   /* Projects */
+
   #myProjects {
     min-height: 100vh;
+    .project-container{
+      display: flex;
+      flex-direction: column;
+    }
+    .project{
+      margin-bottom: 2rem;
+    }
   }
+
 }
 
 /*  Tablet start */
@@ -191,34 +200,32 @@
   #myProjects {
     min-height:100vh;
 
-    .project-container {
-      
-      .project-para{
-        display: none;
-      }
-      .project-link {
-        font-size: 1rem;
-        margin-top: 1rem;
-      }
-      .card {
-        width: 20rem;
-        height: 12rem;
-        border: none;
+  /* Project*/
+  .project{
+    width: 21rem;
+    height: 40rem;
+    margin: 1rem 2rem ;
 
-        img {
-          width: 20em;
-          height: 12em;
-        }
-
-        .card-h2 {
-          font-size: 1.5em;
-        }
-      }
+    .projectImages{
+      width: 19rem;
+      height: 12rem;
+      margin: 2rem 0rem;
     }
+    .project-h2{
+      font-size: 1.8rem;
+    }
+    .project-para{
+      display: none;
+      
+    }
+  }  
   }
   /* Footer */
-  .footer.flex-center {
+  .footer {
     height: 100vh;
+    .footer.h2{
+      margin-top: 6rem;
+    }
     
     .submit.btn {
       width: 15em;

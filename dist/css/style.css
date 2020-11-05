@@ -183,7 +183,7 @@
 /* Projects - Section */
 #myProjects {
   min-height: 100vh;
-  /* Card */
+  /* Project*/
 }
 
 #myProjects .projects-h2 {
@@ -193,81 +193,51 @@
   text-transform: uppercase;
 }
 
-#myProjects .card {
-  background-color: transparent;
+#myProjects .project {
   width: 40rem;
-  height: 25rem;
-  border: none;
-  -webkit-perspective: 90rem;
-          perspective: 90rem;
-  margin: 0rem 2rem 2rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-#myProjects .card img {
-  width: 40rem;
-  height: 25rem;
-}
-
-#myProjects .card .project-para {
-  text-align: center;
-  padding: 2rem;
-  font-size: 1.2rem;
-}
-
-#myProjects .card .project-link {
-  color: #fff;
-  font-size: 1.3rem;
-  padding-bottom: 0.4rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-#myProjects .card .project-link:hover {
-  color: #2bc6ae;
-}
-
-#myProjects .card .card-h2 {
-  font-size: 2rem;
-}
-
-#myProjects .card .card-inner {
+  height: 60rem;
+  margin: 0rem 2rem;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
   position: relative;
-  width: 100%;
-  height: 100%;
+  padding: 2rem;
+}
+
+#myProjects .project .projectImages {
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  width: 33rem;
+  height: 20rem;
+  border-radius: 7px;
+  margin: 2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#myProjects .project .project-h2 {
+  font-size: 2rem;
   text-align: center;
-  -webkit-transition: -webkit-transform 0.8s;
-  transition: -webkit-transform 0.8s;
-  transition: transform 0.8s;
-  transition: transform 0.8s, -webkit-transform 0.8s;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
 }
 
-#myProjects .card .card-front,
-#myProjects .card .card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+#myProjects .project .project-para {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0rem 4rem;
+  color: #a8a8a8;
 }
 
-#myProjects .card .card-back.flex-center-column.findKey {
-  background: #ad1457;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+#myProjects .project .projectList {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.2rem;
+  padding: 1rem 0rem 1rem 0rem;
 }
 
-#myProjects .card .card-back.flex-center-column.bengans {
-  background: linear-gradient(20deg, #57c9d1, #5142fa);
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-#myProjects .card:hover .card-inner {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+#myProjects .project .project-link {
+  margin: 1rem;
 }
 
 /* Media Queries*/
@@ -275,6 +245,18 @@
   /* Projects */
   #myProjects {
     min-height: 100vh;
+  }
+  #myProjects .project-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #myProjects .project {
+    margin-bottom: 2rem;
   }
 }
 
@@ -453,31 +435,32 @@
   /* Projects */
   #myProjects {
     min-height: 100vh;
+    /* Project*/
   }
-  #myProjects .project-container .project-para {
+  #myProjects .project {
+    width: 21rem;
+    height: 40rem;
+    margin: 1rem 2rem;
+  }
+  #myProjects .project .projectImages {
+    width: 19rem;
+    height: 12rem;
+    margin: 2rem 0rem;
+  }
+  #myProjects .project .project-h2 {
+    font-size: 1.8rem;
+  }
+  #myProjects .project .project-para {
     display: none;
   }
-  #myProjects .project-container .project-link {
-    font-size: 1rem;
-    margin-top: 1rem;
-  }
-  #myProjects .project-container .card {
-    width: 20rem;
-    height: 12rem;
-    border: none;
-  }
-  #myProjects .project-container .card img {
-    width: 20em;
-    height: 12em;
-  }
-  #myProjects .project-container .card .card-h2 {
-    font-size: 1.5em;
-  }
   /* Footer */
-  .footer.flex-center {
+  .footer {
     height: 100vh;
   }
-  .footer.flex-center .submit.btn {
+  .footer .footer.h2 {
+    margin-top: 6rem;
+  }
+  .footer .submit.btn {
     width: 15em;
   }
 }
@@ -655,6 +638,10 @@
 
 .footer.flex-center .form-section.flex-center #personal-form .message-field {
   resize: vertical;
+}
+
+.footer.flex-center .form-section.flex-center .submit {
+  font-weight: 600;
 }
 
 .footer.flex-center .home a {
@@ -987,6 +974,19 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-center-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

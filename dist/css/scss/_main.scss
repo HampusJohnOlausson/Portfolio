@@ -114,65 +114,41 @@
     text-align: center;
     text-transform: uppercase;
   }
-
-  /* Card */
-
-  .card {
-    background-color: transparent;
+  /* Project*/
+  .project{
     width: 40rem;
-    height: 25rem;
-    border: none;
-    perspective: 90rem;
-    margin: 0rem 2rem 2rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    
-    img {
-      width: 40rem;
-      height: 25rem;
+    height: 60rem;
+    margin: 0rem 2rem ;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    position: relative;
+    padding: 2rem;
+
+    .projectImages{
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+      width: 33rem;
+      height: 20rem;
+      border-radius: 7px;
+      margin: 2rem;
+      align-self: center;
+    }
+    .project-h2{
+      font-size: 2rem;
+      text-align: center;
     }
     .project-para{
-      text-align: center;
-      padding: 2rem;
       font-size: 1.2rem;
+      text-align: center;
+      padding: 0rem 4rem;
+      color: $textColor;
+    }
+    .projectList{
+      align-self: center;
+      font-size: 1.2rem;
+      padding: 1rem 0rem 1rem 0rem;
     }
     .project-link {
-      color: $fontColor;
-      font-size: 1.3rem;
-      padding-bottom: 0.4rem;
-      transition: 0.5s;
-    }
-    .project-link:hover{
-      color: $accent;
-    }
-    .card-h2 {
-      font-size: 2rem;
-    }
-    .card-inner {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      transition: transform 0.8s;
-      transform-style: preserve-3d;
-    }
-    .card-front,
-    .card-back {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-    }
-    .card-back.flex-center-column.findKey {
-      background: #ad1457;
-      transform: rotateY(180deg);
-    }
-    .card-back.flex-center-column.bengans {
-      background: linear-gradient(20deg, rgb(87, 201, 209), rgb(81, 66, 250));
-      transform: rotateY(180deg);
-    }
-  }
-  .card:hover .card-inner {
-    transform: rotateY(180deg);
+      margin: 1rem;
+    }   
   }
 }

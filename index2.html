@@ -191,53 +191,57 @@
         
     </section>
 
-      <!--Projects Section-->
+          <!--Projects Section-->
 
-      <section id="myProjects" class="flex-center">
+          <section id="myProjects">
 
-        <h2 class="projects-h2">Projects</h2>
-
-        <!--Project map-->
-        <div class="project-container">
-
-       
-          
-          <!--Project 1-->
-          <div class="card">
-            <div class="card-inner">
-             <div class="card-front">
-               <a href=""><img src="/images/findKey.jpg" alt="findKeyGame" class="findKey" ></a>
+            <h2 class="projects-h2">Projects</h2>
+    
+            <!--Project map 1-->
+            <div class="project-container flex-center-row">
+    
+            <!--Project 1-->          
+              <div class="project flex-center-column textBasedGame">
+                <h2 class="project-h2">Text Based Game</h2>
+                <img src="/images/findKey.jpg" alt="findKeyGame" class="projectImages findKey">
+                <p class="project-para">This is a text based adventure game where the user can interact and become a part of the story.
+                  Follow along on journey to find a pair of lost keys in a house with multiple rooms, where unexpected things happens in each room.
+                  Created with tools such as HTML, CSS/SASS and Javascript. The game is responsive.</p>
+                  <ul class="projectList">
+                    <li class="projectListLi">HTML</li>
+                    <li class="projectListLi">CSS / SASS</li>
+                    <li class="projectListLi">Javascript</li>
+                  </ul>
+                <a href="https://hampusjohnolausson.github.io/textBasedAdventureGame/" target="_blank" class="project-link btn flexCenter">View Demo</a>
+                <a href="https://github.com/HampusJohnOlausson/textBasedAdventureGame" target="_blank" class="project-link btn flexCenter">View Code</a>
+              </div>
+    
+              <!--Project 2-->
+    
+              <div class="project flex-center-column travelAgency">
+                <h2 class="project-h2">Travel Agency</h2>
+                <img src="/images/bengansResor.jpg" alt="travelAgency" class="projectImages travelAgency">
+                <p class="project-para bengans">A collaboration with Andreas Stanggren. Where we recreated a website with a modern touch.
+                  This was just a simlple layout so there are no functions to interact with.
+                 This was built with tools such as HTML and CSS.</p>
+                  <ul class="projectList">
+                    <li class="projectListLi">HTML</li>
+                    <li class="projectListLi">CSS</li>
+                  </ul>
+                  <a href="https://hampusjohnolausson.github.io/Bengts-Resor/index" target="_blank" class="project-link btn flexCenter">View Demo</a>
+                 <a href="https://github.com/HampusJohnOlausson/Bengts-Resor" target="_blank" class="project-link btn flexCenter">View Code</a>
+              </div>
+    
             </div>
-            <div class="card-back flex-center-column findKey">
-              <h2 class="card-h2">Text Based Game</h2>
-              <p class="project-para">This is a text based adventure game where the user can interact and become a part of the story.
-              Follow along on journey to find a pair of lost keys in a house with multiple rooms, where unexpected things happens in each room.
-              Created with tools such as HTML, CSS/SASS and Javascript. The game is responsive.</p>
-              <a href="https://hampusjohnolausson.github.io/textBasedAdventureGame/" target="_blank" class="project-link">View Game</a>
-              <a href="https://github.com/HampusJohnOlausson/textBasedAdventureGame" target="_blank" class="project-link">View Code</a>
-            </div>
-          </div>
-          </div>
+    
+            <!--Project map 2-->
+            <div class="project-container flex-center-row">
+    
+              </div>
+    
+    
+          </section>
 
-          <!--Project 2-->
-          <div class="card">
-            <div class="card-inner">
-             <div class="card-front">
-               <a href=""><img src="/images/bengansResor.jpg" alt="TravelAgency" class="Bengans"></a>
-            </div>
-            <div class="card-back flex-center-column bengans">
-              <h2 class="card-h2">Travel Agency</h2>
-              <p class="project-para">A collaboration with Andreas Stanggren. Where we recreated a website with a modern touch.
-                 This was just a simlple layout so there are no functions to interact with.
-                This was built with tools such as HTML and CSS.</p>
-              <a href="https://hampusjohnolausson.github.io/Bengts-Resor/index" target="_blank" class="project-link">View Website</a>
-              <a href="https://github.com/HampusJohnOlausson/Bengts-Resor" target="_blank" class="project-link">View Code</a>
-            </div>
-          </div>
-          </div>
-
-        </div>
-      </section>
     </main>
 
     <!--Footer-->
@@ -250,7 +254,7 @@
         <h2 class="footer h2">Contact</h2>
 
         <div id="personal-form">
-          <form name="contact" method="POST" data-netlifly="true">
+          <form name="contact" method="POST" data-netlify="true">
   
             <div class="form-group">
             <input class="input" type="text" name="firstName"  placeholder="First Name"/>
@@ -273,6 +277,7 @@
               class="message-field"
               rows="8"
             placeholder="Message"></textarea>
+            <div data-netlify-recaptcha="true"></div>
               <button type="submit" value="submit" class="submit btn">Submit</button>
           </div>
           </form>
