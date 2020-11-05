@@ -1,9 +1,11 @@
+/*------Header-----*/
+
 #first-header,
 .flex-spaceBetween {
   height: 10vh;
   padding: 4rem;
 
-  /* Logo */
+  /*---Logo----*/
   .logoName {
     display: flex;
 
@@ -16,7 +18,7 @@
       font-size: 1.5rem;
     }
   }
-  /* Nav */
+  /*----Nav----*/
   .header-nav {
     width: 50%;
     top: 0%;

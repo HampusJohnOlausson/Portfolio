@@ -1,3 +1,5 @@
+/*---footer---*/
+
 .footer.flex-center {
   min-height: 100vh;
   padding: 0 2rem;
@@ -7,7 +9,7 @@
     text-align: center;
   }
 
-  /* Personal Form*/
+  /*----Personal Form----*/
 
   .form-section.flex-center {
     height: 80vh;
@@ -48,11 +50,13 @@
         resize: vertical;
       }
     }
+    /*---Submit Button---*/
     .submit{
       font-weight: 600;
     }
   }
 
+  /*---Home icon---*/
   .home a{
     color: $accent;
     font-size: 2.5rem;

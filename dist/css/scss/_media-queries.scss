@@ -1,8 +1,8 @@
-/* Media Queries*/
+/*---------------------Media Queries----------------------*/
 
 @media screen and (max-width: 1380px) {
-  /* Projects */
 
+  /*-------Projects------*/
   #myProjects {
     min-height: 100vh;
     .project-container{
@@ -16,25 +16,27 @@
 
 }
 
-/*  Tablet start */
+/*-------------Tablet start (Ipad Pro)---------------*/
 
 @media screen and (max-width: 1150px) {
-  /* Header */
+
+  /*-----Header------*/
   #first-header {
     position: relative;
     width: 100%;
     height: 10vh;
 
-    /* Logo */
+    /*------Logo------*/
     .logoName {
       padding: 0.5em;
     }
-    /* Nav */
+    /*------Nav------*/
     .header-nav {
       height: 10vh;
       width: 100%;
       z-index: 100;
       position: fixed;
+
       .nav-links {
         position: absolute;
         background: $primary;
@@ -76,7 +78,7 @@
   }
 
 
-  /* Hamburger Menyn */
+  /*-----Hamburger Menyn------*/
   .hamburger {
     display: flex;
     justify-content: space-around;
@@ -90,7 +92,7 @@
     transform: translate(-50%, -5%);
     z-index: 2;
 
-    /* Line Hamburger*/
+    /*-----Line Hamburger-----*/
     .line {
       width: 100%;
       height: 0.37em;
@@ -100,7 +102,7 @@
     }
   }
 
-  /*  Hero - Main */
+  /*------Hero Main---------*/
 
   .hero-main.flex-center {
     min-height: 90vh;
@@ -109,7 +111,7 @@
     }
   }
 
-  /* About me - Section*/
+  /*------About me Section--------*/
 
   #about {
     min-height: 100vh;
@@ -122,7 +124,7 @@
     }
   }
 
-  /* Projects - Section */
+  /*-------Projects Section-----*/
 
   #myProjects {
     min-height: 100vh;
@@ -134,7 +136,7 @@
   }
 }
 
-/* Ipad */
+/*------Tablet starts (Ipad)-------*/
 
 @media screen and (max-width: 770px){
 
@@ -163,7 +165,7 @@
  
 }
 
-/* Smartphone starts */
+/*-------Smartphone starts--------*/
 
 @media screen and (max-width: 630px) {
 
@@ -178,7 +180,7 @@
       font-size: 2em;
     }
   }
-  /* About me - Section*/
+  /*--------About me Section--------*/
 
   #about {
     min-height: 100vh;
@@ -220,7 +222,7 @@
     }
   }  
   }
-  /* Footer */
+  /*-----Footer-------*/
   .footer {
     height: 100vh;
     .footer.h2{
@@ -233,7 +235,7 @@
   }
 }
 
-/* Desktop: no display on home icon or li cause its not necsessary */
+/*-------Desktop: no display on home icon or li cause its not necsessary-------*/
 @media screen and (min-width: 1150px) {
   .wrapper {
     .homeLi{

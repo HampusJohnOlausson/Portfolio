@@ -1,4 +1,4 @@
-/*  Hero - Main */
+/*---------Hero Main-----------*/
 
 .hero-main.flex-center {
   min-height: 90vh;
@@ -23,7 +23,7 @@
     animation: slideUp 2.1s ease;
   }
 
-  /* Social media icons */
+  /*--------Social media icons-------*/
   .socialmedia-icons {
     
     & ul li {
@@ -50,13 +50,13 @@
   }
 }
 
-/* About me - Section*/
+/*------About me Section--------*/
 
 #about,
 .flex-center {
     min-height: 100vh;
 
-    /* About Text*/
+    /*----About Text-----*/
     .aboutText {
       text-align: center;
       padding: 2rem 12rem;
@@ -74,7 +74,7 @@
         font-size: 1.5rem;
       }
     }
-    /* Profile image*/
+    /*-----Profile image-----*/
       .profile-pic {
         width: 18rem;
         height: 16rem;
@@ -88,7 +88,7 @@
         margin-right: 1rem;
       }
 
-      /* Cv link*/
+      /*-----Cv link-----*/
       .cvLink{
         color: $fontColor;
         font-size: 1.5rem;
@@ -103,7 +103,7 @@
   }
 
 
-/* Projects - Section */
+/*-----Projects Section------*/
 
 #myProjects {
   min-height: 100vh;
@@ -114,7 +114,7 @@
     text-align: center;
     text-transform: uppercase;
   }
-  /* Project*/
+  /*------Project-----*/
   .project{
     width: 40rem;
     height: 60rem;
