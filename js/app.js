@@ -58,6 +58,8 @@ let i = 0; //Starting point
 let images = [];
 let time = 1500; //Duration
 
+/*---Key game----*/
+
 /*---Image list----*/
 
 images[0] = 'findKey.jpg';
@@ -81,3 +83,25 @@ function changeImage(){
  window.onload = changeImage;
 
 
+ /*----Bengans Resor */
+/*---Image list----*/
+
+/*
+
+imagesBengan[0] = 'bengan.jpg';
+imagesBengan[1] = 'bengan2.jpg';
+
+
+function changeImage(){
+  document.slideTwo.src = imagesBengan[i];
+
+  if(i <imagesBengan.length - 1){
+    i++;
+  } else {
+    i = 0;
+  }
+
+  setTimeout('changeImage()', time);
+}
+ window.onload = changeImage;
+ */
