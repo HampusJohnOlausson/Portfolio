@@ -52,5 +52,32 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 smoothScroll();
 
 
+/*-------Image slider-------*/
+
+let i = 0; //Starting point
+let images = [];
+let time = 1500; //Duration
+
+/*---Image list----*/
+
+images[0] = 'findKey.jpg';
+images[1] = 'findKey2.jpg';
+images[2] = 'findKey3.jpg';
+images[3] = 'findKey4.jpg';
+
+/*--Function */
+
+function changeImage(){
+  document.slideOne.src = images[i];
+
+  if(i <images.length - 1){
+    i++;
+  } else {
+    i = 0;
+  }
+
+  setTimeout('changeImage()', time);
+}
+ window.onload = changeImage;
 
 
