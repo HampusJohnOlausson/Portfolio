@@ -3,6 +3,10 @@
 /*------Header-----*/
 #first-header,
 .flex-spaceBetween {
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
   height: 10vh;
   padding: 4rem;
   /*---Logo----*/
@@ -837,7 +841,6 @@
   padding: 0;
   margin: 0;
   letter-spacing: 2px;
-  scroll-behavior: smooth;
 }
 
 .wrapper {

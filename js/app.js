@@ -1,4 +1,4 @@
-//Nav-Meny & Hamburger Meny
+/*-----Nav-Meny & Hamburger Meny-----*/
 const navToggle = () => {
 
 const hamburger = document.querySelector(".hamburger");
@@ -32,14 +32,24 @@ navLinks.addEventListener("click", () => {
 navToggle();
 
 
+/*--------Smooth Scroll---------*/
 
+const smoothScroll = () => {
 
-  
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
+  anchor.addEventListener('click', function(e) {
 
+    e.preventDefault();
+    
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
 
-
-
+};
+smoothScroll();
 
 
 
