@@ -219,6 +219,8 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
 }
 
 #myProjects .project .project-h2 {

@@ -85,23 +85,27 @@ function changeImage(){
 
  /*----Bengans Resor */
 /*---Image list----*/
+ //Starting point
 
-/*
+ //Starting point
 
-imagesBengan[0] = 'bengan.jpg';
-imagesBengan[1] = 'bengan2.jpg';
+ /*
+ let imagesBengan = [];
 
-
-function changeImage(){
-  document.slideTwo.src = imagesBengan[i];
-
-  if(i <imagesBengan.length - 1){
-    i++;
-  } else {
-    i = 0;
-  }
-
-  setTimeout('changeImage()', time);
-}
- window.onload = changeImage;
+ imagesBengan[0] = 'bengan1.jpg';
+ imagesBengan[1] = 'bengan2.jpg';
+ 
+ 
+ function changeImageTwo(){
+   document.slideTwo.src = imagesBengan[i];
+ 
+   if(i <imagesBengan.length - 1){
+     i++;
+   } else {
+     i = 0;
+   }
+ 
+   setTimeout('changeImageTwo()', time);
+ }
+  window.onload = changeImageTwo;
  */
