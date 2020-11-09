@@ -20,6 +20,9 @@
     <!--CSS/Sass-->
     <link rel="stylesheet" href="/dist/css/style.css" />
 
+    <!--AOS Library-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!--fonts.google-->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
@@ -37,8 +40,9 @@
   </head>
   <body>
     
-    <!--Background animation-->
+    <!--Wrapper-->
     <div class="wrapper">
+      <!--Background animation-->
       <div class="background-animation" >
         <ul class="squares">
                 <li></li>
@@ -164,11 +168,11 @@
 
       <!--About me section-->
 
-      <section id="about" class="flex-center">
+      <section id="about" class="flex-center" data-aos="fade-left">
         
 
           <div class="aboutText">
-            <h2 class="about h2">Om mig</h2>
+            <h2 class="about h2" data-aos="fade-right">Om mig</h2>
               <h4>Mitt namn är Hampus och jag studerar till FrontEnd Utvecklare på Medieinstitutet i Göteborg. 
                 Jag har en passion för webbutveckling och ett stort intresse för UI/UX Design.
               </h4>
@@ -190,7 +194,7 @@
 
              <!--Image-->
           <div class="profile-container">
-            <img src="ProfileImage.jpg" alt="ProfilePicture" class="profile-pic">
+            <img src="/images/ProfileImage.jpg" alt="ProfilePicture" class="profile-pic">
           </div>
           
       </section>
@@ -199,15 +203,15 @@
 
       <section id="myProjects">
 
-        <h2 class="projects-h2">Mina Projekt</h2>
+        <h2 class="projects-h2" data-aos="fade-up">Mina Projekt</h2>
 
         <!--Project map 1-->
         <div class="project-container flex-center-row">
 
         <!--Project 1-->          
-          <div class="project flex-center-column textBasedGame">
+          <div class="project flex-center-column textBasedGame" data-aos="fade-right" >
             <h2 class="project-h2">Text Baserat Spel</h2>
-            <img name=slideOne class="projectImages findKey">
+            <img name=slideOne id="slideOne" src="/images/findKey.jpg" class="projectImages findKey">
             <p class="project-para">Ett text baserat spel där användaren kan interagera genom att svara på frågor, På så sätt tar sig användaren vidare i spelet. 
               Följ med på en resa för att hitta ett par försvunna nycklar, där det händer ett event i varje rum.
               Spelet är responsivt.</p>
@@ -222,14 +226,16 @@
 
           <!--Project 2-->
 
-          <div class="project flex-center-column travelAgency">
+          <div class="project flex-center-column travelAgency" data-aos="fade-left" data-aos="fade-left">
             <h2 class="project-h2">Resebyrå</h2>
-            <img name =slideTwo class="projectImages travelAgency">
+            <img name =slideTwo id="slideTwo" src="/images/bengan1.jpg" class="projectImages travelAgency">
             <p class="project-para bengans">Ett skolprojekt där Andreas Stanggren och jag gjorde om en startsida för en resebyrå. 
               Detta var bara en simpel layout av startsidan och har därmed inga funktioner.</p>
+              <br>
               <ul class="projectList">
                 <li class="projectListLi">HTML</li>
                 <li class="projectListLi">CSS</li>
+                <br>
               </ul>
               <a href="https://hampusjohnolausson.github.io/Bengts-Resor/index" target="_blank" class="project-link btn flexCenter">Gå till demo</a>
              <a href="https://github.com/HampusJohnOlausson/Bengts-Resor" target="_blank" class="project-link btn flexCenter">Gå till kod</a>
@@ -255,13 +261,13 @@
       <!--Personal submit form-->
 
       <section class="form-section flex-center">
-        <h2 class="footer h2">Kontakta mig</h2>
+        <h2 class="footer h2" data-aos="fade-left">Kontakta mig</h2>
 
-      <div id="personal-form">
+      <div id="personal-form" data-aos="fade-right">
         <form name="contact" method="POST" data-netlify="true">
 
           <div class="form-group">
-          <input class="input" type="text" name="firstName" placeholder="Förnamn"/>
+          <input class="input" type="text" name="firstName" placeholder="Förnamn" />
         </div>
 
         <div class="form-group">
@@ -293,6 +299,15 @@
 
     <!--Javascript-->
     <script src="/js/app.js"></script>
+
+    <!--AOS Library-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 400,
+        duration: 1000
+      });
+    </script>
 
   </div>
 

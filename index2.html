@@ -19,6 +19,9 @@
     <!--Css/Sass-->
     <link rel="stylesheet" href="/dist/css/style.css" />
 
+    <!--AOS Library-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!--fonts.google-->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
@@ -35,6 +38,7 @@
   
   <body>
     
+    <!--Wrapper-->
     <div class="wrapper">
 
       <!--Background animation-->
@@ -162,10 +166,10 @@
 
       <!--About me section-->
 
-      <section id="about" class="flex-center">
+      <section id="about" class="flex-center" data-aos="fade-left">
 
         <div class="aboutText">
-          <h2 class="about h2">About</h2>
+          <h2 class="about h2" data-aos="fade-right">About</h2>
             <h4>My name is Hampus and I'm studying to become a FrontEnd Developer at  Medieinstitutet in Gothenburg, Sweden.
                I have a passion for web development and a great interest for UI / UX Design.
             </h4>
@@ -187,7 +191,7 @@
 
            <!--Image-->
         <div class="profile-container">
-          <img src="ProfileImage.jpg" alt="ProfilePicture" class="profile-pic">
+          <img src="/images/ProfileImage.jpg" alt="ProfilePicture" class="profile-pic">
         </div>
         
     </section>
@@ -196,15 +200,15 @@
 
           <section id="myProjects">
 
-            <h2 class="projects-h2">Projects</h2>
+            <h2 class="projects-h2" data-aos="fade-up">Projects</h2>
     
             <!--Project map 1-->
             <div class="project-container flex-center-row">
     
             <!--Project 1-->          
-              <div class="project flex-center-column textBasedGame">
+              <div class="project flex-center-column textBasedGame" data-aos="fade-right">
                 <h2 class="project-h2">Text Based Game</h2>
-                <img name = slideOne class="projectImages findKey">
+                <img name = slideOne src="/images/findKey.jpg" class="projectImages findKey">
                 <p class="project-para">This is a text based adventure game where the user can interact and become a part of the story.
                   Follow along on journey to find a pair of lost keys in a house with multiple rooms, where unexpected things happens in each room.
                   Created with tools such as HTML, CSS/SASS and Javascript. The game is responsive.</p>
@@ -219,9 +223,9 @@
     
               <!--Project 2-->
     
-              <div class="project flex-center-column travelAgency">
+              <div class="project flex-center-column travelAgency" data-aos="fade-left">
                 <h2 class="project-h2">Travel Agency</h2>
-                <img name = slideTwo class="projectImages travelAgency">
+                <img name=slideTwo  src="/images/bengan1.jpg" class="projectImages travelAgency">
                 <p class="project-para bengans">A collaboration with Andreas Stanggren. Where we recreated a website with a modern touch.
                   This was just a simlple layout so there are no functions to interact with.
                  This was built with tools such as HTML and CSS.</p>
@@ -252,9 +256,9 @@
       <!--Personal submit form-->
 
       <section class="form-section flex-center">
-        <h2 class="footer h2">Contact</h2>
+        <h2 class="footer h2" data-aos="fade-left">Contact</h2>
 
-        <div id="personal-form">
+        <div id="personal-form" data-aos="fade-right">
           <form name="contact" method="POST" data-netlify="true">
   
             <div class="form-group">
@@ -286,10 +290,20 @@
     </section>
     </footer>
 
- 
-  </div>
 
   <!--Javascript-->
-    <script src="/js/app.js"></script>
+  <script src="/js/app.js"></script>
+
+  <!--AOS Library-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 400,
+      duration: 1000
+    });
+  </script>
+ 
+  </div>
+        
   </body>
 </html>
