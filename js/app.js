@@ -50,7 +50,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 };
 smoothScroll();
-
-
-/*-------Image slider-------*/
-
