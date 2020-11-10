@@ -466,13 +466,26 @@
     /* Project*/
   }
   #myProjects .project {
-    width: 20rem;
-    height: 40rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 21rem;
+    height: 43rem;
     margin: 1rem 2rem;
   }
   #myProjects .project .projectImages {
     width: 19rem;
-    height: 12rem;
+    height: 14rem;
     margin: 2rem 0rem;
   }
   #myProjects .project .project-h2 {

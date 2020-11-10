@@ -204,13 +204,18 @@
 
   /* Project*/
   .project{
-    width: 20rem;
-    height: 40rem;
-    margin: 1rem 2rem ;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 21rem;
+    height: 43rem;
+    margin: 1rem 2rem;
 
     .projectImages{
       width: 19rem;
-      height: 12rem;
+      height: 14rem;
       margin: 2rem 0rem;
     }
     .project-h2{

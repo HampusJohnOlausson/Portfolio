@@ -104,7 +104,7 @@ const slideShow = () => {
   dotSecond[slideIndex -1].className += ' active';
 
   //Duration
-  setTimeout(slideShow , 1500);
+  setTimeout(slideShow , 2000);
 
 
 
