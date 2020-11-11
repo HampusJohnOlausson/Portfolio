@@ -129,18 +129,21 @@
     <main>
 
       <!--First page hero-->
-      <div class="hero-main flex-center" >
+      <div class="hero-main flex-column-vertical-horizontal" >
         <h1 class="hero-text">
           <span>Hello!</span> My name is <span>Hampus.</span><br>
           An aspiring <span>FrontEnd </span>Developer
         </h1>
+         <!--Hero text when small tablet and phone starts-->
         <h2 class="mobile-hero">Hampus Olausson<br>
           <span>FrontEnd Developer</span>
         </h2>
 
         <!--English-Button-->
 
-        <a href="/index.html" class="english btn flexCenter">Svenska</a>
+        <a href="/index.html" class="english btn flex-vertical-horizontal">Svenska</a>
+
+        <!--Social media icons-->
         <div class="socialmedia-icons">
           <ul class="socialmedia-list">
             <li>
@@ -163,13 +166,15 @@
           </ul>
         </div>
       </div>
+      
+      <!--Arrow direct user to scroll down on page-->
       <div class="arrow-section">
         <a href="#about"><i class="fas fa-chevron-down"></i></a>
       </div>
 
       <!--About me section-->
 
-      <section id="about" class="flex-center" data-aos="fade-up">
+      <section id="about" class="flex-column-vertical-horizontal" data-aos="fade-up">
 
         <div class="aboutText">
           <h2 class="about h2">About</h2>
@@ -189,7 +194,7 @@
            <a href="./HampusOlaussonCVEnglish.pdf" target="_blank" class="cvLink">View CV</a>
 
            <!--CV-Button--> 
-             <a href="./HampusOlaussonCVEnglish.pdf" download=".pdf" class="resume btn flexCenter"><i class="fas fa-download"></i> Download CV</a>
+             <a href="./HampusOlaussonCVEnglish.pdf" download=".pdf" class="resume btn flex-vertical-horizontal"><i class="fas fa-download"></i> Download CV</a>
           
 
            <!--Image-->
@@ -206,10 +211,10 @@
             <h2 class="projects-h2" data-aos="fade-up">Projects</h2>
     
             <!--Project map 1-->
-            <div class="project-container flex-center-row">
+            <div class="project-container flex-row-vertical-horizontal-center">
     
             <!--Project 1-->          
-              <div class="project flex-center-column textBasedGame" data-aos="fade-right">
+              <div class="project flex-column-vertical-horizontal textBasedGame" data-aos="fade-right">
                 <h2 class="project-h2">Text Based Game</h2>
                 
                 <!--Images-->
@@ -239,13 +244,13 @@
                     <li class="projectListLi">CSS / SASS</li>
                     <li class="projectListLi">Javascript</li>
                   </ul>
-                <a href="https://hampusjohnolausson.github.io/textBasedAdventureGame/" target="_blank" class="project-link btn flexCenter">View Demo</a>
-                <a href="https://github.com/HampusJohnOlausson/textBasedAdventureGame" target="_blank" class="project-link btn flexCenter">View Code</a>
+                <a href="https://hampusjohnolausson.github.io/textBasedAdventureGame/" target="_blank" class="project-link btn flex-vertical-horizontal">View Demo</a>
+                <a href="https://github.com/HampusJohnOlausson/textBasedAdventureGame" target="_blank" class="project-link btn flex-vertical-horizontal">View Code</a>
               </div>
     
               <!--Project 2-->
     
-              <div class="project flex-center-column travelAgency" data-aos="fade-left">
+              <div class="project flex-column-vertical-horizontal travelAgency" data-aos="fade-left">
                 <h2 class="project-h2">Travel Agency</h2>
                 
                  <!--Images-->
@@ -276,29 +281,24 @@
                     <li class="projectListLi">CSS</li>
                     <br>
                   </ul>
-                  <a href="https://hampusjohnolausson.github.io/Bengts-Resor/index" target="_blank" class="project-link btn flexCenter">View Demo</a>
-                 <a href="https://github.com/HampusJohnOlausson/Bengts-Resor" target="_blank" class="project-link btn flexCenter">View Code</a>
+                  <a href="https://hampusjohnolausson.github.io/Bengts-Resor/index" target="_blank" class="project-link btn flex-vertical-horizontal">View Demo</a>
+                 <a href="https://github.com/HampusJohnOlausson/Bengts-Resor" target="_blank" class="project-link btn flex-vertical-horizontal">View Code</a>
               </div>
-    
             </div>
     
             <!--Project map 2-->
-            <div class="project-container flex-center-row">
+            <div class="project-container flex-row-vertical-horizontal-center">
     
               </div>
-    
-    
           </section>
-
     </main>
 
     <!--Footer-->
 
-    <footer class="footer flex-center">
+    <footer class="footer flex-column-vertical-horizontal">
 
       <!--Personal submit form-->
-
-      <section class="form-section flex-center">
+      <section class="form-section flex-column-vertical-horizontal">
         <h2 class="footer h2" data-aos="fade-left">Contact</h2>
 
         <div id="personal-form" data-aos="fade-right">

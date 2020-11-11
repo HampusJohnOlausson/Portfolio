@@ -1,9 +1,8 @@
-/*---footer---*/
+/*----------ooter----------*/
 
-.footer.flex-center {
+.footer.flex-column-vertical-horizontal{
   min-height: 100vh;
   padding: 0 2rem;
- 
 
   .footer.h2 {
     text-align: center;
@@ -11,7 +10,7 @@
 
   /*----Personal Form----*/
 
-  .form-section.flex-center {
+  .form-section{
     height: 80vh;
     width: 100%;
 

@@ -1,10 +1,10 @@
 /*---------------------Media Queries----------------------*/
 
+/*--------Break Point-------*/
 @media screen and (max-width: 1380px) {
 
-  /*-------Projects------*/
+  /*-------------Projects------------*/
   #myProjects {
-    min-height: 100vh;
     .project-container{
       display: flex;
       flex-direction: column;
@@ -13,10 +13,9 @@
       margin-bottom: 2rem;
     }
   }
-
 }
 
-/*-------------Tablet start (Ipad Pro)---------------*/
+/*-------------Large Tablet start---------------*/
 
 @media screen and (max-width: 1150px) {
 
@@ -24,7 +23,6 @@
   #first-header {
     position: relative;
     width: 100%;
-    height: 10vh;
 
     /*------Logo------*/
     .logoName {
@@ -76,9 +74,7 @@
       }
     }
   }
-
-
-  /*-----Hamburger Menyn------*/
+  /*------Hamburger Menyn------*/
   .hamburger {
     display: flex;
     justify-content: space-around;
@@ -87,12 +83,12 @@
     height: 3.75em;
     position: absolute;
     cursor: pointer;
-    right: 0%;
-    top: 25%;
+    right: 3%;
+    top: 40%;
     transform: translate(-50%, -5%);
     z-index: 2;
 
-    /*-----Line Hamburger-----*/
+    /*--Line Hamburger--*/
     .line {
       width: 100%;
       height: 0.37em;
@@ -102,53 +98,35 @@
     }
   }
 
-  /*------Hero Main---------*/
-
-  .hero-main.flex-center {
-    min-height: 80vh;
-    .hero-text{
-      font-size: 3em;
-    }
-  }
-
-  /*------About me Section--------*/
-
+  /*--About me Section--*/
   #about {
-    min-height: 100vh;
     .aboutText {
       padding: 0em 4em;
     }
+
     .profile-pic {
       width: 15em;
       height: 13em;
     }
-  }
-
-  /*-------Projects Section-----*/
-
-  #myProjects {
-    min-height: 100vh;
-  }
-  footer {
-    .home{
-      display: none;
-    }
+    
   }
 }
 
-/*------Tablet starts (Ipad)-------*/
-
+/*-------------Small Tablet Starts--------------*/
 @media screen and (max-width: 770px){
 
   #first-header {
-    height: 10vh;
 
     .logoName {
       display: none;
     }
   }
-  .hero-main.flex-center{
-    padding-bottom: 7rem;
+  .hamburger{
+    right: 1%;
+    top: 35%;
+  }
+  .hero-main.flex-column-vertical-horizontal{
+
     .hero-text{
       display: none;
     }
@@ -161,35 +139,32 @@
         color: $textColor;
       }
     }
-
   }
- 
 }
 
-/*-------Smartphone starts--------*/
+/*----------Smartphone Starts------------*/
 
 @media screen and (max-width: 630px) {
 
-  #first-header {
-    min-height: 20vh;
-  }
   .hamburger{
+    top: 25%;
     right: -3%;
   }
 
-  .hero-main.flex-center {
-    min-height: 70vh;
-    padding-bottom: 5rem;
+  .hero-main.flex-column-vertical-horizontal{
+    min-height: 65vh;
 
     .mobile-hero{
       font-size: 2em;
     }
   }
-  /*--------About me Section--------*/
+  .arrow-section{
+    min-height: 25vh;
+  }
 
-  #about {
+  /*--About Me Section--*/
+  #about{
     min-height: 100vh;
-
     .aboutText {
       padding: 0em 2em;
 
@@ -202,18 +177,10 @@
     }
   }
 
-  /* Projects */
-
+  /*--Project Section--*/
   #myProjects {
-    min-height:100vh;
-
-  /* Project*/
-  .project{
     
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .project{
     width: 21rem;
     height: 43rem;
     margin: 1rem 2rem;
@@ -221,26 +188,76 @@
     .projectImages{
       width: 19rem;
       height: 14rem;
-      margin: 2rem 0rem;
     }
     .project-h2{
       font-size: 1.8rem;
     }
     .project-para{
       display: none;
-      
     }
   }  
   }
-  /*-----Footer-------*/
+  /*-------Footer-------*/
   .footer {
     height: 100vh;
     .footer.h2{
       margin-top: 6rem;
     }
-    
     .submit.btn {
       width: 15em;
+    }
+  }
+}
+
+/*-----------Small Phone Screens-----------*/
+
+@media screen and (max-width: 340px) {
+
+
+  .hero-main.flex-column-vertical-horizontal{
+    .mobile-hero{
+      font-size: 1.5em;
+    }
+    .english{
+      width: 10rem;
+      margin: 1rem;
+    }
+    .socialmedia-icons {
+    
+      & ul li {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  /*--Projects--*/
+  #myProjects {
+    
+  .project{
+    width: 18rem;
+    height: 43rem;
+    margin: 0rem 2rem;
+
+    .projectImages{
+      width: 16rem;
+      height: 12rem;
+    }
+    .project-h2{
+      font-size: 1.8rem;
+    }
+    .project-para{
+      display: none;
+    }
+  }  
+  }
+  /*-------Footer-------*/
+  .footer {
+    height: 100vh;
+    .footer.h2{
+      margin-top: 12rem;
+    }
+    .submit.btn {
+      width: 12em;
     }
   }
 }
@@ -253,8 +270,6 @@
     }
     .fas .fa-home{
       display: none;
-    }
-
-    
+    }    
   }
 }

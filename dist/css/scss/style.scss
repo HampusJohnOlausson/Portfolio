@@ -32,8 +32,7 @@ $textColor: #a8a8a8;
 
 /*------------Reused Classes------------*/
 
-/*--Button--*/
-
+/*----Button----*/
 .btn {
   text-decoration: none;
   background-color: $accent;
@@ -61,38 +60,41 @@ $textColor: #a8a8a8;
   }
 }
 
-/*--h2 default--*/
-
+/*----H2 Default----*/
 .h2 {
   text-transform: uppercase;
   font-size: 2rem;
   padding: 3rem;
 }
 
-/*--Flex classes--*/
-.flex-center {
+/*----Flex Classes----*/
+.flex-column-vertical-horizontal{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.flexCenter{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-.flex-center-row {
+.flex-row-vertical-horizontal-center{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+.flex-vertical-horizontal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-column-horizontal{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .flex-column {
   display: flex;
   flex-direction: column;
 }
-.flex-spaceAround {
+.flex-spaceAround{
   display: flex;
   justify-content: space-around;
 }
@@ -100,17 +102,7 @@ $textColor: #a8a8a8;
   display: flex;
   flex-direction: row;
 }
-.flex-spaceBetween {
+.flex-spaceBetween{
   display: flex;
   justify-content: space-between;
-}
-.flex-center-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.flex-center-row{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }

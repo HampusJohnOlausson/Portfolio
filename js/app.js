@@ -1,13 +1,16 @@
-/*-----Hamburger Menu-----*/
+/*-----------Hamburger Menu----------*/
 
 const navToggle = () => {
 
 const hamburger = document.querySelector(".hamburger");
+
 const navbar = document.querySelector(".header-nav");
+
 const navLinks = document.querySelector(".header-nav .nav-links");
+
 const links = document.querySelectorAll(".nav-links li");
 
-//Hamburger toggle
+/*--Hamburger toggle--*/
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("open");
   navbar.classList.toggle("open");
@@ -18,7 +21,7 @@ hamburger.addEventListener("click", () => {
   
 });
 
-//Nav links Toggle
+/*--Nav links Toggl--e*/
 navLinks.addEventListener("click", () => {
   navLinks.classList.toggle("open");
   navbar.classList.toggle("open");
@@ -57,11 +60,16 @@ smoothScroll();
 
 let slideIndex = 0;
 
+/*--Function--*/
+
 const slideShow = () => {
 
   const keySlide = document.getElementsByClassName('slideKey');
+
   const dotFirst = document.getElementsByClassName('first');
+
   const dotSecond = document.getElementsByClassName('second');
+
   const benganSlide = document.getElementsByClassName('slideBengan');
   
   //Key Loop
