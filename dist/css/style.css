@@ -72,6 +72,7 @@
 /*---------Hero Main-----------*/
 .hero-main.flex-center {
   min-height: 80vh;
+  padding-top: 5rem;
   /*--------Social media icons-------*/
 }
 
@@ -382,7 +383,7 @@
     height: 3.75em;
     position: absolute;
     cursor: pointer;
-    right: -3%;
+    right: 0%;
     top: 25%;
     -webkit-transform: translate(-50%, -5%);
             transform: translate(-50%, -5%);
@@ -432,6 +433,9 @@
   #first-header .logoName {
     display: none;
   }
+  .hero-main.flex-center {
+    padding-bottom: 7rem;
+  }
   .hero-main.flex-center .hero-text {
     display: none;
   }
@@ -456,8 +460,12 @@
   #first-header {
     min-height: 20vh;
   }
+  .hamburger {
+    right: -3%;
+  }
   .hero-main.flex-center {
     min-height: 70vh;
+    padding-bottom: 5rem;
   }
   .hero-main.flex-center .mobile-hero {
     font-size: 2em;

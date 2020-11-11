@@ -87,7 +87,7 @@
     height: 3.75em;
     position: absolute;
     cursor: pointer;
-    right: -3%;
+    right: 0%;
     top: 25%;
     transform: translate(-50%, -5%);
     z-index: 2;
@@ -148,6 +148,7 @@
     }
   }
   .hero-main.flex-center{
+    padding-bottom: 7rem;
     .hero-text{
       display: none;
     }
@@ -172,9 +173,13 @@
   #first-header {
     min-height: 20vh;
   }
+  .hamburger{
+    right: -3%;
+  }
 
   .hero-main.flex-center {
     min-height: 70vh;
+    padding-bottom: 5rem;
 
     .mobile-hero{
       font-size: 2em;
