@@ -83,3 +83,10 @@
   50%{top: 1.5rem};
   100%{top: 0rem};
 }
+
+/*----Loader animation----*/
+@keyframes spin {
+  to {
+      transform: rotate(360deg);
+  }
+}
