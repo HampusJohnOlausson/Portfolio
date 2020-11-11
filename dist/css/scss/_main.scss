@@ -1,9 +1,8 @@
 /*---------Hero Main-----------*/
 
 .hero-main.flex-center {
-  min-height: 90vh;
+  min-height: 80vh;
   
-
   .hero-text {
     font-size: 4rem;
     font-weight: 600;
@@ -48,8 +47,21 @@
       }
     }
   }
-}
 
+}
+.arrow-section{
+  min-height: 10vh;
+  width: 100%;
+  text-align: center;
+  
+.fa-chevron-down{
+  color: $accent;
+  font-size: 3rem;
+  cursor: pointer;
+  position: relative;
+  animation: bounceArrow 1s infinite;
+}
+}
 /*------About me Section--------*/
 
 #about,
