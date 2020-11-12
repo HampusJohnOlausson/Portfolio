@@ -6,3 +6,5 @@
  This website was made with tools such as HTML, CSS/SASS, AOS and Javascript.
 
 
+Link to website: https://hampusolausson.com/
+Link to repository: https://github.com/HampusJohnOlausson/Portfolio/edit/main/README.md
