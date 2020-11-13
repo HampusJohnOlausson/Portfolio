@@ -6,7 +6,7 @@
  */
 let spinnerWrapper = document.querySelector('.spinner-wrapper');
 
-/*Spinning lodader that appears when the website is loading*/
+//Spinning loader that appears when the website is loading
 window.addEventListener('load', function () {
 
     spinnerWrapper.parentElement.removeChild(spinnerWrapper);
@@ -38,7 +38,7 @@ const navLinks = document.querySelector(".nav-links");
  */
 const links = document.querySelectorAll(".nav-links li");
 
-/*--Hamburger toggle--*/
+//Hamburger toggle
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("open");
   navbar.classList.toggle("open");
@@ -49,7 +49,7 @@ hamburger.addEventListener("click", () => {
   
 });
 
-/*----Nav links Toggle----*/
+//Nav-links Toggle
 navLinks.addEventListener("click", () => {
   navLinks.classList.toggle("open");
   navbar.classList.toggle("open");
@@ -112,12 +112,12 @@ const dotFirst = document.getElementsByClassName('first');
 */
 const dotSecond = document.getElementsByClassName('second');
   
-  /*--Key Loop--*/
+  //FindKeyProject-Loop
   for(let i = 0; i < keySlide.length; i++){
       keySlide[i].style.display = 'none';
   }
 
-  /*--Bengan Loop--*/
+  //BenganProject-Loop
   for(let i = 0; i < benganSlide.length; i++){
     benganSlide[i].style.display = 'none';
   }
@@ -132,7 +132,7 @@ const dotSecond = document.getElementsByClassName('second');
     slideIndex = 1;
   }
 
-/*--Dots Loops--*/
+  //Dots-Loops
 
   for(let i = 0; i < dotFirst.length; i++) {
     dotFirst[i].className = dotFirst[i].className.replace(' active', '');
