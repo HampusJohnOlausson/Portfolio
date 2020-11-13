@@ -1,8 +1,9 @@
 /*--------------Colors----------------*/
 $primary: #23292D;  
-$accent: #2bc6ae;
+$accent:#2bc6ae;
 $fontColor: #fff;
 $textColor: #a8a8a8;
+ 
 
 /*-------------Imports---------------*/
 @import "header";
@@ -89,7 +90,7 @@ $textColor: #a8a8a8;
   height: 3rem;
   margin: 2rem;
   font-size: 1.2rem;
-  font-weight: 200;
+  font-weight: 600;
   text-transform: uppercase;
   border: none;
   border-radius: 27px;

@@ -80,7 +80,7 @@
       }
       color: $textColor;
 
-      h4 {
+      h3 {
         color: $fontColor;
         font-size: 2rem;
       }
@@ -89,7 +89,7 @@
       }
     }
     /*-----Profile image-----*/
-      .profile-pic {
+      img, .profile-pic {
         width: 18rem;
         height: 16rem;
         border-radius: 50%;
@@ -137,7 +137,7 @@
     position: relative;
     padding: 2rem;
 
-    .projectImages{
+    img, .projectImages{
       box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
       width: 33rem;
       height: 20rem;

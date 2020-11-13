@@ -155,7 +155,7 @@
   color: #fff;
 }
 
-#about .aboutText h4 {
+#about .aboutText h3 {
   color: #fff;
   font-size: 2rem;
 }
@@ -164,7 +164,7 @@
   font-size: 1.5rem;
 }
 
-#about .profile-pic {
+#about img, #about .profile-pic {
   width: 18rem;
   height: 16rem;
   border-radius: 50%;
@@ -217,7 +217,7 @@
   /*--Dots under image--*/
 }
 
-#myProjects .project .projectImages {
+#myProjects .project img, #myProjects .project .projectImages {
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
   width: 33rem;
@@ -1030,7 +1030,7 @@
   height: 3rem;
   margin: 2rem;
   font-size: 1.2rem;
-  font-weight: 200;
+  font-weight: 600;
   text-transform: uppercase;
   border: none;
   border-radius: 27px;
