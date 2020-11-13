@@ -6,6 +6,7 @@
  */
 let spinnerWrapper = document.querySelector('.spinner-wrapper');
 
+/*Spinning lodader that appears when the website is loading*/
 window.addEventListener('load', function () {
 
     spinnerWrapper.parentElement.removeChild(spinnerWrapper);
@@ -94,22 +95,22 @@ let slideIndex = 0;
  */
 const slideShow = () => {
 
-  /**
-   * @type {HTMLDivElement}
-   */
-  const keySlide = document.getElementsByClassName('slideKey');
+/**
+* @type {HTMLDivElement}
+*/
+const keySlide = document.getElementsByClassName('slideKey');
 /**
  * @type {HTMLDivElement}
  */
 const benganSlide = document.getElementsByClassName('slideBengan');
-  /**
-   * @type {HTMLSpanElement}
-   */
-  const dotFirst = document.getElementsByClassName('first');
 /**
- * @type {HTMLSpanElement}
- */
-  const dotSecond = document.getElementsByClassName('second');
+* @type {HTMLSpanElement}
+*/
+const dotFirst = document.getElementsByClassName('first');
+/**
+* @type {HTMLSpanElement}
+*/
+const dotSecond = document.getElementsByClassName('second');
   
   /*--Key Loop--*/
   for(let i = 0; i < keySlide.length; i++){
