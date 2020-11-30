@@ -105,10 +105,13 @@
       .cvLink{
         color: $fontColor;
         font-size: 1.5rem;
-        margin-top: 2rem;
+        margin-top: 1rem;
         text-decoration: none;
         cursor: pointer;
         position: relative;
+      }
+      .resume{
+        margin: 1rem 0rem 2rem 0rem;
       }
       
   }
