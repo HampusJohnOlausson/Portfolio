@@ -105,14 +105,12 @@
       .cvLink{
         color: $fontColor;
         font-size: 1.5rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
+        text-decoration: none;
         cursor: pointer;
         position: relative;
-        transition: 0.5s;
       }
-      .cvLink:hover{
-        color: $accent;
-      }
+      
   }
 
 
@@ -240,6 +238,9 @@
       font-size: 2rem;
       padding: 1rem 0rem 1rem 0rem;
     }
+    .project-link {
+      margin: 1rem;
+    } 
   }
 
 }
