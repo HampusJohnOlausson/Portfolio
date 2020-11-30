@@ -1,7 +1,17 @@
+window.addEventListener('load', main);
+
+//calling all functions
+function main(){
+  
+  navToggle();
+  smoothScroll();
+  slideShow();
+  modal();
+  
+}
 
 /*----------Loader----------*/
-
-/**
+  /**
  * @type {HTMLDivElement}
  */
 let spinnerWrapper = document.querySelector('.spinner-wrapper');
@@ -60,8 +70,6 @@ navLinks.addEventListener("click", () => {
   
 });
 }
-navToggle();
-
 
 /*-----------Smooth Scroll-----------*/
 
@@ -83,8 +91,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 };
-smoothScroll();
-
 
 /*--------------Image Slider------------*/
 
@@ -149,9 +155,21 @@ const dotSecond = document.getElementsByClassName('second');
   dotSecond[slideIndex -1].className += ' active';
 
   setTimeout(slideShow , 2700);
-
 };
-slideShow();
+
+/*----Modal Pop-Up----*/
+const modal = () => {
+
+  const popUp = document.querySelector('.readMore');
+  const modalContainer = document.querySelector('.modal-container');
+
+  popUp.addEventListener('click', () => {
+
+    modalContainer.style.transform = 'scale(1)';
+
+  })
+}
+
 
 
 
