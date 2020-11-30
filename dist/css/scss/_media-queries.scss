@@ -192,11 +192,41 @@
     .project-h2{
       font-size: 1.8rem;
     }
-    .project-para{
-      display: none;
-    }
   }  
   }
+
+/*----Modal-----*/
+.modal-container{
+
+  .modal{
+    width: 20rem;
+    height: 40rem;
+    padding: 0;
+
+    .fa-times-circle{
+      font-size: 1.8rem;
+    }
+
+    .modal-h3{
+      font-size: 1.4rem;
+      margin: 0.5rem;
+      
+    }
+    .project-para{
+      font-size: 1.2rem;
+      margin: 1rem 1rem;
+    }
+    .projectList{
+      align-self: center;
+      font-size: 1rem;
+      padding: 1rem 0rem 1rem 0rem;
+    }
+    .project-link {
+      margin: 0.5rem;
+    } 
+  }
+
+}
   /*-------Footer-------*/
   .footer {
     height: 100vh;
@@ -243,13 +273,39 @@
       height: 12rem;
     }
     .project-h2{
-      font-size: 1.8rem;
-    }
-    .project-para{
-      display: none;
+      font-size: 1.4rem;
     }
   }  
   }
+  /*----Modal-----*/
+.modal-container{
+
+  .modal{
+    width: 20rem;
+    height: 35rem;
+    padding: 0;
+
+    .modal-h3{
+      font-size: 1.4rem;
+      
+    }
+    .project-para{
+      font-size: 1.2rem;
+      margin: 0rem 1rem;
+    }
+    .projectList{
+      align-self: center;
+      font-size: 1rem;
+      padding: 0.5rem 0rem 0.5rem 0rem;
+    }
+    .project-link {
+      margin: 0.5rem;
+
+    } 
+  }
+
+}
+  
   /*-------Footer-------*/
   .footer {
     height: 100vh;

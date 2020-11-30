@@ -279,6 +279,8 @@
   z-index: 1;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
 
 .modal-container .modal {
@@ -296,8 +298,6 @@
   border: 0.5rem solid #2bc6ae;
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-  -webkit-transition: all ease 0.5s;
-  transition: all ease 0.5s;
 }
 
 .modal-container .modal .fa-times-circle {
@@ -329,7 +329,7 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  font-size: 2rem;
+  font-size: 1.4rem;
   padding: 1rem 0rem 1rem 0rem;
 }
 
@@ -527,8 +527,32 @@
   #myProjects .project .project-h2 {
     font-size: 1.8rem;
   }
-  #myProjects .project .project-para {
-    display: none;
+  /*----Modal-----*/
+  .modal-container .modal {
+    width: 20rem;
+    height: 40rem;
+    padding: 0;
+  }
+  .modal-container .modal .fa-times-circle {
+    font-size: 1.8rem;
+  }
+  .modal-container .modal .modal-h3 {
+    font-size: 1.4rem;
+    margin: 0.5rem;
+  }
+  .modal-container .modal .project-para {
+    font-size: 1.2rem;
+    margin: 1rem 1rem;
+  }
+  .modal-container .modal .projectList {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 1rem;
+    padding: 1rem 0rem 1rem 0rem;
+  }
+  .modal-container .modal .project-link {
+    margin: 0.5rem;
   }
   /*-------Footer-------*/
   .footer {
@@ -565,10 +589,30 @@
     height: 12rem;
   }
   #myProjects .project .project-h2 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
-  #myProjects .project .project-para {
-    display: none;
+  /*----Modal-----*/
+  .modal-container .modal {
+    width: 20rem;
+    height: 35rem;
+    padding: 0;
+  }
+  .modal-container .modal .modal-h3 {
+    font-size: 1.4rem;
+  }
+  .modal-container .modal .project-para {
+    font-size: 1.2rem;
+    margin: 0rem 1rem;
+  }
+  .modal-container .modal .projectList {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 1rem;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+  }
+  .modal-container .modal .project-link {
+    margin: 0.5rem;
   }
   /*-------Footer-------*/
   .footer {
