@@ -10,18 +10,6 @@ function main(){
   
 }
 
-/*----------Loader----------*/
-  /**
- * @type {HTMLDivElement}
- */
-let spinnerWrapper = document.querySelector('.spinner-wrapper');
-
-//Spinning loader that appears when the website is loading
-window.addEventListener('load', function () {
-
-    spinnerWrapper.parentElement.removeChild(spinnerWrapper);
-});
-
 /*-------------Hamburger Menu-------------*/
 /**
  * Function for hamburger menu.
