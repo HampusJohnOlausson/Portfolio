@@ -172,6 +172,7 @@
           </ul>
         </div>
       </div>
+
       <!--Arrow direct user to scroll down on page-->
       <div class="arrow-section">
         <a href="#about"><i class="fas fa-chevron-down"></i></a>
@@ -198,25 +199,25 @@
           </div>
           
             <!-- CV link-->
-            <a href="./HampusOlaussonCV.pdf" target="_blank" rel="noopener" class="cvLink"> Gå till CV</a>
+              <a href="./HampusOlaussonCV.pdf" target="_blank" rel="noopener" class="cvLink"> Gå till CV</a>
             <!--CV-Button--> 
               <a href="./HampusOlaussonCV.pdf" download=".pdf" class="resume btn flex-vertical-horizontal"><i class="fas fa-download "></i> Ladda ner CV</a>
-             <!--Image-->
-          <div class="profile-container">
-            <img src="./images/ProfileImage.webp" alt="ProfilePicture" class="profile-pic" width="256" height="288">
-          </div>
+            <!--Image-->
+              <div class="profile-container">
+                <img src="./images/ProfileImage.webp" alt="ProfilePicture" class="profile-pic" width="256" height="288">
+              </div>
         
       </section>
 
 
-      <!--Projects Section-->
+    <!--Projects Section-->
 
-      <section id="myProjects">
+    <section id="myProjects">
 
         <h2 class="projects-h2" data-aos="fade-up">Mina Projekt</h2>
 
-        <!--Project map 1-->
-        <div class="project-container flex-row-vertical-horizontal-center">
+      <!--Project position-->
+      <div class="project-container flex-row-vertical-horizontal-center">
 
         <!--Project 1-->          
         <div class="project flex-column-vertical-horizontal textBasedGame" data-aos="fade-right">
@@ -245,32 +246,32 @@
                   <a href="https://hampusjohnolausson.github.io/textBasedAdventureGame/" target="_blank" rel="noopener" class="project-link btn flex-vertical-horizontal">View Demo</a>
                   <a href="https://github.com/HampusJohnOlausson/textBasedAdventureGame" target="_blank" rel="noopener" class="project-link btn flex-vertical-horizontal">View Code</a>
                      
-        <!--Modal pop-up-->
-                <div class="modal-container">
+            <!--Modal pop-up-->
+              <div class="modal-container">
                 <div class="modal flex-column-vertical-horizontal">
-                <i class="fas fa-times-circle"></i>
-                <h3 class="modal-h3">Text Baserat Spel</h3>
-             <!--Info and Links-->
-            <p class="project-para">Ett text baserat spel där användaren kan interagera genom att svara på frågor, På så sätt tar sig användaren vidare i spelet. 
-              Följ med på ett äventyr för att hitta ett par försvunna nycklar, där det händer ett event i varje rum.
-              Spelet är responsivt.</p>
-              <ul class="projectList">
-                <li class="projectListLi">HTML</li>
-                <li class="projectListLi">CSS / SASS</li>
-                <li class="projectListLi">Javascript</li>
-              </ul>
-            <a href="https://hampusjohnolausson.github.io/textBasedAdventureGame/" target="_blank" rel="noopener" class="project-link btn flex-vertical-horizontal">Gå till demo</a>
-            <a href="https://github.com/HampusJohnOlausson/textBasedAdventureGame" target="_blank" rel="noopener" class="project-link btn flex-vertical-horizontal">Gå till kod</a>
-          </div>
-           </div>
-         
-
+                  <i class="fas fa-times-circle"></i>
+                    <h3 class="modal-h3">Text Baserat Spel</h3>
+                  <!--Info and Links-->
+                    <p class="project-para">Ett text baserat spel där användaren kan interagera genom att svara på frågor, På så sätt tar sig användaren vidare i spelet. 
+                      Följ med på ett äventyr för att hitta ett par försvunna nycklar, där det händer ett event i varje rum.
+                      Spelet är responsivt.</p>
+                    <ul class="projectList">
+                      <li class="projectListLi">HTML</li>
+                      <li class="projectListLi">CSS / SASS</li>
+                      <li class="projectListLi">Javascript</li>
+                    </ul>
+                      <a href="https://hampusjohnolausson.github.io/textBasedAdventureGame/" target="_blank" rel="noopener" class="project-link btn flex-vertical-horizontal">Gå till demo</a>
+                      <a href="https://github.com/HampusJohnOlausson/textBasedAdventureGame" target="_blank" rel="noopener" class="project-link btn flex-vertical-horizontal">Gå till kod</a>
+                </div>
+              </div>
         </div>
+      </div>
 
-        <!--Project map 2-->
+        <!--Project map 2
         <div class="project-container flex-row-vertical-horizontal-center">
-          </div>
-      </section>
+          </div>-->
+    </section>
+  
     </main>
 
     <!--Footer-->
@@ -286,29 +287,31 @@
         <form name="contact" method="POST" data-netlify="true">
           
           <label class="form-group" for="firstName">
-              <input class="input" type="text" name="firstName" placeholder="Förnamn" />
-        </label>
+              <input class="input" id="firstName" type="text" name="firstName" placeholder="Förnamn" />
+          </label>
 
-        <label class="form-group" for="lastName">
-            <input class="input" type="text" name="lastName"  placeholder="Efternamn"/>
-        </label>
+          <label class="form-group" for="lastName">
+            <input class="input" id="lastName" type="text" name="lastName"  placeholder="Efternamn"/>
+          </label>
 
-        <label class="form-group" for="phoneNumber">
-            <input class="input" type="text"  name="phoneNumber"  placeholder="Telefon"/>
-        </label>
+          <label class="form-group" for="phoneNumber" id="phone">
+              <input class="input" id="phoneNumber" type="text"  name="phoneNumber"  placeholder="Telefon"/>
+          </label>
 
-          <label class="form-group" for="mail">
-               <input class="input" type="email"  name="mail" placeholder="Mail"/>
-        </label>
+          <label class="form-group" for="email">
+               <input class="input" id="email" type="mail"  name="mail" placeholder="Mail"/>
+          </label>
 
           <label class="form-group" for="textField">
-          <textarea
-           name="textField" 
-            class="message-field"
-            rows="8"
-          placeholder="Meddelande"></textarea>
-            <button type="submit" value="submit" class="submit btn">Skicka</button>
-        </label>
+              <textarea
+                name="textField" 
+                class="message-field"
+                id="textField"
+                rows="8"
+                placeholder="Meddelande">
+              </textarea>
+          </label>
+          <button type="submit" value="submit" class="submit btn">Skicka</button>
         </form>
       </div>
       <div class="home"><a href="#first-header"><i class="fas fa-home"></i></a></div>
