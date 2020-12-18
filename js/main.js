@@ -5,7 +5,6 @@ function main(){
   
   navToggle();
   smoothScroll();
-  slideShow();
   modal();
   
 }
