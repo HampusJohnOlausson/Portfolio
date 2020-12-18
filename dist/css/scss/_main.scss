@@ -141,38 +141,17 @@
     .project-h2{
       font-size: 2.2rem;
     }
+   
 
-    img, .projectImages{
-      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-      width: 33rem;
-      height: 20rem;
-      border-radius: 7px;
+    .projectVideos{
+      //box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+      border-radius: 1rem;
       margin: 2rem;
       align-self: center;
-      transition: ease 1s;
-
+      
     }
     /*--Dots under image--*/
-    .dot-container{
-      text-align: center;
 
-      .dot{
-        height: 1rem;
-        width: 1rem;
-        border-radius: 50%;
-        margin: 0rem 0.5rem 1rem 0.5rem;
-        display: inline-block;
-        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-        background-color: $textColor;
-        transition: background-color 0.6s ease;
-      }
-      .active {
-        background-color: $accent;
-        height: 1.2rem;
-        width: 1.2rem;
-        
-      }
-    }
     .readMore{
       font-size: 1.6rem;
       margin: 1rem;
