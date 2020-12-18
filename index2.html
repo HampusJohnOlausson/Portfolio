@@ -191,7 +191,7 @@
             <p>
               My journey began about a year ago when I was studying an evening course in programming course. I was hooked directly. 
               Since then, I have explored more and more in web development and find it very exciting.
-              I have knowledge in HTML, CSS / SCSS, Javascript, Git, Adobe XD to name a few.
+              I have knowledge in HTML, CSS / SCSS, Javascript, Typescript, Git, Adobe XD to name a few.
           </p>
           <p>Otherwise, I would describe myself as a driven and social person. I like structure and keeping things in order.</p>
         </div>
@@ -205,7 +205,7 @@
 
            <!--Image-->
         <div class="profile-container">
-          <img src="./images/ProfileImage.webp" alt="ProfilePicture" class="profile-pic" width="500" height="600">
+          <img src="./images/ProfileImage.webp" alt="ProfilePicture" class="profile-pic" width="256" height="288">
         </div>
         
     </section>
@@ -215,24 +215,44 @@
           <section id="myProjects" >
 
             <h2 class="projects-h2" data-aos="fade-up">Projects</h2>
-    
-            <!--Project map 1-->
-            <div class="project-container flex-row-vertical-horizontal-center">
+
+      <!--Project position-->
+        <div class="project-container flex-row-vertical-horizontal-center">
     
             <!--Project 1-->          
-              <div class="project flex-column-vertical-horizontal textBasedGame" data-aos="fade-right">
+          <div class="project flex-column-vertical-horizontal textBasedGame" data-aos="fade-right">
                 <h2 class="project-h2">Text Based Game</h2>
                 
+
                  <!--video-->
               <video class="projectVideos" width="526" height="320" playsinline autoplay muted loop>
                 <source src="./video/findKey-1.mp4" type="video/mp4">
               </video>
 
-          <!--Info-->
-          <h3 class="readMore">Read More</h3>
+                <!--Images-->
+            <div class="slideKey fade">
+              <img src="./images/findKey.webp" alt="textBasedGame" class="projectImages findKey" width="526" height="320">
+            </div>  
+            <div class="slideKey fade">
+              <img src="./images/findKey2.webp" alt="textBasedGame" class="projectImages findKey" width="526" height="320">
+            </div> 
+            <div class="slideKey fade">
+              <img src="./images/findKey3.webp" alt="textBasedGame" class="projectImages findKey" width="526" height="320">
+            </div> 
+
+            <!--Dots under images-->
+            <div class="dot-container">
+              <span class="dot first"></span>
+              <span class="dot first"></span>
+              <span class="dot first"></span>
+            </div>
+
+
+              <!--Info-->
+              <h3 class="readMore">Read more...</h3>
                 <a href="https://hampusjohnolausson.github.io/textBasedAdventureGame/" target="_blank" rel="noopener" class="project-link btn flex-vertical-horizontal">View Demo</a>
                 <a href="https://github.com/HampusJohnOlausson/textBasedAdventureGame" target="_blank" rel="noopener" class="project-link btn flex-vertical-horizontal">View Code</a>
-            </div>
+          </div>
              
             <!--Modal pop-up-->
             <div class="modal-container">
@@ -251,12 +271,13 @@
                 <a href="https://github.com/HampusJohnOlausson/textBasedAdventureGame" target="_blank" rel="noopener" class="project-link btn flex-vertical-horizontal">View Code</a>
             </div>
           </div>
+        </div>  
     
-            <!--Project map 2-->
+            <!--Project map 2
             <div class="project-container flex-row-vertical-horizontal-center">
-    
-              </div>
-          </section>
+              </div>-->
+
+        </section>
     </main>
 
     <!--Footer-->
@@ -270,33 +291,33 @@
         <div id="personal-form" data-aos="fade-right">
           <form name="contact" method="POST" data-netlify="true">
   
-            <div class="form-group">
-              <label for="firstName"></label>
-            <input class="input" type="text" name="firstName"  placeholder="First Name"/>
-          </div>
+            <label class="form-group" for="firstName">
+                <input class="input" id="firstName" type="text" name="firstName"  placeholder="First Name"/>
+            </label>
   
-          <div class="form-group">
-            <label for="lastName"></label>
-            <input class="input" type="text" name="lastName" placeholder="Last Name"/>
-          </div>
+          <label class="form-group" for="lastName">
+               <input class="input" id="lastName" type="text" name="lastName" placeholder="Last Name"/>
+          </label>
   
-          <div class="form-group">
-            <label for="phoneNumber"></label>
-            <input class="input" type="text" name="phoneNumber"  placeholder="Phone"/>
-          </div>
+          <label class="form-group" for="phoneNumber">  
+                <input class="input" id="phoneNumber" type="text" name="phoneNumber"  placeholder="Phone"/>
+          </label>
   
-            <div class="form-group">
-              <label for="mail"></label>
-            <input class="input" type="email" name="mail" placeholder="Mail"/>
-          </div>
-            <div class="form-group">
-              <label for="textField"></label>
+            <label class="form-group" for="email">
+                <input class="input" id="email" type="email" name="email" placeholder="Mail"/>
+          </label>
+
+            <label class="form-group" for="textField">
             <textarea
              name="textField"
               class="message-field"
+              id="textField"
               rows="8"
-            placeholder="Message"></textarea>
-              <button type="submit" value="submit" class="submit btn">Submit</button>
+            placeholder="Message">
+          </textarea>
+          </label>
+          <div class="flex-column-vertical-horizontal">
+            <button type="submit" value="submit" class="submit btn">Submit</button>
           </div>
           </form>
         </div>
