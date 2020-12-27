@@ -429,12 +429,12 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 4.37em;
-    height: 3.75em;
+    width: 3em;
+    height: 2.75em;
     position: absolute;
     cursor: pointer;
-    right: 3%;
-    top: 40%;
+    right: 1%;
+    top: 20%;
     -webkit-transform: translate(-50%, -5%);
             transform: translate(-50%, -5%);
     z-index: 2;
@@ -442,7 +442,7 @@
   }
   .hamburger .line {
     width: 100%;
-    height: 0.37em;
+    height: 0.25em;
     border-radius: 1em;
     background-color: #2bc6ae;
     -webkit-transition: all 0.8s;
@@ -464,8 +464,7 @@
     display: none;
   }
   .hamburger {
-    right: 1%;
-    top: 35%;
+    right: 0%;
   }
   .hero-main.flex-column-vertical-horizontal .hero-text {
     display: none;
@@ -489,8 +488,8 @@
 /*----------Smartphone Starts------------*/
 @media screen and (max-width: 630px) {
   .hamburger {
-    top: 25%;
-    right: -3%;
+    top: 20%;
+    right: -2%;
   }
   .hero-main.flex-column-vertical-horizontal {
     min-height: 65vh;
@@ -659,8 +658,8 @@
 
 /*------Hamburger Rotation Of Lines------*/
 .open .line-1 {
-  -webkit-transform: rotateZ(-405deg) translate(-16px, 12px);
-          transform: rotateZ(-405deg) translate(-16px, 12px);
+  -webkit-transform: rotateZ(-405deg) translate(-6px, 14px);
+          transform: rotateZ(-405deg) translate(-6px, 14px);
 }
 
 .open .line-2 {
@@ -668,8 +667,8 @@
 }
 
 .open .line-3 {
-  -webkit-transform: rotateZ(405deg) translate(-16px, -12px);
-          transform: rotateZ(405deg) translate(-16px, -12px);
+  -webkit-transform: rotateZ(405deg) translate(-6px, -14px);
+          transform: rotateZ(405deg) translate(-6px, -14px);
 }
 
 /*-----Socialmedia-icons Hover-----*/
