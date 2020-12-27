@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html lang="sv-se">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="theme-color" content="#23292D"/>
-    <title>Hampus Olausson - Frontend utvecklare och webbutvecklare</title>
-    <meta name="description" content="Hampus Olausson, Frontend utvecklare och webbutvecklare i Göteborg, Sverige. Portfolio med mina projekt, CV, kontakt information. Bygger webbapplikationer och hemsidor." >
-    <link rel="canonical" href="https://hampusolausson.com/">
+    <title>Hampus Olausson - Front End developer and web developer</title>
+    <meta name="description" content="Hampus Olausson, Front End developer and web developer in Gothenburg, Sweden. Portfolio with my project, CV, contact information. Building web applications and websites." >
+    <!-- <link rel="canonical" href="https://hampusolausson.com/index2/">
     <link rel="alternate" href="https://hampusolausson.com/" hreflang="sv-se">
-    <link rel="alternate" href="https://hampusolausson.com/index2/" hreflang="en">
-    <meta property="og:locale" content="sv_se">
-    <meta property="og:locale:alternate" content="en">
+    <link rel="alternate" href="https://hampusolausson.com/index2/" hreflang="en"> -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="sv_SE">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Hampus Olausson - Frontend Utvecklare och webbutvecklare">
-    <meta property="og:description" content="Hampus Olausson, Frontend utvecklare och webbutvecklare i Göteborg, Sverige. Portfolio med mina projekt, CV, kontakt information. Bygger webbapplikationer och hemsidor.">
-    <meta property="og:url" content="https://hampusolausson.com/">
-    <meta property="og:site_name" content="Hampus Olausson - Frontend Utvecklare och webbutvecklare">
+    <meta property="og:title" content="Hampus Olausson - Frontend developer and web developer">
+    <meta property="og:description" content="Hampus Olausson, Frontend developer and web developer in Gothenburg, Sweden. Portfolio with my project, CV, contact information. Building web applications and websites.">
+    <meta property="og:url" content="https://hampusolausson.com/index2/">
+    <meta property="og:site_name" content="Hampus Olausson - Frontend developer and web developer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
-    <!--CSS/Sass-->
+    <!--Css/Sass-->
     <link rel="stylesheet" href="./dist/css/style.css" />
 
     <!--AOS Library-->
@@ -36,12 +35,13 @@
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
     />
-    <!--Javascript-->
-    <script defer src="./js/main.js"></script>
-    <script defer src="./js/projects.js"></script>
 
-
+   <!--Javascript-->
+   <script defer src="./js/main.js"></script>
+   <script defer src="./js/projects.js"></script>
+   
   </head>
+  
   <body>
     
     <!--Wrapper-->
@@ -122,32 +122,32 @@
 
         <!--Nav-->
         <ul class="nav-links flex-spaceAround">
-          <li class="homeLi"><a href="#first-header"><i class="fas fa-home"></i>Hem</a></li>
-          <li class="aboutLi"><a href="#about"><i class="fas fa-user"></i>Om mig</a></li>
-          <li class="projectLi"><a href="#myProjects"><i class="fas fa-briefcase"></i>Projekt</a></li>
-          <li class="contactLi"><a href="#personal-form"><i class="fas fa-id-card"></i>Kontakt</a></li>
+          <li class="homeLi"><a href="#first-header" ><i class="fas fa-home"></i>Home</a></li>
+          <li class="aboutLi"><a href="#about"><i class="fas fa-user"></i>About</a></li>
+          <li class="projectLi"><a href="#myProjects"><i class="fas fa-briefcase"></i>Projects</a></li>
+          <li class="contactLi"><a href="#personal-form"><i class="fas fa-id-card"></i>Contact</a></li>
         </ul>
       </nav>
     </header>
 
-
     <!--Main-->
+
     <main>
 
       <!--First page hero-->
       <div class="hero-main flex-column-vertical-horizontal" >
         <h1 class="hero-text">
-          <span>Hej!</span> Mitt namn är <span>Hampus.</span><br>
-          En blivande <span>Front End </span>Utvecklare
+          <span>Hello!</span> My name is <span>Hampus.</span><br>
+          An aspiring <span>Front End </span>Developer
         </h1>
-        <!--Hero text when small tablet and phone starts-->
-        <h2 class="mobile-hero">Hampus Olausson <br>
-          <span>Front End Utvecklare</span>
+         <!--Hero text when small tablet and phone starts-->
+        <h2 class="mobile-hero">Hampus Olausson<br>
+          <span>Front End Developer</span>
         </h2>
 
-        <!--English button-->
+        <!--English-Button-->
 
-        <a href="index2.html" class="english btn flex-vertical-horizontal" >English</a>
+        <a href="/index.html" class="english btn flex-vertical-horizontal">Svenska</a>
 
         <!--Social media icons-->
         <div class="socialmedia-icons">
@@ -172,105 +172,104 @@
           </ul>
         </div>
       </div>
+      
       <!--Arrow direct user to scroll down on page-->
       <div class="arrow-section">
         <a href="#about"><i class="fas fa-chevron-down"></i></a>
       </div>
-      
 
       <!--About me section-->
 
       <section id="about" class="flex-column-vertical-horizontal" data-aos="fade-up">
-        
-          <div class="aboutText">
-            <h2 class="about h2">Om mig</h2>
-              <h3>Mitt namn är Hampus och jag studerar till Front End Utvecklare på Medieinstitutet i Göteborg. 
-                Jag har en passion för webbutveckling och ett stort intresse för UI/UX Design.
-              </h3>
-              <br>
-              <p>
-              Min resa började för cirka ett år sedan med att jag började studera en kvällskurs inom programmering 
-              och det blev startskottet. Sedan dess har jag utforskat mer och mer av webbutvecklingens värld och tycker det 
-              är otroligt spännande. Jag har kunskaper inom HTML, CSS/SCSS, Javascript, Git, Adobe XD för att nämna några.
-            </p>
+
+        <div class="aboutText">
+          <h2 class="about h2">About</h2>
+            <h3>My name is Hampus and I'm studying to become a Front End Developer at  Medieinstitutet in Gothenburg, Sweden.
+               I have a passion for web development and a great interest for UI / UX Design.
+            </h3>
             <br>
-            <p>Annars skulle jag beskriva mig själv som en driven och social person. Jag gillar struktur och hålla saker i sin ordning. </p>
-          </div>
-          
-            <!-- CV link-->
-            <a href="./HampusOlaussonCV.pdf" target="_blank" rel="noopener" class="cvLink"> Gå till CV</a>
-            <!--CV-Button--> 
-              <a href="./HampusOlaussonCV.pdf" download=".pdf" class="resume btn flex-vertical-horizontal"><i class="fas fa-download "></i> Ladda ner CV</a>
-             <!--Image-->
-          <div class="profile-container">
-            <img src="./images/ProfileImage.webp" alt="ProfilePicture" class="profile-pic" width="500" height="600">
-          </div>
-        
-      </section>
-
-
-      <!--Projects Section-->
-
-      <section id="myProjects">
-
-        <h2 class="projects-h2" data-aos="fade-up">Mina Projekt</h2>
-
-        <!--Project map 1-->
-        <div class="project-container flex-row-vertical-horizontal-center">
-
-        <!--Project 1-->          
-        <div class="project flex-column-vertical-horizontal textBasedGame" data-aos="fade-right">
-            <h2 class="project-h2">Text Baserat Spel</h2>
-                        
-              <!--Images-->
-              <div class="slideKey fade">
-                <img src="./images/findKey.webp" alt="textBasedGame" class="projectImages findKey" width="500" height="600">
-              </div>  
-              <div class="slideKey fade">
-                <img src="./images/findKey2.webp" alt="textBasedGame" class="projectImages findKey" width="500" height="600">
-              </div> 
-              <div class="slideKey fade">
-                <img src="./images/findKey3.webp" alt="textBasedGame" class="projectImages findKey" width="500" height="600">
-              </div> 
-        
-               <!--Dots under images-->
-              <div class="dot-container">
-                <span class="dot first"></span>
-                <span class="dot first"></span>
-                <span class="dot first"></span>
-              </div>
-        
-              <!--Info-->
-              <h3 class="readMore">Läs mer</h3>
-                  <a href="https://hampusjohnolausson.github.io/textBasedAdventureGame/" target="_blank" rel="noopener" class="project-link btn flex-vertical-horizontal">View Demo</a>
-                  <a href="https://github.com/HampusJohnOlausson/textBasedAdventureGame" target="_blank" rel="noopener" class="project-link btn flex-vertical-horizontal">View Code</a>
-                     
-        <!--Modal pop-up-->
-                <div class="modal-container">
-                <div class="modal flex-column-vertical-horizontal">
-                <i class="fas fa-times-circle"></i>
-                <h3 class="modal-h3">Text Baserat Spel</h3>
-             <!--Info and Links-->
-            <p class="project-para">Ett text baserat spel där användaren kan interagera genom att svara på frågor, På så sätt tar sig användaren vidare i spelet. 
-              Följ med på ett äventyr för att hitta ett par försvunna nycklar, där det händer ett event i varje rum.
-              Spelet är responsivt.</p>
-              <ul class="projectList">
-                <li class="projectListLi">HTML</li>
-                <li class="projectListLi">CSS / SASS</li>
-                <li class="projectListLi">Javascript</li>
-              </ul>
-            <a href="https://hampusjohnolausson.github.io/textBasedAdventureGame/" target="_blank" rel="noopener" class="project-link btn flex-vertical-horizontal">Gå till demo</a>
-            <a href="https://github.com/HampusJohnOlausson/textBasedAdventureGame" target="_blank" rel="noopener" class="project-link btn flex-vertical-horizontal">Gå till kod</a>
-          </div>
-           </div>
-         
-
+            <p>
+              My journey began about a year ago when I was studying an evening course in programming course. I was hooked directly. 
+              Since then, I have explored more and more in web development and find it very exciting.
+              I have knowledge in HTML, CSS / SCSS, Javascript, Git, Adobe XD to name a few.
+          </p>
+          <p>Otherwise, I would describe myself as a driven and social person. I like structure and keeping things in order.</p>
         </div>
 
-        <!--Project map 2-->
-        <div class="project-container flex-row-vertical-horizontal-center">
+           <!-- CV link-->
+           <a href="./HampusOlaussonCVEnglish.pdf" target="_blank" rel="noopener" class="cvLink">View CV</a>
+
+           <!--CV-Button--> 
+             <a href="./HampusOlaussonCVEnglish.pdf" download=".pdf" class="resume btn flex-vertical-horizontal"><i class="fas fa-download"></i> Download CV</a>
+          
+
+           <!--Image-->
+        <div class="profile-container">
+          <img src="./images/ProfileImage.webp" alt="ProfilePicture" class="profile-pic" width="500" height="600">
+        </div>
+        
+    </section>
+
+          <!--Projects Section-->
+
+          <section id="myProjects" >
+
+            <h2 class="projects-h2" data-aos="fade-up">Projects</h2>
+    
+            <!--Project map 1-->
+            <div class="project-container flex-row-vertical-horizontal-center">
+    
+            <!--Project 1-->          
+              <div class="project flex-column-vertical-horizontal textBasedGame" data-aos="fade-right">
+                <h2 class="project-h2">Text Based Game</h2>
+                
+                <!--Images-->
+            <div class="slideKey fade">
+              <img src="./images/findKey.webp" alt="textBasedGame" class="projectImages findKey" width="500" height="600">
+            </div>  
+            <div class="slideKey fade">
+              <img src="./images/findKey2.webp" alt="textBasedGame" class="projectImages findKey" width="500" height="600">
+            </div> 
+            <div class="slideKey fade">
+              <img src="./images/findKey3.webp" alt="textBasedGame" class="projectImages findKey" width="500" height="600">
+            </div> 
+
+            <!--Dots under images-->
+            <div class="dot-container">
+              <span class="dot first"></span>
+              <span class="dot first"></span>
+              <span class="dot first"></span>
+            </div>
+
+          <!--Info-->
+          <h3 class="readMore">Read More</h3>
+                <a href="https://hampusjohnolausson.github.io/textBasedAdventureGame/" target="_blank" rel="noopener" class="project-link btn flex-vertical-horizontal">View Demo</a>
+                <a href="https://github.com/HampusJohnOlausson/textBasedAdventureGame" target="_blank" rel="noopener" class="project-link btn flex-vertical-horizontal">View Code</a>
+            </div>
+             
+            <!--Modal pop-up-->
+            <div class="modal-container">
+              <div class="modal flex-column-vertical-horizontal">
+                <i class="fas fa-times-circle"></i>
+                <h3 class = "modal-h3">Text Based Adventure Game</h3>
+                <p class="project-para">This is a text based adventure game where the user can interact and become a part of the story.
+                  Follow along on journey to find a pair of lost keys in a house with multiple rooms, where unexpected things happens in each room.
+                  Created with tools such as HTML, CSS/SASS and Javascript. The game is responsive.</p>
+                  <ul class="projectList">
+                    <li class="projectListLi">HTML</li>
+                    <li class="projectListLi">CSS / SASS</li>
+                    <li class="projectListLi">Javascript</li>
+                  </ul>
+                <a href="https://hampusjohnolausson.github.io/textBasedAdventureGame/" target="_blank" rel="noopener" class="project-link btn flex-vertical-horizontal">View Demo</a>
+                <a href="https://github.com/HampusJohnOlausson/textBasedAdventureGame" target="_blank" rel="noopener" class="project-link btn flex-vertical-horizontal">View Code</a>
+            </div>
           </div>
-      </section>
+    
+            <!--Project map 2-->
+            <div class="project-container flex-row-vertical-horizontal-center">
+    
+              </div>
+          </section>
     </main>
 
     <!--Footer-->
@@ -278,60 +277,57 @@
     <footer class="footer flex-column-vertical-horizontal">
 
       <!--Personal submit form-->
-
       <section class="form-section flex-column-vertical-horizontal">
-        <h2 class="footer h2" data-aos="fade-left">Kontakta mig</h2>
+        <h2 class="footer h2" data-aos="fade-left">Contact</h2>
 
-      <div id="personal-form" data-aos="fade-right">
-        <form name="contact" method="POST" data-netlify="true">
-          
-          <div class="form-group">
-            <label for="firstName"></label>
-          <input class="input" type="text" name="firstName" placeholder="Förnamn" />
-        </div>
-
-        <div class="form-group">
-          <label for="lastName"></label>
-          <input class="input" type="text" name="lastName"  placeholder="Efternamn"/>
-        </div>
-
-        <div class="form-group">
-          <label for="phoneNumber"></label>
-          <input class="input" type="text"  name="phoneNumber"  placeholder="Telefon"/>
-        </div>
-
-          <div class="form-group">
-            <label for="mail"></label>
-          <input class="input" type="email"  name="mail" placeholder="Mail"/>
-        </div>
-
-          <div class="form-group">
-            <label for="textField"></label>
-          <textarea
-           name="textField" 
-            class="message-field"
-            rows="8"
-          placeholder="Meddelande"></textarea>
-            <button type="submit" value="submit" class="submit btn">Skicka</button>
-        </div>
-        </form>
-      </div>
-      <div class="home"><a href="#first-header"><i class="fas fa-home"></i></a></div>
-    </section>  
-    
-    </footer>
+        <div id="personal-form" data-aos="fade-right">
+          <form name="contact" method="POST" data-netlify="true">
   
+            <div class="form-group">
+              <label for="firstName"></label>
+            <input class="input" type="text" name="firstName"  placeholder="First Name"/>
+          </div>
+  
+          <div class="form-group">
+            <label for="lastName"></label>
+            <input class="input" type="text" name="lastName" placeholder="Last Name"/>
+          </div>
+  
+          <div class="form-group">
+            <label for="phoneNumber"></label>
+            <input class="input" type="text" name="phoneNumber"  placeholder="Phone"/>
+          </div>
+  
+            <div class="form-group">
+              <label for="mail"></label>
+            <input class="input" type="email" name="mail" placeholder="Mail"/>
+          </div>
+            <div class="form-group">
+              <label for="textField"></label>
+            <textarea
+             name="textField"
+              class="message-field"
+              rows="8"
+            placeholder="Message"></textarea>
+              <button type="submit" value="submit" class="submit btn">Submit</button>
+          </div>
+          </form>
+        </div>
+        <div class="home"><a href="#first-header"><i class="fas fa-home"></i></a></div>
+    </section>
+    </footer>
 
-    <!--AOS Library-->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        offset: 400,
-        duration: 1000
-      });
-    </script>
 
+  <!--AOS Library-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 400,
+      duration: 1000
+    });
+  </script>
+ 
   </div>
-
+        
   </body>
 </html>
