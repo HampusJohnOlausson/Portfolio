@@ -94,7 +94,7 @@
   display: none;
 }
 
-.hero-main.flex-column-vertical-horizontal .english {
+.hero-main.flex-column-vertical-horizontal .hero-btn {
   -webkit-animation: slideUp 2.1s ease;
           animation: slideUp 2.1s ease;
 }
@@ -492,12 +492,21 @@
   width: 12rem;
 }
 
+@media screen and (max-width: 360px) {
+  .footer.h2 {
+    margin-top: 8em;
+  }
+  .home a {
+    display: none;
+  }
+}
+
 /*-----------Small Phone Screens-----------*/
 @media screen and (max-width: 340px) {
   .hero-main.flex-column-vertical-horizontal .mobile-hero {
     font-size: 1.5em;
   }
-  .hero-main.flex-column-vertical-horizontal .english {
+  .hero-main.flex-column-vertical-horizontal .hero-btn {
     width: 12rem;
     margin: 1rem;
     font-size: 1.1em;
@@ -529,9 +538,7 @@
   }
   /*----------Footer----------*/
   .footer.h2 {
-    margin-bottom: 0em;
-    margin-top: 16em;
-    text-align: center;
+    margin-top: 12em;
   }
 }
 
@@ -752,7 +759,7 @@
   max-width: 50rem;
   margin: 0rem auto 2rem;
   position: relative;
-  border: 0.3rem solid #2bc6ae;
+  border: none;
   border-radius: 1rem;
 }
 
@@ -767,7 +774,7 @@
   margin: 1rem auto;
   color: #fff;
   font-size: 1.4rem;
-  width: 80%;
+  width: 100%;
 }
 
 .footer.flex-column-vertical-horizontal .form-section #personal-form .input,
@@ -780,7 +787,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin: auto;
-  width: 80%;
+  width: 100%;
   padding: 0.5rem;
   font-size: 1.2rem;
   outline: none;

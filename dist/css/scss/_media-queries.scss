@@ -233,6 +233,15 @@
   }
   
 
+@media screen and (max-width: 360px) {
+
+  .footer.h2 {
+    margin-top: 8em;
+  }
+  .home a{
+    display: none;
+  }
+}
 
 /*-----------Small Phone Screens-----------*/
 
@@ -242,7 +251,7 @@
     .mobile-hero{
       font-size: 1.5em;
     }
-    .english{
+    .hero-btn{
       width: 12rem;
       margin: 1rem;
       font-size: 1.1em;
@@ -281,12 +290,12 @@
   }
 
   /*----------Footer----------*/
-
   .footer.h2 {
-    margin-bottom: 0em;
-    margin-top: 16em;
-    text-align: center;
+    margin-top: 12em;
   }
+  
+
+  
 }
 
 /*-------Desktop: no display on home icon or li cause its not necsessary-------*/
