@@ -196,85 +196,47 @@
   }
 }
   
-/*----------ooter----------*/
-
-.footer{
-  height: 100vh;
-  padding: 0 1rem;
+/*----------Footer----------*/
 
   .footer.h2 {
-    margin-top: 6rem;
+    margin-bottom: 0em;
+    margin-top: 4em;
     text-align: center;
   }
 
   /*----Personal Form----*/
 
   .form-section{
-    height: 80vh;
-    width: 100%;
-
+    margin: 0em;
     #personal-form {
-      width: 100%;
-      max-width: 50rem;
-      margin: 0rem auto 2rem;
-      position: relative;
-      border: 0.3rem solid $accent;
-      border-radius: 1rem;
-
+      margin: 0rem 0.5em;
       
+ 
       .label {
-        display: flex;
-        flex-direction: column;
-        margin: 1rem auto;
-        color: $fontColor;
-        font-size: 1.4rem;
-        width: 80%;
+        margin: 1em 0em;
+        font-size: 1em;
       }
 
       .input,
       .message-field { 
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        width: 80%;
-        padding: 0.5rem;
-        font-size: 1.2rem;
-        outline: none;
-        background-color: transparent;
-        color: $accent;
-        font-family: "Roboto", sans-serif;
-        border: 0.15rem solid $accent;
-        border-radius: 0.5rem;
+        margin: 0.2em;
+        width: 90%;
+        padding: 0.2rem;
+        font-size: 1em;
       }
-      .message-field {
-        resize: vertical;
-      }
+      
     }
     /*---Submit Button---*/
     .submit{
-      font-weight: 600;
+      width: 12rem;
     }
   }
-
-  /*---Home icon---*/
-  .home a{
-    color: $accent;
-    font-size: 2.5rem;
-    padding: 1rem;
-    position: relative;
-    transition: 0.7s all ease;
-  }
-  .home a:hover {
-    color: $fontColor;
-  }
+  
 
 
-
-}
 /*-----------Small Phone Screens-----------*/
 
 @media screen and (max-width: 340px) {
-
 
   .hero-main.flex-column-vertical-horizontal{
     .mobile-hero{
@@ -283,10 +245,9 @@
     .english{
       width: 12rem;
       margin: 1rem;
-      font-size: 1em;
+      font-size: 1.1em;
     }
     .socialmedia-icons {
-    
       & ul li {
         font-size: 2rem;
       }
@@ -296,27 +257,35 @@
   /*--Projects--*/
   #myProjects {
     
-  .project{
-    width: 18rem;
-    height: 43rem;
-    margin: 0rem 4em;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    .project{
+      width: 18rem;
+      height: 43rem;
+      margin: 0rem 4em;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
 
-    .projectImages{
-      width: 16rem;
-      height: 12rem;
-    }
-    .project-h2{
-      font-size: 1.4em;
-    }
-    .readMore{
-      font-size: 1.4em;
-      margin-bottom: 0em;
-    }
-    .project-link {
-      width: 12em;
-    } 
-  }  
+      .projectImages{
+        width: 16rem;
+        height: 12rem;
+      }
+      .project-h2{
+        font-size: 1.4em;
+      }
+      .readMore{
+        font-size: 1.4em;
+        margin-bottom: 0.5em;
+      }
+      .project-link {
+        width: 12em;
+      } 
+    }  
+  }
+
+  /*----------Footer----------*/
+
+  .footer.h2 {
+    margin-bottom: 0em;
+    margin-top: 16em;
+    text-align: center;
   }
 }
 

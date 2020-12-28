@@ -458,88 +458,38 @@
   }
 }
 
-/*----------ooter----------*/
-.footer {
-  height: 100vh;
-  padding: 0 1rem;
-  /*----Personal Form----*/
-  /*---Home icon---*/
-}
-
-.footer .footer.h2 {
-  margin-top: 6rem;
+/*----------Footer----------*/
+.footer.h2 {
+  margin-bottom: 0em;
+  margin-top: 4em;
   text-align: center;
 }
 
-.footer .form-section {
-  height: 80vh;
-  width: 100%;
+/*----Personal Form----*/
+.form-section {
+  margin: 0em;
   /*---Submit Button---*/
 }
 
-.footer .form-section #personal-form {
-  width: 100%;
-  max-width: 50rem;
-  margin: 0rem auto 2rem;
-  position: relative;
-  border: 0.3rem solid #2bc6ae;
-  border-radius: 1rem;
+.form-section #personal-form {
+  margin: 0rem 0.5em;
 }
 
-.footer .form-section #personal-form .label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 1rem auto;
-  color: #fff;
-  font-size: 1.4rem;
-  width: 80%;
+.form-section #personal-form .label {
+  margin: 1em 0em;
+  font-size: 1em;
 }
 
-.footer .form-section #personal-form .input,
-.footer .form-section #personal-form .message-field {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: auto;
-  width: 80%;
-  padding: 0.5rem;
-  font-size: 1.2rem;
-  outline: none;
-  background-color: transparent;
-  color: #2bc6ae;
-  font-family: "Roboto", sans-serif;
-  border: 0.15rem solid #2bc6ae;
-  border-radius: 0.5rem;
+.form-section #personal-form .input,
+.form-section #personal-form .message-field {
+  margin: 0.2em;
+  width: 90%;
+  padding: 0.2rem;
+  font-size: 1em;
 }
 
-.footer .form-section #personal-form .message-field {
-  resize: vertical;
-}
-
-.footer .form-section .submit {
-  font-weight: 600;
-}
-
-.footer .home a {
-  color: #2bc6ae;
-  font-size: 2.5rem;
-  padding: 1rem;
-  position: relative;
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
-}
-
-.footer .home a:hover {
-  color: #fff;
+.form-section .submit {
+  width: 12rem;
 }
 
 /*-----------Small Phone Screens-----------*/
@@ -550,7 +500,7 @@
   .hero-main.flex-column-vertical-horizontal .english {
     width: 12rem;
     margin: 1rem;
-    font-size: 1em;
+    font-size: 1.1em;
   }
   .hero-main.flex-column-vertical-horizontal .socialmedia-icons ul li {
     font-size: 2rem;
@@ -572,10 +522,16 @@
   }
   #myProjects .project .readMore {
     font-size: 1.4em;
-    margin-bottom: 0em;
+    margin-bottom: 0.5em;
   }
   #myProjects .project .project-link {
     width: 12em;
+  }
+  /*----------Footer----------*/
+  .footer.h2 {
+    margin-bottom: 0em;
+    margin-top: 16em;
+    text-align: center;
   }
 }
 
@@ -771,20 +727,6 @@
   -webkit-transition: width 0.3s;
   transition: width 0.3s;
   color: #2bc6ae;
-}
-
-/*----Loader animation----*/
-@-webkit-keyframes spin {
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-@keyframes spin {
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
 }
 
 /*----------footer----------*/
