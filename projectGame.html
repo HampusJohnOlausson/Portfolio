@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#23292D"/>
+    <title>Hampus Olausson - Front End developer and web developer</title>
+    <meta name="description" content="Hampus Olausson, Front End developer and web developer in Gothenburg, Sweden. Portfolio with my project, CV, contact information. Building web applications and websites." >
+    <!-- <link rel="canonical" href="https://hampusolausson.com/index2/">
+    <link rel="alternate" href="https://hampusolausson.com/" hreflang="sv-se">
+    <link rel="alternate" href="https://hampusolausson.com/index2/" hreflang="en"> -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="sv_SE">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hampus Olausson - Frontend developer and web developer">
+    <meta property="og:description" content="Hampus Olausson, Frontend developer and web developer in Gothenburg, Sweden. Portfolio with my project, CV, contact information. Building web applications and websites.">
+    <meta property="og:url" content="https://hampusolausson.com/index/">
+    <meta property="og:site_name" content="Hampus Olausson - Frontend developer and web developer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Css/Sass-->
+    <link rel="stylesheet" href="./dist/css/style.css" />
+
+    <!--AOS Library-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!--fonts.google-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Fontawesome icons-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+
+   <!--Javascript-->
+   <script defer src="./js/main.js"></script>
+   <script defer src="./js/projects.js"></script>
+   
+  </head>
+  
+  <body>
+    
+    <!--Wrapper-->
+    <div class="wrapper">
+
+      <!--Background animation-->
+      <div class="background-animation" >
+        <ul class="squares">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+  </div >
+
+    <!--Header-->
+    <header id="first-header" class="flex-end">
+      
+      <nav class="header-nav">
+
+        <!--Hamburger-->
+        <div class="hamburger">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </div>
+
+        <!--Nav-->
+        <ul class="nav-links flex-spaceAround">
+          <li class="homeLi"><a href="index.html" ><i class="fas fa-home"></i>Home</a></li>
+          <li class="aboutLi"><a href="index.html#about"><i class="fas fa-user"></i>About</a></li>
+          <li class="projectLi"><a href="index.html#myProjects"><i class="fas fa-briefcase"></i>Projects</a></li>
+          <li class="contactLi"><a href="index.html#personal-form"><i class="fas fa-id-card"></i>Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+<!--main-->
+
+<main class="gameProject">
+
+    <h2 class="game-h2">Text Based Game</h2>
+
+    <div class="game-container">
+        <div class="game-section">
+            <p class="game-paragraph">
+                This is a text based adventure game where the user can interact and become a part of the story.
+                Follow along on journey to find a pair of lost keys in a house with multiple rooms, where unexpected things happens in each room.
+                Created with tools such as HTML, CSS/SASS and Javascript. The game is responsive.
+            </p>
+            <div class="icon-container">
+                <ul class="icon-list">
+                    <li><i class="fab fa-html5"></i></li>
+                    <li><i class="fab fa-css3-alt"></i></li>
+                    <li><i class="fab fa-js-square"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="game-section">
+
+        </div>
+    </div>
+
+</main>
+
+
+
+  <!--AOS Library-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 400,
+      duration: 1000
+    });
+  </script>
+ 
+  </div>
+        
+  </body>
+</html>

@@ -27,7 +27,7 @@ $textColor: #a8a8a8;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   width: 100%;
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 /*------------Reused Classes------------*/
@@ -105,5 +105,9 @@ $textColor: #a8a8a8;
 .flex-spaceBetween{
   display: flex;
   justify-content: space-between;
+}
+.flex-end{
+  display: flex;
+  justify-content: flex-end;
 }
 

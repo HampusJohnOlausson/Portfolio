@@ -24,7 +24,7 @@
   }
 
   /*--------Social media icons-------*/
-  .socialmedia-icons {
+  .icon-container {
     
     & ul li {
       display: inline-block;
@@ -176,6 +176,8 @@
       font-size: 1.6rem;
       margin: 1rem;
       cursor: pointer;
+      text-decoration: none;
+      color: $fontColor;
     }
     .project-link {
       margin: 1rem;

@@ -99,7 +99,7 @@
           animation: slideUp 2.1s ease;
 }
 
-.hero-main.flex-column-vertical-horizontal .socialmedia-icons ul li {
+.hero-main.flex-column-vertical-horizontal .icon-container ul li {
   display: inline-block;
   text-align: center;
   font-size: 2.5rem;
@@ -109,8 +109,8 @@
   position: relative;
 }
 
-.hero-main.flex-column-vertical-horizontal .socialmedia-icons ul li .fab,
-.hero-main.flex-column-vertical-horizontal .socialmedia-icons ul li .far {
+.hero-main.flex-column-vertical-horizontal .icon-container ul li .fab,
+.hero-main.flex-column-vertical-horizontal .icon-container ul li .far {
   color: #a8a8a8;
   padding: 1rem;
   margin: 1rem 0.7rem;
@@ -261,6 +261,8 @@
   font-size: 1.6rem;
   margin: 1rem;
   cursor: pointer;
+  text-decoration: none;
+  color: #fff;
 }
 
 #myProjects .project .project-link {
@@ -511,7 +513,7 @@
     margin: 1rem;
     font-size: 1.1em;
   }
-  .hero-main.flex-column-vertical-horizontal .socialmedia-icons ul li {
+  .hero-main.flex-column-vertical-horizontal .icon-container ul li {
     font-size: 2rem;
   }
   /*--Projects--*/
@@ -1004,7 +1006,7 @@
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   width: 100%;
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 /*------------Reused Classes------------*/
@@ -1140,5 +1142,14 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.flex-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 /*# sourceMappingURL=style.css.map */

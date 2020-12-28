@@ -1,5 +1,5 @@
 # Portfolio
- This is my portfolio, Here you can find information about me and projects I have created. There are functions where you can change language from Swedish to English, An image slider to view different section in each project. You can download a CV and use a contact form to send information.
+ This is my portfolio, Here you can find information about me and projects I have created. There are function like an image slider to view different section in each project. You can download a CV and use a contact form to send information.
 
  The website is responsive.  
 
