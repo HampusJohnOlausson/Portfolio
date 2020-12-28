@@ -17,33 +17,35 @@
     #personal-form {
       width: 100%;
       max-width: 50rem;
-      margin: 0rem auto;
+      margin: 0rem auto 2rem;
       position: relative;
+      border: 0.3rem solid $accent;
+      border-radius: 1rem;
+
       
-      .form-group {
-        width: 100%;
-        margin-top: 1.5rem;
+      .label {
         display: flex;
         flex-direction: column;
-        padding: 0rem 1rem;
+        margin: 1rem auto;
+        color: $fontColor;
+        font-size: 1.4rem;
+        width: 80%;
       }
 
-      .form-group .input,
-      .form-group .message-field {
-        
-        padding: 0.5rem 0rem;
+      .input,
+      .message-field { 
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 80%;
+        padding: 0.5rem;
         font-size: 1.2rem;
         outline: none;
         background-color: transparent;
-        color: $fontColor;
-        font-family: "Roboto", sans-serif;
-        border: none;
-        border-bottom: 2px solid $fontColor;
-        
-      }
-      .input::placeholder,
-      .message-field::placeholder {
         color: $accent;
+        font-family: "Roboto", sans-serif;
+        border: 0.15rem solid $accent;
+        border-radius: 0.5rem;
       }
       .message-field {
         resize: vertical;
@@ -59,7 +61,7 @@
   .home a{
     color: $accent;
     font-size: 2.5rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
     position: relative;
     transition: 0.7s all ease;
   }
