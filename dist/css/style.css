@@ -267,76 +267,6 @@
   margin: 1rem;
 }
 
-/*----Modal-----*/
-.modal-container {
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-  -webkit-transition: all ease 0.5s;
-  transition: all ease 0.5s;
-}
-
-.modal-container .modal {
-  top: 50%;
-  left: 50%;
-  position: fixed;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  margin: auto;
-  padding: 2rem;
-  width: 45rem;
-  height: 45rem;
-  border-radius: 2rem;
-  background-color: #23292D;
-  border: 0.5rem solid #2bc6ae;
-  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-}
-
-.modal-container .modal .fa-times-circle {
-  color: #2bc6ae;
-  font-size: 2.2rem;
-  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  margin: 0.7rem;
-  top: 0;
-  right: 0;
-  -webkit-transition: all ease .5s;
-  transition: all ease .5s;
-  cursor: pointer;
-}
-
-.modal-container .modal .modal-h3 {
-  font-size: 2rem;
-  margin: 1rem;
-}
-
-.modal-container .modal .project-para {
-  font-size: 1.4rem;
-  text-align: center;
-  color: #a8a8a8;
-  margin: 2rem;
-}
-
-.modal-container .modal .projectList {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  font-size: 1.4rem;
-  padding: 1rem 0rem 1rem 0rem;
-}
-
-.modal-container .modal .project-link {
-  margin: 1rem;
-}
-
 /*---------------------Media Queries----------------------*/
 /*--------Break Point-------*/
 @media screen and (max-width: 1380px) {
@@ -507,8 +437,8 @@
   #about .aboutText {
     padding: 0em 2em;
   }
-  #about .aboutText h4 {
-    font-size: 1.5em;
+  #about .aboutText .about-h3 {
+    font-size: 1.6em;
   }
   #about .aboutText p {
     display: none;
@@ -526,43 +456,90 @@
   #myProjects .project .project-h2 {
     font-size: 1.8rem;
   }
-  /*----Modal-----*/
-  .modal-container .modal {
-    width: 20rem;
-    height: 40rem;
-    padding: 0;
-  }
-  .modal-container .modal .fa-times-circle {
-    font-size: 1.8rem;
-  }
-  .modal-container .modal .modal-h3 {
-    font-size: 1.4rem;
-    margin: 0.5rem;
-  }
-  .modal-container .modal .project-para {
-    font-size: 1.2rem;
-    margin: 1rem 1rem;
-  }
-  .modal-container .modal .projectList {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    font-size: 1rem;
-    padding: 1rem 0rem 1rem 0rem;
-  }
-  .modal-container .modal .project-link {
-    margin: 0.5rem;
-  }
-  /*-------Footer-------*/
-  .footer {
-    height: 100vh;
-  }
-  .footer .footer.h2 {
-    margin-top: 6rem;
-  }
-  .footer .submit.btn {
-    width: 15em;
-  }
+}
+
+/*----------ooter----------*/
+.footer {
+  height: 100vh;
+  padding: 0 1rem;
+  /*----Personal Form----*/
+  /*---Home icon---*/
+}
+
+.footer .footer.h2 {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.footer .form-section {
+  height: 80vh;
+  width: 100%;
+  /*---Submit Button---*/
+}
+
+.footer .form-section #personal-form {
+  width: 100%;
+  max-width: 50rem;
+  margin: 0rem auto 2rem;
+  position: relative;
+  border: 0.3rem solid #2bc6ae;
+  border-radius: 1rem;
+}
+
+.footer .form-section #personal-form .label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem auto;
+  color: #fff;
+  font-size: 1.4rem;
+  width: 80%;
+}
+
+.footer .form-section #personal-form .input,
+.footer .form-section #personal-form .message-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  width: 80%;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  outline: none;
+  background-color: transparent;
+  color: #2bc6ae;
+  font-family: "Roboto", sans-serif;
+  border: 0.15rem solid #2bc6ae;
+  border-radius: 0.5rem;
+}
+
+.footer .form-section #personal-form .message-field {
+  resize: vertical;
+}
+
+.footer .form-section .submit {
+  font-weight: 600;
+}
+
+.footer .home a {
+  color: #2bc6ae;
+  font-size: 2.5rem;
+  padding: 1rem;
+  position: relative;
+  -webkit-transition: 0.7s all ease;
+  transition: 0.7s all ease;
+}
+
+.footer .home a:hover {
+  color: #fff;
 }
 
 /*-----------Small Phone Screens-----------*/
@@ -571,8 +548,9 @@
     font-size: 1.5em;
   }
   .hero-main.flex-column-vertical-horizontal .english {
-    width: 10rem;
+    width: 12rem;
     margin: 1rem;
+    font-size: 1em;
   }
   .hero-main.flex-column-vertical-horizontal .socialmedia-icons ul li {
     font-size: 2rem;
@@ -581,46 +559,22 @@
   #myProjects .project {
     width: 18rem;
     height: 43rem;
-    margin: 0rem 2rem;
+    margin: 0rem 4em;
+    -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
   }
   #myProjects .project .projectImages {
     width: 16rem;
     height: 12rem;
   }
   #myProjects .project .project-h2 {
-    font-size: 1.4rem;
+    font-size: 1.4em;
   }
-  /*----Modal-----*/
-  .modal-container .modal {
-    width: 20rem;
-    height: 35rem;
-    padding: 0;
+  #myProjects .project .readMore {
+    font-size: 1.4em;
+    margin-bottom: 0em;
   }
-  .modal-container .modal .modal-h3 {
-    font-size: 1.4rem;
-  }
-  .modal-container .modal .project-para {
-    font-size: 1.2rem;
-    margin: 0rem 1rem;
-  }
-  .modal-container .modal .projectList {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    font-size: 1rem;
-    padding: 0.5rem 0rem 0.5rem 0rem;
-  }
-  .modal-container .modal .project-link {
-    margin: 0.5rem;
-  }
-  /*-------Footer-------*/
-  .footer {
-    height: 100vh;
-  }
-  .footer .footer.h2 {
-    margin-top: 12rem;
-  }
-  .footer .submit.btn {
+  #myProjects .project .project-link {
     width: 12em;
   }
 }
@@ -833,7 +787,7 @@
   }
 }
 
-/*----------ooter----------*/
+/*----------footer----------*/
 .footer.flex-column-vertical-horizontal {
   min-height: 100vh;
   padding: 0 2rem;

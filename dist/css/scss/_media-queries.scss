@@ -167,8 +167,9 @@
     .aboutText {
       padding: 0em 2em;
 
-      h4 {
-        font-size: 1.5em;
+      .about-h3{
+        font-size: 1.6em;
+
       }
       p {
         display: none;
@@ -179,65 +180,97 @@
   /*--Project Section--*/
   #myProjects {
     
-  .project{
-    width: 21rem;
-    height: 43rem;
-    margin: 1rem 2rem;
+    .project{
+      width: 21rem;
+      height: 43rem;
+      margin: 1rem 2rem;
 
-    .projectImages{
-      width: 19rem;
-      height: 14rem;
-    }
-    .project-h2{
-      font-size: 1.8rem;
-    }
-  }  
+      .projectImages{
+        width: 19rem;
+        height: 14rem;
+      }
+      .project-h2{
+        font-size: 1.8rem;
+      }
+    }  
+  }
+}
+  
+/*----------ooter----------*/
+
+.footer{
+  height: 100vh;
+  padding: 0 1rem;
+
+  .footer.h2 {
+    margin-top: 6rem;
+    text-align: center;
   }
 
-/*----Modal-----*/
-.modal-container{
+  /*----Personal Form----*/
 
-  .modal{
-    width: 20rem;
-    height: 40rem;
-    padding: 0;
+  .form-section{
+    height: 80vh;
+    width: 100%;
 
-    .fa-times-circle{
-      font-size: 1.8rem;
-    }
+    #personal-form {
+      width: 100%;
+      max-width: 50rem;
+      margin: 0rem auto 2rem;
+      position: relative;
+      border: 0.3rem solid $accent;
+      border-radius: 1rem;
 
-    .modal-h3{
-      font-size: 1.4rem;
-      margin: 0.5rem;
       
+      .label {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem auto;
+        color: $fontColor;
+        font-size: 1.4rem;
+        width: 80%;
+      }
+
+      .input,
+      .message-field { 
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 80%;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+        outline: none;
+        background-color: transparent;
+        color: $accent;
+        font-family: "Roboto", sans-serif;
+        border: 0.15rem solid $accent;
+        border-radius: 0.5rem;
+      }
+      .message-field {
+        resize: vertical;
+      }
     }
-    .project-para{
-      font-size: 1.2rem;
-      margin: 1rem 1rem;
+    /*---Submit Button---*/
+    .submit{
+      font-weight: 600;
     }
-    .projectList{
-      align-self: center;
-      font-size: 1rem;
-      padding: 1rem 0rem 1rem 0rem;
-    }
-    .project-link {
-      margin: 0.5rem;
-    } 
   }
 
-}
-  /*-------Footer-------*/
-  .footer {
-    height: 100vh;
-    .footer.h2{
-      margin-top: 6rem;
-    }
-    .submit.btn {
-      width: 15em;
-    }
+  /*---Home icon---*/
+  .home a{
+    color: $accent;
+    font-size: 2.5rem;
+    padding: 1rem;
+    position: relative;
+    transition: 0.7s all ease;
   }
-}
+  .home a:hover {
+    color: $fontColor;
+  }
 
+
+
+}
 /*-----------Small Phone Screens-----------*/
 
 @media screen and (max-width: 340px) {
@@ -248,8 +281,9 @@
       font-size: 1.5em;
     }
     .english{
-      width: 10rem;
+      width: 12rem;
       margin: 1rem;
+      font-size: 1em;
     }
     .socialmedia-icons {
     
@@ -265,55 +299,24 @@
   .project{
     width: 18rem;
     height: 43rem;
-    margin: 0rem 2rem;
+    margin: 0rem 4em;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
 
     .projectImages{
       width: 16rem;
       height: 12rem;
     }
     .project-h2{
-      font-size: 1.4rem;
+      font-size: 1.4em;
     }
-  }  
-  }
-  /*----Modal-----*/
-.modal-container{
-
-  .modal{
-    width: 20rem;
-    height: 35rem;
-    padding: 0;
-
-    .modal-h3{
-      font-size: 1.4rem;
-      
-    }
-    .project-para{
-      font-size: 1.2rem;
-      margin: 0rem 1rem;
-    }
-    .projectList{
-      align-self: center;
-      font-size: 1rem;
-      padding: 0.5rem 0rem 0.5rem 0rem;
+    .readMore{
+      font-size: 1.4em;
+      margin-bottom: 0em;
     }
     .project-link {
-      margin: 0.5rem;
-
-    } 
-  }
-
-}
-  
-  /*-------Footer-------*/
-  .footer {
-    height: 100vh;
-    .footer.h2{
-      margin-top: 12rem;
-    }
-    .submit.btn {
       width: 12em;
-    }
+    } 
+  }  
   }
 }
 

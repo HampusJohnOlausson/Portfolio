@@ -5,9 +5,7 @@ function main(){
   
   navToggle();
   smoothScroll();
-  slideShow();
-  modal();
-  
+  slideShow(); 
 }
 
 /*-------------Hamburger Menu-------------*/
