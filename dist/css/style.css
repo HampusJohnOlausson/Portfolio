@@ -989,6 +989,29 @@
   }
 }
 
+.projectPage-project {
+  min-height: 80vh;
+}
+
+.projectPage-project .project-h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.projectPage-project .projectPage-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.projectPage-project .projectPage-container .projectPage-section {
+  padding: 4rem;
+}
+
 /*------------Html Overall-----------*/
 * {
   -webkit-box-sizing: border-box;

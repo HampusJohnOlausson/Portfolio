@@ -1,0 +1,22 @@
+.projectPage-project{
+    min-height: 80vh;
+
+    .project-h2{
+
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .projectPage-container{
+        display: flex;
+        flex-direction: row;
+
+        .projectPage-section{
+            padding: 4rem;
+        }
+    }
+
+
+
+
+}
