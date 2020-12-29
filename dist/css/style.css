@@ -1,8 +1,7 @@
 /*--------------Colors----------------*/
 /*-------------Imports---------------*/
 /*------------Header------------*/
-#first-header,
-.flex-spaceBetween {
+#header {
   left: 0;
   right: 0;
   top: 0;
@@ -13,36 +12,30 @@
   /*----Nav----*/
 }
 
-#first-header .logoName,
-.flex-spaceBetween .logoName {
+#header .logoName {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#first-header .logoName i,
-.flex-spaceBetween .logoName i {
+#header .logoName i {
   color: #2bc6ae;
   font-size: 2rem;
 }
 
-#first-header .logoName .header.h2,
-.flex-spaceBetween .logoName .header.h2 {
+#header .logoName .header.h2 {
   padding: 0;
   font-size: 1.5rem;
 }
 
-#first-header .header-nav,
-.flex-spaceBetween .header-nav {
+#header .header-nav {
   width: 50%;
   top: 0%;
   right: 0;
 }
 
-#first-header .header-nav .nav-links,
-#first-header .header-nav .flex-spaceAround,
-.flex-spaceBetween .header-nav .nav-links,
-.flex-spaceBetween .header-nav .flex-spaceAround {
+#header .header-nav .nav-links,
+#header .header-nav .flex-spaceAround {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -50,10 +43,8 @@
   position: relative;
 }
 
-#first-header .header-nav .nav-links li a,
-#first-header .header-nav .flex-spaceAround li a,
-.flex-spaceBetween .header-nav .nav-links li a,
-.flex-spaceBetween .header-nav .flex-spaceAround li a {
+#header .header-nav .nav-links li a,
+#header .header-nav .flex-spaceAround li a {
   font-size: 1.2rem;
   font-weight: lighter;
   color: #fff;
@@ -62,10 +53,8 @@
   cursor: pointer;
 }
 
-#first-header .header-nav .nav-links li a .fas,
-#first-header .header-nav .flex-spaceAround li a .fas,
-.flex-spaceBetween .header-nav .nav-links li a .fas,
-.flex-spaceBetween .header-nav .flex-spaceAround li a .fas {
+#header .header-nav .nav-links li a .fas,
+#header .header-nav .flex-spaceAround li a .fas {
   padding-right: 0.7rem;
 }
 
@@ -290,22 +279,22 @@
 /*-------------Large Tablet start---------------*/
 @media screen and (max-width: 1150px) {
   /*-----Header------*/
-  #first-header {
+  #header {
     position: relative;
     width: 100%;
     /*------Logo------*/
     /*------Nav------*/
   }
-  #first-header .logoName {
+  #header .logoName {
     padding: 0.5em;
   }
-  #first-header .header-nav {
+  #header .header-nav {
     height: 10vh;
     width: 100%;
     z-index: 100;
     position: fixed;
   }
-  #first-header .header-nav .nav-links {
+  #header .header-nav .nav-links {
     position: absolute;
     background: #23292D;
     height: 100vh;
@@ -320,34 +309,34 @@
     transition: all 1s ease-out;
     pointer-events: none;
   }
-  #first-header .header-nav .nav-links.open {
+  #header .header-nav .nav-links.open {
     clip-path: circle(1000px at 100% -10%);
     -webkit-clip-path: circle(1000px at 50% 50%);
     pointer-events: all;
   }
-  #first-header .header-nav .nav-links li {
+  #header .header-nav .nav-links li {
     opacity: 0;
   }
-  #first-header .header-nav .nav-links li a {
+  #header .header-nav .nav-links li a {
     font-size: 2em;
   }
-  #first-header .header-nav .nav-links li:nth-child(1) {
+  #header .header-nav .nav-links li:nth-child(1) {
     -webkit-transition: all 0.5s ease 0.2s;
     transition: all 0.5s ease 0.2s;
   }
-  #first-header .header-nav .nav-links li:nth-child(2) {
+  #header .header-nav .nav-links li:nth-child(2) {
     -webkit-transition: all 0.5s ease 0.4s;
     transition: all 0.5s ease 0.4s;
   }
-  #first-header .header-nav .nav-links li:nth-child(3) {
+  #header .header-nav .nav-links li:nth-child(3) {
     -webkit-transition: all 0.5s ease 0.6s;
     transition: all 0.5s ease 0.6s;
   }
-  #first-header .header-nav .nav-links li:nth-child(4) {
+  #header .header-nav .nav-links li:nth-child(4) {
     -webkit-transition: all 0.5s ease 0.8s;
     transition: all 0.5s ease 0.8s;
   }
-  #first-header .header-nav li.open {
+  #header .header-nav li.open {
     opacity: 1;
   }
   /*------Hamburger Menyn------*/
@@ -392,7 +381,7 @@
 
 /*-------------Small Tablet Starts--------------*/
 @media screen and (max-width: 770px) {
-  #first-header .logoName {
+  #header .logoName {
     display: none;
   }
   .hamburger {
@@ -989,16 +978,55 @@
   }
 }
 
+/*-------------Project Page------------*/
 .projectPage-project {
-  min-height: 80vh;
+  min-height: 90vh;
+  width: 100%;
+  /*--Title--*/
+  /*--Main-Container--*/
 }
 
 .projectPage-project .project-h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .projectPage-project .projectPage-container {
+  /*----Each section----*/
+}
+
+.projectPage-project .projectPage-container .projectPage-section {
+  width: 100%;
+  margin: auto;
+  /*-----Video------*/
+  /*--Paragraph section--*/
+  /*--icon section--*/
+}
+
+.projectPage-project .projectPage-container .projectPage-section .projectVideos {
+  z-index: 900;
+  position: relative;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.projectPage-project .projectPage-container .projectPage-section .projectPage-paragraph {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.projectPage-project .projectPage-container .projectPage-section .projectPage-icon-container {
+  color: #2bc6ae;
+  font-size: 4rem;
+}
+
+.projectPage-project .projectPage-container .projectPage-section .projectPage-icon-container .projectPage-icon-list {
+  width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1006,10 +1034,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-.projectPage-project .projectPage-container .projectPage-section {
-  padding: 4rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 /*------------Html Overall-----------*/
