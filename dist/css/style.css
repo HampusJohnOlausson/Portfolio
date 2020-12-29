@@ -751,7 +751,6 @@
 }
 
 .footer.flex-column-vertical-horizontal .form-section {
-  height: 80vh;
   width: 100%;
   /*---Submit Button---*/
 }
@@ -759,7 +758,7 @@
 .footer.flex-column-vertical-horizontal .form-section #personal-form {
   width: 100%;
   max-width: 50rem;
-  margin: 0rem auto 2rem;
+  margin: 0rem auto 1rem;
   position: relative;
   border: none;
   border-radius: 1rem;
