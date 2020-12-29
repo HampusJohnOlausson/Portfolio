@@ -1,48 +1,41 @@
 /*--------------Colors----------------*/
 /*-------------Imports---------------*/
 /*------------Header------------*/
-#first-header,
-.flex-spaceBetween {
+#header {
   left: 0;
   right: 0;
   top: 0;
-  z-index: 1;
+  z-index: 999;
   height: 10vh;
   padding: 4rem;
   /*---Logo----*/
   /*----Nav----*/
 }
 
-#first-header .logoName,
-.flex-spaceBetween .logoName {
+#header .logoName {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#first-header .logoName i,
-.flex-spaceBetween .logoName i {
+#header .logoName i {
   color: #2bc6ae;
   font-size: 2rem;
 }
 
-#first-header .logoName .header.h2,
-.flex-spaceBetween .logoName .header.h2 {
+#header .logoName .header.h2 {
   padding: 0;
   font-size: 1.5rem;
 }
 
-#first-header .header-nav,
-.flex-spaceBetween .header-nav {
+#header .header-nav {
   width: 50%;
   top: 0%;
   right: 0;
 }
 
-#first-header .header-nav .nav-links,
-#first-header .header-nav .flex-spaceAround,
-.flex-spaceBetween .header-nav .nav-links,
-.flex-spaceBetween .header-nav .flex-spaceAround {
+#header .header-nav .nav-links,
+#header .header-nav .flex-spaceAround {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -50,10 +43,8 @@
   position: relative;
 }
 
-#first-header .header-nav .nav-links li a,
-#first-header .header-nav .flex-spaceAround li a,
-.flex-spaceBetween .header-nav .nav-links li a,
-.flex-spaceBetween .header-nav .flex-spaceAround li a {
+#header .header-nav .nav-links li a,
+#header .header-nav .flex-spaceAround li a {
   font-size: 1.2rem;
   font-weight: lighter;
   color: #fff;
@@ -62,10 +53,8 @@
   cursor: pointer;
 }
 
-#first-header .header-nav .nav-links li a .fas,
-#first-header .header-nav .flex-spaceAround li a .fas,
-.flex-spaceBetween .header-nav .nav-links li a .fas,
-.flex-spaceBetween .header-nav .flex-spaceAround li a .fas {
+#header .header-nav .nav-links li a .fas,
+#header .header-nav .flex-spaceAround li a .fas {
   padding-right: 0.7rem;
 }
 
@@ -94,12 +83,12 @@
   display: none;
 }
 
-.hero-main.flex-column-vertical-horizontal .english {
+.hero-main.flex-column-vertical-horizontal .hero-btn {
   -webkit-animation: slideUp 2.1s ease;
           animation: slideUp 2.1s ease;
 }
 
-.hero-main.flex-column-vertical-horizontal .socialmedia-icons ul li {
+.hero-main.flex-column-vertical-horizontal .icon-container ul li {
   display: inline-block;
   text-align: center;
   font-size: 2.5rem;
@@ -109,8 +98,8 @@
   position: relative;
 }
 
-.hero-main.flex-column-vertical-horizontal .socialmedia-icons ul li .fab,
-.hero-main.flex-column-vertical-horizontal .socialmedia-icons ul li .far {
+.hero-main.flex-column-vertical-horizontal .icon-container ul li .fab,
+.hero-main.flex-column-vertical-horizontal .icon-container ul li .far {
   color: #a8a8a8;
   padding: 1rem;
   margin: 1rem 0.7rem;
@@ -122,6 +111,7 @@
   cursor: pointer;
 }
 
+/*---Arrow pointing down---*/
 .arrow-section {
   height: 15vh;
   width: 100%;
@@ -135,60 +125,6 @@
   position: relative;
   -webkit-animation: bounceArrow 1s infinite;
           animation: bounceArrow 1s infinite;
-}
-
-/*------------About me Section-------------*/
-#about {
-  min-height: 100vh;
-  /*----About Text-----*/
-  /*-----Profile image-----*/
-  /*-----Cv link-----*/
-}
-
-#about .aboutText {
-  text-align: center;
-  padding: 2rem 12rem;
-  color: #a8a8a8;
-}
-
-#about .aboutText .about.h2 {
-  color: #fff;
-}
-
-#about .aboutText h3 {
-  color: #fff;
-  font-size: 2rem;
-}
-
-#about .aboutText p {
-  font-size: 1.5rem;
-}
-
-#about img, #about .profile-pic {
-  width: 18rem;
-  height: 16rem;
-  border-radius: 50%;
-  position: relative;
-  margin: 2rem 12rem;
-  -webkit-box-shadow: 0 13px 26px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 13px 26px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
-}
-
-#about .fa-download {
-  margin-right: 1rem;
-}
-
-#about .cvLink {
-  color: #fff;
-  font-size: 1.5rem;
-  margin-top: 1rem;
-  text-decoration: none;
-  cursor: pointer;
-  position: relative;
-}
-
-#about .resume {
-  margin: 1rem 0rem 2rem 0rem;
 }
 
 /*--------------Projects Section----------------*/
@@ -220,95 +156,109 @@
   font-size: 2.2rem;
 }
 
-#myProjects .project .projectVideos {
-  border-radius: 1rem;
+#myProjects .project img, #myProjects .project .projectImages {
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  width: 33rem;
+  height: 20rem;
+  border-radius: 7px;
   margin: 2rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
+}
+
+#myProjects .project .dot-container {
+  text-align: center;
+}
+
+#myProjects .project .dot-container .dot {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin: 0rem 0.5rem 2rem 0.5rem;
+  display: inline-block;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  background-color: #a8a8a8;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+#myProjects .project .dot-container .active {
+  background-color: #2bc6ae;
+  height: 1.2rem;
+  width: 1.2rem;
 }
 
 #myProjects .project .readMore {
   font-size: 1.6rem;
-  margin: 1rem;
   cursor: pointer;
+  text-decoration: none;
+  color: #fff;
 }
 
 #myProjects .project .project-link {
   margin: 1rem;
 }
 
-/*----Modal-----*/
-.modal-container {
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-  -webkit-transition: all ease 0.5s;
-  transition: all ease 0.5s;
+/*------------About me Section-------------*/
+#about {
+  min-height: 100vh;
+  /*----About Text-----*/
+  /*-----Profile image-----*/
+  /*-----Cv link-----*/
 }
 
-.modal-container .modal {
-  top: 50%;
-  left: 50%;
-  position: fixed;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  margin: auto;
-  padding: 2rem;
-  width: 45rem;
-  height: 45rem;
-  border-radius: 2rem;
-  background-color: #23292D;
-  border: 0.5rem solid #2bc6ae;
-  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-}
-
-.modal-container .modal .fa-times-circle {
-  color: #2bc6ae;
-  font-size: 2.2rem;
-  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  margin: 0.7rem;
-  top: 0;
-  right: 0;
-  -webkit-transition: all ease .5s;
-  transition: all ease .5s;
-  cursor: pointer;
-}
-
-.modal-container .modal .modal-h3 {
-  font-size: 2rem;
-  margin: 1rem;
-}
-
-.modal-container .modal .project-para {
-  font-size: 1.4rem;
+#about .aboutText {
   text-align: center;
+  padding: 2rem 12rem;
   color: #a8a8a8;
-  margin: 2rem;
 }
 
-.modal-container .modal .projectList {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  font-size: 1.4rem;
-  padding: 1rem 0rem 1rem 0rem;
+#about .aboutText .about.h2 {
+  color: #fff;
 }
 
-.modal-container .modal .project-link {
-  margin: 1rem;
+#about .aboutText h3 {
+  color: #fff;
+  font-size: 2rem;
 }
 
-/*---------------------Media Queries----------------------*/
+#about .aboutText p {
+  font-size: 1.5rem;
+}
+
+#about .profile-pic {
+  width: 18rem;
+  height: 16rem;
+  border-radius: 50%;
+  position: relative;
+  margin: 2rem 12rem;
+  -webkit-box-shadow: 0 13px 26px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 13px 26px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+#about .fa-download {
+  margin-right: 1rem;
+}
+
+#about .cvLink {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+}
+
+#about .resume {
+  margin: 1rem 0rem 2rem 0rem;
+}
+
+/*---------------------Media Queries Tablet----------------------*/
 /*--------Break Point-------*/
 @media screen and (max-width: 1380px) {
   /*-------------Projects------------*/
@@ -329,22 +279,22 @@
 /*-------------Large Tablet start---------------*/
 @media screen and (max-width: 1150px) {
   /*-----Header------*/
-  #first-header {
+  #header {
     position: relative;
     width: 100%;
     /*------Logo------*/
     /*------Nav------*/
   }
-  #first-header .logoName {
+  #header .logoName {
     padding: 0.5em;
   }
-  #first-header .header-nav {
+  #header .header-nav {
     height: 10vh;
     width: 100%;
     z-index: 100;
     position: fixed;
   }
-  #first-header .header-nav .nav-links {
+  #header .header-nav .nav-links {
     position: absolute;
     background: #23292D;
     height: 100vh;
@@ -359,34 +309,34 @@
     transition: all 1s ease-out;
     pointer-events: none;
   }
-  #first-header .header-nav .nav-links.open {
+  #header .header-nav .nav-links.open {
     clip-path: circle(1000px at 100% -10%);
     -webkit-clip-path: circle(1000px at 50% 50%);
     pointer-events: all;
   }
-  #first-header .header-nav .nav-links li {
+  #header .header-nav .nav-links li {
     opacity: 0;
   }
-  #first-header .header-nav .nav-links li a {
+  #header .header-nav .nav-links li a {
     font-size: 2em;
   }
-  #first-header .header-nav .nav-links li:nth-child(1) {
+  #header .header-nav .nav-links li:nth-child(1) {
     -webkit-transition: all 0.5s ease 0.2s;
     transition: all 0.5s ease 0.2s;
   }
-  #first-header .header-nav .nav-links li:nth-child(2) {
+  #header .header-nav .nav-links li:nth-child(2) {
     -webkit-transition: all 0.5s ease 0.4s;
     transition: all 0.5s ease 0.4s;
   }
-  #first-header .header-nav .nav-links li:nth-child(3) {
+  #header .header-nav .nav-links li:nth-child(3) {
     -webkit-transition: all 0.5s ease 0.6s;
     transition: all 0.5s ease 0.6s;
   }
-  #first-header .header-nav .nav-links li:nth-child(4) {
+  #header .header-nav .nav-links li:nth-child(4) {
     -webkit-transition: all 0.5s ease 0.8s;
     transition: all 0.5s ease 0.8s;
   }
-  #first-header .header-nav li.open {
+  #header .header-nav li.open {
     opacity: 1;
   }
   /*------Hamburger Menyn------*/
@@ -400,12 +350,12 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 4.37em;
-    height: 3.75em;
+    width: 3em;
+    height: 2.75em;
     position: absolute;
     cursor: pointer;
-    right: 3%;
-    top: 40%;
+    right: 1%;
+    top: 20%;
     -webkit-transform: translate(-50%, -5%);
             transform: translate(-50%, -5%);
     z-index: 2;
@@ -413,7 +363,7 @@
   }
   .hamburger .line {
     width: 100%;
-    height: 0.37em;
+    height: 0.25em;
     border-radius: 1em;
     background-color: #2bc6ae;
     -webkit-transition: all 0.8s;
@@ -427,16 +377,28 @@
     width: 15em;
     height: 13em;
   }
+  /*-------------Project Page------------*/
+  .wrapper .projectPage-project {
+    /*--Main-Container--*/
+  }
+  .wrapper .projectPage-project .projectPage-container {
+    /*----Each section----*/
+  }
+  .wrapper .projectPage-project .projectPage-container .projectPage-section {
+    /*--Paragraph section--*/
+  }
+  .wrapper .projectPage-project .projectPage-container .projectPage-section .projectPage-paragraph {
+    width: 70%;
+  }
 }
 
 /*-------------Small Tablet Starts--------------*/
 @media screen and (max-width: 770px) {
-  #first-header .logoName {
+  #header .logoName {
     display: none;
   }
   .hamburger {
-    right: 1%;
-    top: 35%;
+    right: 0%;
   }
   .hero-main.flex-column-vertical-horizontal .hero-text {
     display: none;
@@ -455,155 +417,32 @@
   .hero-main.flex-column-vertical-horizontal .mobile-hero span {
     color: #a8a8a8;
   }
-}
-
-/*----------Smartphone Starts------------*/
-@media screen and (max-width: 630px) {
-  .hamburger {
-    top: 25%;
-    right: -3%;
+  /*-------------Project Page------------*/
+  .wrapper .projectPage-project {
+    /*--Main-Container--*/
   }
-  .hero-main.flex-column-vertical-horizontal {
-    min-height: 65vh;
+  .wrapper .projectPage-project .project-h2 {
+    margin-bottom: 1em;
   }
-  .hero-main.flex-column-vertical-horizontal .mobile-hero {
-    font-size: 2em;
+  .wrapper .projectPage-project .projectPage-container {
+    /*----Each section----*/
   }
-  .arrow-section {
-    min-height: 25vh;
+  .wrapper .projectPage-project .projectPage-container .projectPage-section {
+    /*--Paragraph section--*/
+    /*--icon section--*/
   }
-  /*--About Me Section--*/
-  #about {
-    min-height: 100vh;
+  .wrapper .projectPage-project .projectPage-container .projectPage-section .projectVideos {
+    width: 40rem;
+    height: 20rem;
   }
-  #about .aboutText {
-    padding: 0em 2em;
+  .wrapper .projectPage-project .projectPage-container .projectPage-section .projectPage-paragraph {
+    width: 100%;
   }
-  #about .aboutText h4 {
-    font-size: 1.5em;
+  .wrapper .projectPage-project .projectPage-container .projectPage-section .projectPage-icon-container {
+    font-size: 3em;
   }
-  #about .aboutText p {
-    display: none;
-  }
-  /*--Project Section--*/
-  #myProjects .project {
-    width: 21rem;
-    height: 43rem;
-    margin: 1rem 2rem;
-  }
-  #myProjects .project .projectVideos {
-    width: 19rem;
-    height: 14rem;
-  }
-  #myProjects .project .project-h2 {
-    font-size: 1.8rem;
-  }
-  /*----Modal-----*/
-  .modal-container .modal {
-    width: 20rem;
-    height: 40rem;
-    padding: 0;
-  }
-  .modal-container .modal .fa-times-circle {
-    font-size: 1.8rem;
-  }
-  .modal-container .modal .modal-h3 {
-    font-size: 1.4rem;
-    margin: 0.5rem;
-  }
-  .modal-container .modal .project-para {
-    font-size: 1.2rem;
-    margin: 1rem 1rem;
-  }
-  .modal-container .modal .projectList {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    font-size: 1rem;
-    padding: 1rem 0rem 1rem 0rem;
-  }
-  .modal-container .modal .project-link {
-    margin: 0.5rem;
-  }
-  /*-------Footer-------*/
-  .footer {
-    height: 100vh;
-  }
-  .footer .footer.h2 {
-    margin-top: 6rem;
-  }
-  .footer .submit.btn {
-    width: 15em;
-  }
-}
-
-/*-----------Small Phone Screens-----------*/
-@media screen and (max-width: 340px) {
-  .hero-main.flex-column-vertical-horizontal .mobile-hero {
-    font-size: 1.5em;
-  }
-  .hero-main.flex-column-vertical-horizontal .english {
-    width: 10rem;
-    margin: 1rem;
-  }
-  .hero-main.flex-column-vertical-horizontal .socialmedia-icons ul li {
-    font-size: 2rem;
-  }
-  /*--Projects--*/
-  #myProjects .project {
-    width: 18rem;
-    height: 43rem;
-    margin: 0rem 2rem;
-  }
-  #myProjects .project .projectVideos {
-    width: 16rem;
-    height: 12rem;
-  }
-  #myProjects .project .project-h2 {
-    font-size: 1.4rem;
-  }
-  /*----Modal-----*/
-  .modal-container .modal {
-    width: 20rem;
-    height: 35rem;
-    padding: 0;
-  }
-  .modal-container .modal .modal-h3 {
-    font-size: 1.4rem;
-  }
-  .modal-container .modal .project-para {
-    font-size: 1.2rem;
-    margin: 0rem 1rem;
-  }
-  .modal-container .modal .projectList {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    font-size: 1rem;
-    padding: 0.5rem 0rem 0.5rem 0rem;
-  }
-  .modal-container .modal .project-link {
-    margin: 0.5rem;
-  }
-  /*-------Footer-------*/
-  .footer {
-    height: 100vh;
-  }
-  .footer .footer.h2 {
-    margin-top: 12rem;
-  }
-  .footer .submit.btn {
-    width: 12em;
-  }
-}
-
-/*-------Desktop: no display on home icon or li cause its not necsessary-------*/
-@media screen and (min-width: 1150px) {
-  .wrapper .homeLi {
-    display: none;
-  }
-  .wrapper .fas .fa-home {
-    display: none;
+  .wrapper .projectPage-project .projectPage-container .projectPage-section .projectPage-icon-container .projectPage-icon-list {
+    width: 35%;
   }
 }
 
@@ -630,8 +469,8 @@
 
 /*------Hamburger Rotation Of Lines------*/
 .open .line-1 {
-  -webkit-transform: rotateZ(-405deg) translate(-16px, 12px);
-          transform: rotateZ(-405deg) translate(-16px, 12px);
+  -webkit-transform: rotateZ(-405deg) translate(-6px, 14px);
+          transform: rotateZ(-405deg) translate(-6px, 14px);
 }
 
 .open .line-2 {
@@ -639,8 +478,8 @@
 }
 
 .open .line-3 {
-  -webkit-transform: rotateZ(405deg) translate(-16px, -12px);
-          transform: rotateZ(405deg) translate(-16px, -12px);
+  -webkit-transform: rotateZ(405deg) translate(-6px, -14px);
+          transform: rotateZ(405deg) translate(-6px, -14px);
 }
 
 /*-----Socialmedia-icons Hover-----*/
@@ -791,21 +630,7 @@
   color: #2bc6ae;
 }
 
-/*----Loader animation----*/
-@-webkit-keyframes spin {
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-@keyframes spin {
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-/*----------ooter----------*/
+/*----------footer----------*/
 .footer.flex-column-vertical-horizontal {
   min-height: 100vh;
   padding: 0 2rem;
@@ -815,10 +640,10 @@
 
 .footer.flex-column-vertical-horizontal .footer.h2 {
   text-align: center;
+  margin-bottom: 0rem;
 }
 
 .footer.flex-column-vertical-horizontal .form-section {
-  height: 80vh;
   width: 100%;
   /*---Submit Button---*/
 }
@@ -826,13 +651,13 @@
 .footer.flex-column-vertical-horizontal .form-section #personal-form {
   width: 100%;
   max-width: 50rem;
-  margin: 0rem auto;
+  margin: 0rem auto 1rem;
   position: relative;
+  border: none;
+  border-radius: 1rem;
 }
 
-.footer.flex-column-vertical-horizontal .form-section #personal-form .form-group {
-  width: 100%;
-  margin-top: 1.5rem;
+.footer.flex-column-vertical-horizontal .form-section #personal-form .label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -840,39 +665,31 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0rem 1rem;
+  margin: 1rem auto;
+  color: #fff;
+  font-size: 1.4rem;
+  width: 100%;
 }
 
-.footer.flex-column-vertical-horizontal .form-section #personal-form .form-group .input,
-.footer.flex-column-vertical-horizontal .form-section #personal-form .form-group .message-field {
-  padding: 0.5rem 0rem;
+.footer.flex-column-vertical-horizontal .form-section #personal-form .input,
+.footer.flex-column-vertical-horizontal .form-section #personal-form .message-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  width: 100%;
+  padding: 0.5rem;
   font-size: 1.2rem;
   outline: none;
   background-color: transparent;
-  color: #fff;
+  color: #2bc6ae;
   font-family: "Roboto", sans-serif;
-  border: none;
-  border-bottom: 2px solid #fff;
-}
-
-.footer.flex-column-vertical-horizontal .form-section #personal-form .input::-webkit-input-placeholder,
-.footer.flex-column-vertical-horizontal .form-section #personal-form .message-field::-webkit-input-placeholder {
-  color: #2bc6ae;
-}
-
-.footer.flex-column-vertical-horizontal .form-section #personal-form .input:-ms-input-placeholder,
-.footer.flex-column-vertical-horizontal .form-section #personal-form .message-field:-ms-input-placeholder {
-  color: #2bc6ae;
-}
-
-.footer.flex-column-vertical-horizontal .form-section #personal-form .input::-ms-input-placeholder,
-.footer.flex-column-vertical-horizontal .form-section #personal-form .message-field::-ms-input-placeholder {
-  color: #2bc6ae;
-}
-
-.footer.flex-column-vertical-horizontal .form-section #personal-form .input::placeholder,
-.footer.flex-column-vertical-horizontal .form-section #personal-form .message-field::placeholder {
-  color: #2bc6ae;
+  border: 0.15rem solid #2bc6ae;
+  border-radius: 0.5rem;
 }
 
 .footer.flex-column-vertical-horizontal .form-section #personal-form .message-field {
@@ -881,12 +698,13 @@
 
 .footer.flex-column-vertical-horizontal .form-section .submit {
   font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .footer.flex-column-vertical-horizontal .home a {
   color: #2bc6ae;
   font-size: 2.5rem;
-  padding-bottom: 1rem;
+  padding: 0.5rem;
   position: relative;
   -webkit-transition: 0.7s all ease;
   transition: 0.7s all ease;
@@ -1065,6 +883,233 @@
   }
 }
 
+/*-------------Project Page------------*/
+.projectPage-project {
+  min-height: 90vh;
+  width: 100%;
+  /*--Title--*/
+  /*--Main-Container--*/
+}
+
+.projectPage-project .project-h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.projectPage-project .projectPage-container {
+  /*----Each section----*/
+}
+
+.projectPage-project .projectPage-container .projectPage-section {
+  width: 100%;
+  margin: auto;
+  /*-----Video------*/
+  /*--Paragraph section--*/
+  /*--icon section--*/
+}
+
+.projectPage-project .projectPage-container .projectPage-section .projectVideos {
+  z-index: 900;
+  position: relative;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.projectPage-project .projectPage-container .projectPage-section .projectPage-paragraph {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.projectPage-project .projectPage-container .projectPage-section .project-link {
+  margin: 2rem 1rem 2rem;
+}
+
+.projectPage-project .projectPage-container .projectPage-section .projectPage-icon-container {
+  color: #2bc6ae;
+  font-size: 4rem;
+}
+
+.projectPage-project .projectPage-container .projectPage-section .projectPage-icon-container .projectPage-icon-list {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/*---------------------Media Queries Mobile----------------------*/
+/*----------Smartphone Starts------------*/
+@media screen and (max-width: 630px) {
+  .hamburger {
+    top: 20%;
+    right: -2%;
+  }
+  .hero-main.flex-column-vertical-horizontal {
+    min-height: 65vh;
+  }
+  .hero-main.flex-column-vertical-horizontal .mobile-hero {
+    font-size: 2em;
+  }
+  .arrow-section {
+    min-height: 25vh;
+  }
+  /*--About Me Section--*/
+  #about {
+    min-height: 100vh;
+  }
+  #about .aboutText {
+    padding: 0em 2em;
+  }
+  #about .aboutText .about-h3 {
+    font-size: 1.6em;
+  }
+  #about .aboutText p {
+    display: none;
+  }
+  #about .resume {
+    width: 12em;
+  }
+  #about .resume .fa-download {
+    display: none;
+  }
+  /*--Project Section--*/
+  #myProjects .project {
+    width: 21rem;
+    height: 43rem;
+    margin: 1rem 2rem;
+  }
+  #myProjects .project .projectImages {
+    width: 19rem;
+    height: 14rem;
+  }
+  #myProjects .project .project-h2 {
+    font-size: 1.8rem;
+  }
+  /*-------------Project Page------------*/
+  .projectPage-project {
+    /*--Main-Container--*/
+  }
+  .projectPage-project .projectPage-container {
+    /*----Each section----*/
+  }
+  .projectPage-project .projectPage-container .projectPage-section {
+    /*--icon section--*/
+  }
+  .projectPage-project .projectPage-container .projectPage-section .projectVideos {
+    display: none;
+  }
+  .projectPage-project .projectPage-container .projectPage-section .projectPage-btn-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projectPage-project .projectPage-container .projectPage-section .projectPage-btn-container .project-link {
+    width: 11em;
+    margin: 1em;
+  }
+  .projectPage-project .projectPage-container .projectPage-section .projectPage-icon-container {
+    display: none;
+  }
+}
+
+/*----------Footer----------*/
+.footer.h2 {
+  margin-bottom: 0em;
+  margin-top: 4em;
+  text-align: center;
+}
+
+/*----Personal Form----*/
+.form-section {
+  margin: 0em;
+  /*---Submit Button---*/
+}
+
+.form-section #personal-form {
+  margin: 0rem 0.5em;
+}
+
+.form-section #personal-form .label {
+  margin: 1em 0em;
+  font-size: 1em;
+}
+
+.form-section #personal-form .input,
+.form-section #personal-form .message-field {
+  margin: 0.2em;
+  width: 90%;
+  padding: 0.2rem;
+  font-size: 1em;
+}
+
+.form-section .submit {
+  width: 12rem;
+}
+
+@media screen and (max-width: 360px) {
+  .footer.h2 {
+    margin-top: 8em;
+  }
+  .home a {
+    display: none;
+  }
+}
+
+/*-----------Small Phone Screens-----------*/
+@media screen and (max-width: 340px) {
+  .hero-main.flex-column-vertical-horizontal .mobile-hero {
+    font-size: 1.5em;
+  }
+  .hero-main.flex-column-vertical-horizontal .hero-btn {
+    width: 12rem;
+    margin: 1rem;
+    font-size: 1.1em;
+  }
+  .hero-main.flex-column-vertical-horizontal .icon-container ul li {
+    font-size: 2rem;
+  }
+  /*--Projects--*/
+  #myProjects .project {
+    width: 18rem;
+    height: 43rem;
+    margin: 0rem 4em;
+    -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  }
+  #myProjects .project .projectImages {
+    width: 16rem;
+    height: 12rem;
+  }
+  #myProjects .project .project-h2 {
+    font-size: 1.4em;
+  }
+  #myProjects .project .readMore {
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+  }
+  #myProjects .project .project-link {
+    width: 12em;
+  }
+  /*----------Footer----------*/
+  .footer.h2 {
+    margin-top: 12em;
+  }
+}
+
 /*------------Html Overall-----------*/
 * {
   -webkit-box-sizing: border-box;
@@ -1081,7 +1126,7 @@
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   width: 100%;
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 /*------------Reused Classes------------*/
@@ -1121,7 +1166,7 @@
 .h2 {
   text-transform: uppercase;
   font-size: 2rem;
-  padding: 3rem;
+  padding: 1rem;
 }
 
 /*----Flex Classes----*/
@@ -1217,5 +1262,14 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.flex-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 /*# sourceMappingURL=style.css.map */

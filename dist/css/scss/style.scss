@@ -7,11 +7,15 @@ $textColor: #a8a8a8;
 /*-------------Imports---------------*/
 @import "header";
 @import "main";
-@import "media-queries";
-@import "hover";
+@import "projectSection";
+@import "aboutSection";
+@import "tablet";
+@import "animation";
 @import "footer";
 @import "background";
-@import "css-aspect-ratio/css-aspect-ratio";
+@import "projectPage";
+@import "mobile";
+
 
 /*------------Html Overall-----------*/
 * {
@@ -28,7 +32,7 @@ $textColor: #a8a8a8;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   width: 100%;
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 /*------------Reused Classes------------*/
@@ -65,7 +69,7 @@ $textColor: #a8a8a8;
 .h2 {
   text-transform: uppercase;
   font-size: 2rem;
-  padding: 3rem;
+  padding: 1rem;
 }
 
 /*----Flex Classes----*/
@@ -106,5 +110,9 @@ $textColor: #a8a8a8;
 .flex-spaceBetween{
   display: flex;
   justify-content: space-between;
+}
+.flex-end{
+  display: flex;
+  justify-content: flex-end;
 }
 
