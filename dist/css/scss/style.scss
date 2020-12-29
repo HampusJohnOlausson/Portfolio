@@ -9,11 +9,13 @@ $textColor: #a8a8a8;
 @import "main";
 @import "projectSection";
 @import "aboutSection";
-@import "media-queries";
+@import "tablet";
 @import "animation";
 @import "footer";
 @import "background";
 @import "projectPage";
+@import "mobile";
+
 
 /*------------Html Overall-----------*/
 * {
@@ -67,7 +69,7 @@ $textColor: #a8a8a8;
 .h2 {
   text-transform: uppercase;
   font-size: 2rem;
-  padding: 3rem;
+  padding: 1rem;
 }
 
 /*----Flex Classes----*/

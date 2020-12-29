@@ -258,7 +258,7 @@
   margin: 1rem 0rem 2rem 0rem;
 }
 
-/*---------------------Media Queries----------------------*/
+/*---------------------Media Queries Tablet----------------------*/
 /*--------Break Point-------*/
 @media screen and (max-width: 1380px) {
   /*-------------Projects------------*/
@@ -443,159 +443,6 @@
   }
   .wrapper .projectPage-project .projectPage-container .projectPage-section .projectPage-icon-container .projectPage-icon-list {
     width: 35%;
-  }
-}
-
-/*----------Smartphone Starts------------*/
-@media screen and (max-width: 630px) {
-  .hamburger {
-    top: 20%;
-    right: -2%;
-  }
-  .hero-main.flex-column-vertical-horizontal {
-    min-height: 65vh;
-  }
-  .hero-main.flex-column-vertical-horizontal .mobile-hero {
-    font-size: 2em;
-  }
-  .arrow-section {
-    min-height: 25vh;
-  }
-  /*--About Me Section--*/
-  #about {
-    min-height: 100vh;
-  }
-  #about .aboutText {
-    padding: 0em 2em;
-  }
-  #about .aboutText .about-h3 {
-    font-size: 1.6em;
-  }
-  #about .aboutText p {
-    display: none;
-  }
-  /*--Project Section--*/
-  #myProjects .project {
-    width: 21rem;
-    height: 43rem;
-    margin: 1rem 2rem;
-  }
-  #myProjects .project .projectImages {
-    width: 19rem;
-    height: 14rem;
-  }
-  #myProjects .project .project-h2 {
-    font-size: 1.8rem;
-  }
-  /*-------------Project Page------------*/
-  .projectPage-project {
-    /*--Main-Container--*/
-  }
-  .projectPage-project .projectPage-container {
-    /*----Each section----*/
-  }
-  .projectPage-project .projectPage-container .projectPage-section {
-    /*--icon section--*/
-  }
-  .projectPage-project .projectPage-container .projectPage-section .projectVideos {
-    display: none;
-  }
-  .projectPage-project .projectPage-container .projectPage-section .projectPage-btn-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .projectPage-project .projectPage-container .projectPage-section .projectPage-btn-container .project-link {
-    width: 11em;
-    margin: 1em;
-  }
-  .projectPage-project .projectPage-container .projectPage-section .projectPage-icon-container {
-    display: none;
-  }
-}
-
-/*----------Footer----------*/
-.footer.h2 {
-  margin-bottom: 0em;
-  margin-top: 4em;
-  text-align: center;
-}
-
-/*----Personal Form----*/
-.form-section {
-  margin: 0em;
-  /*---Submit Button---*/
-}
-
-.form-section #personal-form {
-  margin: 0rem 0.5em;
-}
-
-.form-section #personal-form .label {
-  margin: 1em 0em;
-  font-size: 1em;
-}
-
-.form-section #personal-form .input,
-.form-section #personal-form .message-field {
-  margin: 0.2em;
-  width: 90%;
-  padding: 0.2rem;
-  font-size: 1em;
-}
-
-.form-section .submit {
-  width: 12rem;
-}
-
-@media screen and (max-width: 360px) {
-  .footer.h2 {
-    margin-top: 8em;
-  }
-  .home a {
-    display: none;
-  }
-}
-
-/*-----------Small Phone Screens-----------*/
-@media screen and (max-width: 340px) {
-  .hero-main.flex-column-vertical-horizontal .mobile-hero {
-    font-size: 1.5em;
-  }
-  .hero-main.flex-column-vertical-horizontal .hero-btn {
-    width: 12rem;
-    margin: 1rem;
-    font-size: 1.1em;
-  }
-  .hero-main.flex-column-vertical-horizontal .icon-container ul li {
-    font-size: 2rem;
-  }
-  /*--Projects--*/
-  #myProjects .project {
-    width: 18rem;
-    height: 43rem;
-    margin: 0rem 4em;
-    -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-  }
-  #myProjects .project .projectImages {
-    width: 16rem;
-    height: 12rem;
-  }
-  #myProjects .project .project-h2 {
-    font-size: 1.4em;
-  }
-  #myProjects .project .readMore {
-    font-size: 1.4em;
-    margin-bottom: 0.5em;
-  }
-  #myProjects .project .project-link {
-    width: 12em;
-  }
-  /*----------Footer----------*/
-  .footer.h2 {
-    margin-top: 12em;
   }
 }
 
@@ -1103,6 +950,166 @@
   text-decoration: none;
 }
 
+/*---------------------Media Queries Mobile----------------------*/
+/*----------Smartphone Starts------------*/
+@media screen and (max-width: 630px) {
+  .hamburger {
+    top: 20%;
+    right: -2%;
+  }
+  .hero-main.flex-column-vertical-horizontal {
+    min-height: 65vh;
+  }
+  .hero-main.flex-column-vertical-horizontal .mobile-hero {
+    font-size: 2em;
+  }
+  .arrow-section {
+    min-height: 25vh;
+  }
+  /*--About Me Section--*/
+  #about {
+    min-height: 100vh;
+  }
+  #about .aboutText {
+    padding: 0em 2em;
+  }
+  #about .aboutText .about-h3 {
+    font-size: 1.6em;
+  }
+  #about .aboutText p {
+    display: none;
+  }
+  #about .resume {
+    width: 12em;
+  }
+  #about .resume .fa-download {
+    display: none;
+  }
+  /*--Project Section--*/
+  #myProjects .project {
+    width: 21rem;
+    height: 43rem;
+    margin: 1rem 2rem;
+  }
+  #myProjects .project .projectImages {
+    width: 19rem;
+    height: 14rem;
+  }
+  #myProjects .project .project-h2 {
+    font-size: 1.8rem;
+  }
+  /*-------------Project Page------------*/
+  .projectPage-project {
+    /*--Main-Container--*/
+  }
+  .projectPage-project .projectPage-container {
+    /*----Each section----*/
+  }
+  .projectPage-project .projectPage-container .projectPage-section {
+    /*--icon section--*/
+  }
+  .projectPage-project .projectPage-container .projectPage-section .projectVideos {
+    display: none;
+  }
+  .projectPage-project .projectPage-container .projectPage-section .projectPage-btn-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projectPage-project .projectPage-container .projectPage-section .projectPage-btn-container .project-link {
+    width: 11em;
+    margin: 1em;
+  }
+  .projectPage-project .projectPage-container .projectPage-section .projectPage-icon-container {
+    display: none;
+  }
+}
+
+/*----------Footer----------*/
+.footer.h2 {
+  margin-bottom: 0em;
+  margin-top: 4em;
+  text-align: center;
+}
+
+/*----Personal Form----*/
+.form-section {
+  margin: 0em;
+  /*---Submit Button---*/
+}
+
+.form-section #personal-form {
+  margin: 0rem 0.5em;
+}
+
+.form-section #personal-form .label {
+  margin: 1em 0em;
+  font-size: 1em;
+}
+
+.form-section #personal-form .input,
+.form-section #personal-form .message-field {
+  margin: 0.2em;
+  width: 90%;
+  padding: 0.2rem;
+  font-size: 1em;
+}
+
+.form-section .submit {
+  width: 12rem;
+}
+
+@media screen and (max-width: 360px) {
+  .footer.h2 {
+    margin-top: 8em;
+  }
+  .home a {
+    display: none;
+  }
+}
+
+/*-----------Small Phone Screens-----------*/
+@media screen and (max-width: 340px) {
+  .hero-main.flex-column-vertical-horizontal .mobile-hero {
+    font-size: 1.5em;
+  }
+  .hero-main.flex-column-vertical-horizontal .hero-btn {
+    width: 12rem;
+    margin: 1rem;
+    font-size: 1.1em;
+  }
+  .hero-main.flex-column-vertical-horizontal .icon-container ul li {
+    font-size: 2rem;
+  }
+  /*--Projects--*/
+  #myProjects .project {
+    width: 18rem;
+    height: 43rem;
+    margin: 0rem 4em;
+    -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  }
+  #myProjects .project .projectImages {
+    width: 16rem;
+    height: 12rem;
+  }
+  #myProjects .project .project-h2 {
+    font-size: 1.4em;
+  }
+  #myProjects .project .readMore {
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+  }
+  #myProjects .project .project-link {
+    width: 12em;
+  }
+  /*----------Footer----------*/
+  .footer.h2 {
+    margin-top: 12em;
+  }
+}
+
 /*------------Html Overall-----------*/
 * {
   -webkit-box-sizing: border-box;
@@ -1159,7 +1166,7 @@
 .h2 {
   text-transform: uppercase;
   font-size: 2rem;
-  padding: 3rem;
+  padding: 1rem;
 }
 
 /*----Flex Classes----*/
