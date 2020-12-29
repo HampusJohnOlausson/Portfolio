@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#23292D"/>
+    <title>Hampus Olausson - Front End developer and web developer</title>
+    <meta name="description" content="Hampus Olausson, Front End developer and web developer in Gothenburg, Sweden. Portfolio with my project, CV, contact information. Building web applications and websites." >
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="sv_SE">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hampus Olausson - Frontend developer and web developer">
+    <meta property="og:description" content="Hampus Olausson, Frontend developer and web developer in Gothenburg, Sweden. Portfolio with my project, CV, contact information. Building web applications and websites.">
+    <meta property="og:url" content="https://hampusolausson.com/index/">
+    <meta property="og:site_name" content="Hampus Olausson - Frontend developer and web developer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Css/Sass-->
+    <link rel="stylesheet" href="./dist/css/style.css" />
+
+    <!--fonts.google-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Fontawesome icons-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+
+   <!--Javascript-->
+   <script defer src="./js/main.js"></script>
+   <script defer src="./js/projects.js"></script>
+   
+  </head>
+  
+  <body>
+    
+    <!--Wrapper-->
+    <div class="wrapper">
+
+      <!--Background animation-->
+      <div class="background-animation" >
+        <ul class="squares">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+  </div >
+
+    <!--Header-->
+    <header id="header" class="flex-end">
+      
+      <nav class="header-nav">
+
+        <!--Hamburger-->
+        <div class="hamburger">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </div>
+
+        <!--Nav-->
+        <ul class="nav-links flex-spaceAround">
+          <li class="homeLi"><a href="index.html" ><i class="fas fa-home"></i>Home</a></li>
+          <li class="aboutLi"><a href="index.html#about"><i class="fas fa-user"></i>About</a></li>
+          <li class="projectLi"><a href="index.html#myProjects"><i class="fas fa-briefcase"></i>Projects</a></li>
+          <li class="contactLi"><a href="index.html#personal-form"><i class="fas fa-id-card"></i>Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+<!--main-->
+<main class="projectPage-project flex-column-vertical-horizontal">
+    <!--Title-->
+    <h2 class="project-h2">Text Based Game</h2>
+    <!--Container-->
+    <div class="projectPage-container flex-column-vertical-horizontal-center">
+        <!--Section1-->
+        <div class="projectPage-section flex-column-vertical-horizontal">
+
+          <!--video-->
+          <video class="projectVideos" width="600" height="350" playsinline autoplay loop muted>
+            <source src="./video/findKey-1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <!--Section2-->
+        <div class="projectPage-section ">
+            <p class="projectPage-paragraph flex-column-vertical-horizontal">
+                This is a text based adventure game where the user can interact and become a part of the story.
+                Follow along on journey to find a pair of lost keys in a house with multiple rooms, where unexpected things happens in each room.
+                Created with tools such as HTML, CSS/SASS and Javascript. The game is responsive.
+            </p>
+          <!--Icons-->      
+          <div class="projectPage-icon-container flex-row-vertical-horizontal-center">
+            <ul class="projectPage-icon-list">
+              <li><i class="fab fa-html5"></i></li>
+              <li><i class="fab fa-css3-alt"></i></li>
+              <li><i class="fab fa-js-square"></i></li>
+            </ul>
+        </div>
+          <!--Buttons-->
+          <div class="projectPage-btn-container flex-row-vertical-horizontal-center">
+            <a href="https://hampusjohnolausson.github.io/textBasedAdventureGame/" target="_blank" rel="noopener" class="project-link btn flex-vertical-horizontal">View Demo</a>
+            <a href="https://github.com/HampusJohnOlausson/textBasedAdventureGame" target="_blank" rel="noopener" class="project-link btn flex-vertical-horizontal">View Code</a>
+          </div>
+
+    </div>
+    
+  </div>
+
+</main>
+
+ 
+</div>
+        
+</body>
+</html>
