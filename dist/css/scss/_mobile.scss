@@ -63,12 +63,13 @@
   
     /*-------------Project Page------------*/
    
+    
     .projectPage-project{
+      
     /*--Main-Container--*/
       .projectPage-container{
         /*----Each section----*/
         .projectPage-section{
-          
           .projectVideos{
               display: none;
             }
@@ -76,12 +77,14 @@
               flex-direction: column;
             .project-link {
                 width: 11em;  
-                margin: 1em;    
+                margin: 0.7em;    
             } 
           }
             /*--icon section--*/
             .projectPage-icon-container{
-              display: none;
+              li{
+                margin: 0em 1rem 0.5em 1rem;
+              }
             }
         }
       }

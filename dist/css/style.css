@@ -931,7 +931,7 @@
 
 .projectPage-project .projectPage-container .projectPage-section .projectPage-icon-container {
   color: #2bc6ae;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .projectPage-project .projectPage-container .projectPage-section .projectPage-icon-container .projectPage-icon-list {
@@ -1019,10 +1019,10 @@
   }
   .projectPage-project .projectPage-container .projectPage-section .projectPage-btn-container .project-link {
     width: 11em;
-    margin: 1em;
+    margin: 0.7em;
   }
-  .projectPage-project .projectPage-container .projectPage-section .projectPage-icon-container {
-    display: none;
+  .projectPage-project .projectPage-container .projectPage-section .projectPage-icon-container li {
+    margin: 0em 1rem 0.5em 1rem;
   }
 }
 
