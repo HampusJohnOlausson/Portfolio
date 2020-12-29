@@ -5,7 +5,7 @@
   left: 0;
   right: 0;
   top: 0;
-  z-index: 1;
+  z-index: 999;
   height: 10vh;
   padding: 4rem;
   /*---Logo----*/
@@ -377,6 +377,19 @@
     width: 15em;
     height: 13em;
   }
+  /*-------------Project Page------------*/
+  .wrapper .projectPage-project {
+    /*--Main-Container--*/
+  }
+  .wrapper .projectPage-project .projectPage-container {
+    /*----Each section----*/
+  }
+  .wrapper .projectPage-project .projectPage-container .projectPage-section {
+    /*--Paragraph section--*/
+  }
+  .wrapper .projectPage-project .projectPage-container .projectPage-section .projectPage-paragraph {
+    width: 70%;
+  }
 }
 
 /*-------------Small Tablet Starts--------------*/
@@ -403,6 +416,33 @@
   }
   .hero-main.flex-column-vertical-horizontal .mobile-hero span {
     color: #a8a8a8;
+  }
+  /*-------------Project Page------------*/
+  .wrapper .projectPage-project {
+    /*--Main-Container--*/
+  }
+  .wrapper .projectPage-project .project-h2 {
+    margin-bottom: 1em;
+  }
+  .wrapper .projectPage-project .projectPage-container {
+    /*----Each section----*/
+  }
+  .wrapper .projectPage-project .projectPage-container .projectPage-section {
+    /*--Paragraph section--*/
+    /*--icon section--*/
+  }
+  .wrapper .projectPage-project .projectPage-container .projectPage-section .projectVideos {
+    width: 40rem;
+    height: 20rem;
+  }
+  .wrapper .projectPage-project .projectPage-container .projectPage-section .projectPage-paragraph {
+    width: 100%;
+  }
+  .wrapper .projectPage-project .projectPage-container .projectPage-section .projectPage-icon-container {
+    font-size: 3em;
+  }
+  .wrapper .projectPage-project .projectPage-container .projectPage-section .projectPage-icon-container .projectPage-icon-list {
+    width: 35%;
   }
 }
 
@@ -446,6 +486,32 @@
   }
   #myProjects .project .project-h2 {
     font-size: 1.8rem;
+  }
+  /*-------------Project Page------------*/
+  .projectPage-project {
+    /*--Main-Container--*/
+  }
+  .projectPage-project .projectPage-container {
+    /*----Each section----*/
+  }
+  .projectPage-project .projectPage-container .projectPage-section {
+    /*--icon section--*/
+  }
+  .projectPage-project .projectPage-container .projectPage-section .projectVideos {
+    display: none;
+  }
+  .projectPage-project .projectPage-container .projectPage-section .projectPage-btn-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projectPage-project .projectPage-container .projectPage-section .projectPage-btn-container .project-link {
+    width: 11em;
+    margin: 1em;
+  }
+  .projectPage-project .projectPage-container .projectPage-section .projectPage-icon-container {
+    display: none;
   }
 }
 
@@ -530,16 +596,6 @@
   /*----------Footer----------*/
   .footer.h2 {
     margin-top: 12em;
-  }
-}
-
-/*-------Desktop: no display on home icon or li cause its not necsessary-------*/
-@media screen and (min-width: 1150px) {
-  .wrapper .homeLi {
-    display: none;
-  }
-  .wrapper .fas .fa-home {
-    display: none;
   }
 }
 
@@ -989,7 +1045,7 @@
 }
 
 .projectPage-project .project-h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -1020,6 +1076,10 @@
   margin: auto;
   padding: 2rem;
   font-size: 1.2rem;
+}
+
+.projectPage-project .projectPage-container .projectPage-section .project-link {
+  margin: 2rem 1rem 2rem;
 }
 
 .projectPage-project .projectPage-container .projectPage-section .projectPage-icon-container {

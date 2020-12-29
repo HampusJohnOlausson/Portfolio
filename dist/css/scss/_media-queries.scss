@@ -110,6 +110,24 @@
     }
     
   }
+
+/*-------------Project Page------------*/
+  .wrapper {
+    .projectPage-project{
+  
+      /*--Main-Container--*/
+      .projectPage-container{
+        /*----Each section----*/
+        .projectPage-section{
+            /*--Paragraph section--*/
+            .projectPage-paragraph{
+                width: 70%;
+            }
+        }
+      }
+    }
+  }
+
 }
 
 /*-------------Small Tablet Starts--------------*/
@@ -139,6 +157,39 @@
       }
     }
   }
+
+
+/*-------------Project Page------------*/
+  .wrapper {
+    .projectPage-project{
+      .project-h2{
+        margin-bottom: 1em;
+      }
+    /*--Main-Container--*/
+      .projectPage-container{
+        /*----Each section----*/
+        .projectPage-section{
+            .projectVideos{
+                width: 40rem;
+                height: 20rem;
+            }
+            /*--Paragraph section--*/
+            .projectPage-paragraph{
+                width: 100%;
+            }
+            /*--icon section--*/
+            .projectPage-icon-container{
+              font-size: 3em;
+
+              .projectPage-icon-list{
+                  width: 35%;
+              }
+            }
+        }
+      }
+    }
+  }
+
 }
 
 /*----------Smartphone Starts------------*/
@@ -194,6 +245,33 @@
       }
     }  
   }
+
+  /*-------------Project Page------------*/
+ 
+  .projectPage-project{
+  /*--Main-Container--*/
+    .projectPage-container{
+      /*----Each section----*/
+      .projectPage-section{
+        
+        .projectVideos{
+            display: none;
+          }
+        .projectPage-btn-container{
+            flex-direction: column;
+          .project-link {
+              width: 11em;  
+              margin: 1em;    
+          } 
+        }
+          /*--icon section--*/
+          .projectPage-icon-container{
+            display: none;
+          }
+      }
+    }
+  }
+  
 }
   
 /*----------Footer----------*/
@@ -230,7 +308,8 @@
     .submit{
       width: 12rem;
     }
-  }
+
+}
   
 
 @media screen and (max-width: 360px) {
@@ -294,18 +373,4 @@
     margin-top: 12em;
   }
   
-
-  
-}
-
-/*-------Desktop: no display on home icon or li cause its not necsessary-------*/
-@media screen and (min-width: 1150px) {
-  .wrapper {
-    .homeLi{
-      display: none;
-    }
-    .fas .fa-home{
-      display: none;
-    }   
-  }
 }
