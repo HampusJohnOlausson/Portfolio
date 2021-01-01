@@ -2,17 +2,14 @@
 /*-------------Imports---------------*/
 /*------------Header------------*/
 #header {
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 999;
   height: 10vh;
-  padding: 4rem;
+  padding: 4rem 2rem;
   /*---Logo----*/
   /*----Nav----*/
 }
 
 #header .logoName {
+  padding-left: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,7 +26,7 @@
 }
 
 #header .header-nav {
-  width: 50%;
+  width: 45%;
   top: 0%;
   right: 0;
 }
@@ -286,7 +283,7 @@
     /*------Nav------*/
   }
   #header .logoName {
-    padding: 0.5em;
+    display: none;
   }
   #header .header-nav {
     height: 10vh;
@@ -318,7 +315,7 @@
     opacity: 0;
   }
   #header .header-nav .nav-links li a {
-    font-size: 2em;
+    font-size: 1.8em;
   }
   #header .header-nav .nav-links li:nth-child(1) {
     -webkit-transition: all 0.5s ease 0.2s;
@@ -953,6 +950,9 @@
 /*---------------------Media Queries Mobile----------------------*/
 /*----------Smartphone Starts------------*/
 @media screen and (max-width: 630px) {
+  #header .header-nav .nav-links li a {
+    font-size: 1.6em;
+  }
   .hamburger {
     top: 20%;
     right: -2%;
@@ -1061,6 +1061,9 @@
 }
 
 @media screen and (max-width: 360px) {
+  #header .header-nav .nav-links li a {
+    font-size: 1.4em;
+  }
   .footer.h2 {
     margin-top: 8em;
   }
@@ -1071,6 +1074,9 @@
 
 /*-----------Small Phone Screens-----------*/
 @media screen and (max-width: 340px) {
+  .hero-main.flex-column-vertical-horizontal {
+    padding-top: 0rem;
+  }
   .hero-main.flex-column-vertical-horizontal .mobile-hero {
     font-size: 1.5em;
   }
@@ -1127,6 +1133,12 @@
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
+}
+
+@media screen and (min-width: 1380px) {
+  .homeLi {
+    display: none;
+  }
 }
 
 /*------------Reused Classes------------*/

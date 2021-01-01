@@ -4,6 +4,13 @@
 
 @media screen and (max-width: 630px) {
 
+  #header{
+    .header-nav{
+      .nav-links li a {
+      font-size: 1.6em;
+      }
+    }
+  }
     .hamburger{
       top: 20%;
       right: -2%;
@@ -131,6 +138,14 @@
     
   
   @media screen and (max-width: 360px) {
+
+    #header{
+      .header-nav{
+        .nav-links li a {
+        font-size: 1.4em;
+        }
+      }
+    }
   
     .footer.h2 {
       margin-top: 8em;
@@ -145,6 +160,7 @@
   @media screen and (max-width: 340px) {
   
     .hero-main.flex-column-vertical-horizontal{
+      padding-top: 0rem;
       .mobile-hero{
         font-size: 1.5em;
       }

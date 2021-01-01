@@ -1,16 +1,12 @@
 /*------------Header------------*/
 
 #header{
-  
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 999;
   height: 10vh;
-  padding: 4rem;
+  padding: 4rem 2rem;
 
   /*---Logo----*/
   .logoName {
+    padding-left: 2rem;
     display: flex;
 
     i {
@@ -24,7 +20,7 @@
   }
   /*----Nav----*/
   .header-nav {
-    width: 50%;
+    width: 45%;
     top: 0%;
     right: 0;
     
