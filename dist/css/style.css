@@ -991,7 +991,8 @@
     display: none;
   }
   #about .cvLink {
-    font-size: 1.4em;
+    font-size: 1.3em;
+    margin-top: 0.2em;
   }
   #about .resume {
     width: 12em;
@@ -1041,40 +1042,27 @@
   .projectPage-project .projectPage-container .projectPage-section .projectPage-icon-container li {
     margin: 0em 1rem 0.5em 1rem;
   }
-}
-
-/*----------Footer----------*/
-.footer.h2 {
-  margin-bottom: 0em;
-  margin-top: 4em;
-  text-align: center;
-}
-
-/*----Personal Form----*/
-.form-section {
-  margin: 0em;
-  /*---Submit Button---*/
-}
-
-.form-section #personal-form {
-  margin: 0rem 0.5em;
-}
-
-.form-section #personal-form .label {
-  margin: 1em 0em;
-  font-size: 1em;
-}
-
-.form-section #personal-form .input,
-.form-section #personal-form .message-field {
-  margin: 0.2em;
-  width: 90%;
-  padding: 0.2rem;
-  font-size: 1em;
-}
-
-.form-section .submit {
-  width: 12rem;
+  /*----------footer----------*/
+  .footer.flex-column-vertical-horizontal {
+    /*----Personal Form----*/
+    /*---Home icon---*/
+  }
+  .footer.flex-column-vertical-horizontal .form-section {
+    /*---Submit Button---*/
+  }
+  .footer.flex-column-vertical-horizontal .form-section #personal-form .label {
+    margin: 0.5rem auto;
+    font-size: 1.3em;
+  }
+  .footer.flex-column-vertical-horizontal .form-section #personal-form .input,
+  .footer.flex-column-vertical-horizontal .form-section #personal-form .message-field {
+    width: 100%;
+    padding: 0.2em;
+    font-size: 1.1em;
+  }
+  .footer.flex-column-vertical-horizontal .home a {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 360px) {
