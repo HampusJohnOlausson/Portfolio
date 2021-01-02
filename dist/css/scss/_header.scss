@@ -16,10 +16,12 @@
       font-size: 2rem;
     }
     .header.h2 {
+      font-weight: 200;
+      text-transform: unset;
       color: $fontColor;
       font-family: 'Mr Dafoe', cursive;
       padding: 0;
-      font-size: 1.5rem;
+      font-size: 1.6rem;
     }
   }
   /*----Nav----*/

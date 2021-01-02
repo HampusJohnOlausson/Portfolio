@@ -21,7 +21,8 @@
       padding: 2rem;
   
       .project-h2{
-        font-size: 2.2rem;
+        color: $textColor;
+        font-size: 1.6rem;
       }
   
       img, .projectImages{
@@ -55,7 +56,7 @@
         }
       }
       .readMore{
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         cursor: pointer;
         text-decoration: none;
         color: $fontColor;
