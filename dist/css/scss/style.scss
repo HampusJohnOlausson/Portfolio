@@ -25,7 +25,7 @@ $textColor: #a8a8a8;
   
 }
 .wrapper {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: $primary;
   color: $fontColor;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -75,6 +75,7 @@ $textColor: #a8a8a8;
   text-transform: uppercase;
   font-size: 2rem;
   padding: 1rem;
+  color: $textColor;
 }
 
 /*----Flex Classes----*/

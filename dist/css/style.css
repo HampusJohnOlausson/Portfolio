@@ -4,6 +4,7 @@
 #header {
   height: 10vh;
   padding: 4rem 2rem;
+  font-weight: 600;
   /*---Logo----*/
   /*----Nav----*/
 }
@@ -21,6 +22,8 @@
 }
 
 #header .logoName .header.h2 {
+  color: #fff;
+  font-family: 'Mr Dafoe', cursive;
   padding: 0;
   font-size: 1.5rem;
 }
@@ -43,7 +46,6 @@
 #header .header-nav .nav-links li a,
 #header .header-nav .flex-spaceAround li a {
   font-size: 1.2rem;
-  font-weight: lighter;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -63,8 +65,9 @@
 }
 
 .hero-main.flex-column-vertical-horizontal .hero-text {
-  font-size: 4rem;
   font-weight: 600;
+  font-size: 3.5rem;
+  font-weight: 400;
   text-align: center;
   color: #a8a8a8;
   padding: 0rem 5rem;
@@ -73,7 +76,10 @@
 }
 
 .hero-main.flex-column-vertical-horizontal .hero-text span {
+  font-size: 4.5rem;
+  font-family: 'Mr Dafoe', cursive;
   color: #fff;
+  font-weight: 200;
 }
 
 .hero-main.flex-column-vertical-horizontal .mobile-hero {
@@ -131,6 +137,7 @@
 }
 
 #myProjects .projects-h2 {
+  color: #a8a8a8;
   font-size: 2rem;
   padding: 3rem;
   text-align: center;
@@ -212,11 +219,10 @@
 #about .aboutText {
   text-align: center;
   padding: 2rem 12rem;
-  color: #a8a8a8;
 }
 
 #about .aboutText .about.h2 {
-  color: #fff;
+  color: #a8a8a8;
 }
 
 #about .aboutText h3 {
@@ -225,6 +231,7 @@
 }
 
 #about .aboutText p {
+  color: #a8a8a8;
   font-size: 1.5rem;
 }
 
@@ -682,9 +689,9 @@
   padding: 0.5rem;
   font-size: 1.2rem;
   outline: none;
+  font-family: 'Poppins', sans-serif;
   background-color: transparent;
   color: #2bc6ae;
-  font-family: "Roboto", sans-serif;
   border: 0.15rem solid #2bc6ae;
   border-radius: 0.5rem;
 }
@@ -889,6 +896,7 @@
 }
 
 .projectPage-project .project-h2 {
+  color: #a8a8a8;
   font-size: 2rem;
   text-align: center;
   margin-bottom: 2rem;
@@ -916,10 +924,10 @@
 
 .projectPage-project .projectPage-container .projectPage-section .projectPage-paragraph {
   text-align: center;
-  width: 50%;
+  width: 80%;
   margin: auto;
   padding: 2rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .projectPage-project .projectPage-container .projectPage-section .project-link {
@@ -1126,7 +1134,7 @@
 }
 
 .wrapper {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: #23292D;
   color: #fff;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -1179,6 +1187,7 @@
   text-transform: uppercase;
   font-size: 2rem;
   padding: 1rem;
+  color: #a8a8a8;
 }
 
 /*----Flex Classes----*/
