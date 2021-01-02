@@ -33,7 +33,7 @@ $textColor: #a8a8a8;
   min-height: 100vh;
   overflow: hidden;
 }
-
+/*--Desktop home icon not needed--*/
 @media screen and (min-width: 1380px) {
     .homeLi{
       display: none;
