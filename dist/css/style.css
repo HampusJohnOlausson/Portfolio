@@ -5,6 +5,7 @@
   height: 10vh;
   padding: 4rem 2rem;
   font-weight: 600;
+  z-index: 999;
   /*---Logo----*/
   /*----Nav----*/
 }
@@ -408,6 +409,7 @@
     display: none;
   }
   .hero-main.flex-column-vertical-horizontal .mobile-hero {
+    font-family: 'Mr Dafoe', cursive;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -419,6 +421,7 @@
     font-size: 3em;
   }
   .hero-main.flex-column-vertical-horizontal .mobile-hero span {
+    font-family: 'Poppins', sans-serif;
     color: #a8a8a8;
   }
   /*-------------Project Page------------*/
@@ -982,10 +985,13 @@
     padding: 0em 2em;
   }
   #about .aboutText .about-h3 {
-    font-size: 1.6em;
+    font-size: 1.2em;
   }
   #about .aboutText p {
     display: none;
+  }
+  #about .cvLink {
+    font-size: 1.4em;
   }
   #about .resume {
     width: 12em;
@@ -1004,7 +1010,10 @@
     height: 14rem;
   }
   #myProjects .project .project-h2 {
-    font-size: 1.8rem;
+    font-size: 1.6em;
+  }
+  #myProjects .project .readMore {
+    font-size: 1.2em;
   }
   /*-------------Project Page------------*/
   .projectPage-project {
@@ -1109,10 +1118,10 @@
     height: 12rem;
   }
   #myProjects .project .project-h2 {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
   #myProjects .project .readMore {
-    font-size: 1.4em;
+    font-size: 1.2em;
     margin-bottom: 0.5em;
   }
   #myProjects .project .project-link {

@@ -149,11 +149,13 @@
         display: none;
       }
       .mobile-hero{
+        font-family: 'Mr Dafoe', cursive;
         text-align: center;
         display: flex;
         flex-direction: column;
         font-size: 3em;
         span{
+          font-family: 'Poppins', sans-serif;
           color: $textColor;
         }
       }
