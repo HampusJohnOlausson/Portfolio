@@ -659,7 +659,7 @@
 
 .footer.flex-column-vertical-horizontal .form-section #personal-form {
   width: 100%;
-  max-width: 50rem;
+  max-width: 40rem;
   margin: 0rem auto 1rem;
   position: relative;
   border: none;
@@ -706,7 +706,6 @@
 }
 
 .footer.flex-column-vertical-horizontal .form-section .submit {
-  font-weight: 600;
   margin-bottom: 1rem;
 }
 
@@ -1112,6 +1111,7 @@
     height: 12rem;
   }
   #myProjects .project .project-h2 {
+    text-align: center;
     font-size: 1.2em;
   }
   #myProjects .project .readMore {
@@ -1120,6 +1120,22 @@
   }
   #myProjects .project .project-link {
     width: 12em;
+  }
+  .footer.flex-column-vertical-horizontal {
+    /*----Personal Form----*/
+  }
+  .footer.flex-column-vertical-horizontal .form-section #personal-form .label {
+    margin: 0.5rem auto;
+    font-size: 1em;
+  }
+  .footer.flex-column-vertical-horizontal .form-section #personal-form .input,
+  .footer.flex-column-vertical-horizontal .form-section #personal-form .message-field {
+    width: 100%;
+    padding: 0.2em;
+    font-size: 1em;
+  }
+  .footer.flex-column-vertical-horizontal .form-section .submit {
+    width: 10em;
   }
 }
 
@@ -1169,7 +1185,7 @@
   overflow: hidden;
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
   position: relative;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
