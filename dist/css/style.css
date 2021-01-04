@@ -159,11 +159,6 @@
   /*--Dots under image--*/
 }
 
-#myProjects .project .project-h2 {
-  color: #a8a8a8;
-  font-size: 1.6rem;
-}
-
 #myProjects .project img, #myProjects .project .projectImages {
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
@@ -934,6 +929,10 @@
   font-size: 1.3rem;
 }
 
+.projectPage-project .projectPage-container .projectPage-section .projectPage-paragraph span {
+  color: #2bc6ae;
+}
+
 .projectPage-project .projectPage-container .projectPage-section .project-link {
   margin: 2rem 1rem 2rem;
 }
@@ -1021,6 +1020,10 @@
   /*-------------Project Page------------*/
   .projectPage-project {
     /*--Main-Container--*/
+  }
+  .projectPage-project .project-h2 {
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
   }
   .projectPage-project .projectPage-container {
     /*----Each section----*/
@@ -1200,10 +1203,12 @@
 
 /*----H2 Default----*/
 .h2 {
-  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   font-size: 2rem;
   padding: 1rem;
   color: #a8a8a8;
+  font-family: 'Mr Dafoe', cursive;
+  text-align: center;
 }
 
 /*----Flex Classes----*/
