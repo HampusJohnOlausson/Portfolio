@@ -139,10 +139,9 @@
   /*------Project-----*/
 }
 
-#myProjects .projects-h2 {
+#myProjects .project-container-h2 {
   color: #a8a8a8;
   font-size: 2rem;
-  padding: 3rem;
   text-align: center;
   text-transform: uppercase;
 }
@@ -961,6 +960,10 @@
 /*---------------------Media Queries Mobile----------------------*/
 /*----------Smartphone Starts------------*/
 @media screen and (max-width: 630px) {
+  .wrapper .h2 {
+    font-size: 2.4em;
+    padding: 0.5em;
+  }
   #header .header-nav .nav-links li a {
     font-size: 1.6em;
   }
@@ -1007,15 +1010,15 @@
     height: 43rem;
     margin: 1rem 2rem;
   }
+  #myProjects .project .project-container-h2 {
+    font-size: 1.4em;
+  }
   #myProjects .project .projectImages {
     width: 19rem;
     height: 14rem;
   }
-  #myProjects .project .project-h2 {
-    font-size: 1.6em;
-  }
   #myProjects .project .readMore {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   /*-------------Project Page------------*/
   .projectPage-project {
@@ -1113,7 +1116,7 @@
     width: 16rem;
     height: 12rem;
   }
-  #myProjects .project .project-h2 {
+  #myProjects .project .project-container-h2 {
     text-align: center;
     font-size: 1.2em;
   }
@@ -1204,7 +1207,7 @@
 /*----H2 Default----*/
 .h2 {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  font-size: 2rem;
+  font-size: 3rem;
   padding: 1rem;
   color: #a8a8a8;
   font-family: 'Mr Dafoe', cursive;

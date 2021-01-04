@@ -3,6 +3,13 @@
 /*----------Smartphone Starts------------*/
 
 @media screen and (max-width: 630px) {
+.wrapper{
+  .h2 {
+    font-size: 2.4em;
+    padding: 0.5em;
+  }
+
+}
 
   #header{
     .header-nav{
@@ -58,20 +65,22 @@
     /*--Project Section--*/
     #myProjects {
       
+
       .project{
         width: 21rem;
         height: 43rem;
         margin: 1rem 2rem;
+
+        .project-container-h2{
+          font-size: 1.4em;
+        }
   
         .projectImages{
           width: 19rem;
           height: 14rem;
         }
-        .project-h2{
-          font-size: 1.6em;
-        }
         .readMore{
-          font-size: 1.2em;
+          font-size: 1em;
         }
       }  
     }
@@ -199,7 +208,7 @@
           width: 16rem;
           height: 12rem;
         }
-        .project-h2{
+        .project-container-h2{
           text-align: center;
           font-size: 1.2em;
         }
