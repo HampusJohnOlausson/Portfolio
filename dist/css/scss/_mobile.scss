@@ -3,253 +3,236 @@
 /*----------Smartphone Starts------------*/
 
 @media screen and (max-width: 630px) {
-.wrapper{
-  .h2 {
-    font-size: 2.4em;
-    padding: 0.5em;
+  .wrapper {
+    .mobile-hero {
+      font-size: 2em;
+      padding: 0.5em;
+
+      span {
+        font-size: 0.9em;
+      }
+    }
   }
 
-}
-
-  #header{
-    .header-nav{
+  #header {
+    .header-nav {
       .nav-links li a {
-      font-size: 1.6em;
+        font-size: 1.6em;
       }
     }
   }
-    .hamburger{
-      top: 20%;
-      right: -2%;
+  .hamburger {
+    top: 20%;
+    right: -2%;
+  }
+
+  .hero-main.flex-column-vertical-horizontal {
+    min-height: 65vh;
+
+    .mobile-hero {
+      font-size: 2em;
+      font-weight: 200;
     }
-  
-    .hero-main.flex-column-vertical-horizontal{
-      min-height: 65vh;
-  
-      .mobile-hero{
-        font-size: 2em;
-        font-weight: 200;
+  }
+  .arrow-section {
+    min-height: 25vh;
+  }
+
+  /*--About Me Section--*/
+  #about {
+    min-height: 100vh;
+    .aboutText {
+      padding: 0em 2em;
+
+      .about-h3 {
+        font-size: 1.2em;
+      }
+      p {
+        display: none;
       }
     }
-    .arrow-section{
-      min-height: 25vh;
+    .cvLink {
+      font-size: 1.3em;
+      margin-top: 0.2em;
     }
-  
-    /*--About Me Section--*/
-    #about{
-      min-height: 100vh;
-      .aboutText {
-        padding: 0em 2em;
-  
-        .about-h3{
-          font-size: 1.2em;
-  
-        }
-        p {
+    .resume {
+      width: 12em;
+
+      .fa-download {
+        display: none;
+      }
+    }
+  }
+
+  /*--Project Section--*/
+  #myProjects {
+    .project {
+      width: 21rem;
+      height: 43rem;
+      margin: 1rem 2rem;
+
+      .project-container-h2 {
+        font-size: 1.4em;
+      }
+
+      .projectImages {
+        width: 19rem;
+        height: 14rem;
+      }
+      .readMore {
+        font-size: 1em;
+      }
+    }
+  }
+
+  /*-------------Project Page------------*/
+
+  .projectPage-project {
+    .project-h2 {
+      font-size: 1.4em;
+      margin-bottom: 0.5em;
+    }
+
+    /*--Main-Container--*/
+    .projectPage-container {
+      /*----Each section----*/
+      .projectPage-section {
+        .projectVideos {
           display: none;
         }
-      }
-      .cvLink{
-        font-size: 1.3em;
-        margin-top: 0.2em;
-      }
-      .resume{
-          width: 12em;
-
-          .fa-download{
-              display: none;
+        .projectPage-btn-container {
+          flex-direction: column;
+          .project-link {
+            width: 11em;
+            margin: 0.7em;
           }
-      }
-    }
-  
-    /*--Project Section--*/
-    #myProjects {
-      
-
-      .project{
-        width: 21rem;
-        height: 43rem;
-        margin: 1rem 2rem;
-
-        .project-container-h2{
-          font-size: 1.4em;
         }
-  
-        .projectImages{
-          width: 19rem;
-          height: 14rem;
-        }
-        .readMore{
-          font-size: 1em;
-        }
-      }  
-    }
-  
-    /*-------------Project Page------------*/
-   
-    
-    .projectPage-project{
-
-      .project-h2{
-      
-        font-size: 1.4em;
-        margin-bottom: 0.5em;
-    }
-      
-    /*--Main-Container--*/
-      .projectPage-container{
-        /*----Each section----*/
-        .projectPage-section{
-          .projectVideos{
-              display: none;
-            }
-          .projectPage-btn-container{
-              flex-direction: column;
-            .project-link {
-                width: 11em;  
-                margin: 0.7em;    
-            } 
+        /*--icon section--*/
+        .projectPage-icon-container {
+          li {
+            margin: 0em 1rem 0.5em 1rem;
           }
-            /*--icon section--*/
-            .projectPage-icon-container{
-              li{
-                margin: 0em 1rem 0.5em 1rem;
-              }
-            }
         }
       }
-    }
-
-      /*----------footer----------*/
-
-.footer.flex-column-vertical-horizontal{
-  /*----Personal Form----*/
-
-  .form-section{
-    #personal-form {
-      .label {
-        margin: 0.5rem auto;
-        font-size: 1.3em;
-      }
-
-      .input,
-      .message-field { 
-        width: 100%;
-        padding: 0.2em;
-        font-size: 1.1em;
-      }
-    }
-    /*---Submit Button---*/
-    .submit{
-      width: 12em;
     }
   }
-  /*---Home icon---*/
-  .home a{
-    display: none;
-  }
-}
-    
-}
-    
-  
-       
-    
-  
-  @media screen and (max-width: 360px) {
 
-    #header{
-      .header-nav{
-        .nav-links li a {
-        font-size: 1.4em;
+  /*----------footer----------*/
+
+  .footer.flex-column-vertical-horizontal {
+    /*----Personal Form----*/
+
+    .form-section {
+      #personal-form {
+        .label {
+          margin: 0.5rem auto;
+          font-size: 1.3em;
+        }
+
+        .input,
+        .message-field {
+          width: 100%;
+          padding: 0.2em;
+          font-size: 1.1em;
         }
       }
+      /*---Submit Button---*/
+      .submit {
+        width: 12em;
+      }
     }
-  
-    .footer.h2 {
-      margin-top: 8em;
-    }
-    .home a{
+    /*---Home icon---*/
+    .home a {
       display: none;
     }
   }
-  
-  /*-----------Small Phone Screens-----------*/
-  
-  @media screen and (max-width: 340px) {
-  
-    .hero-main.flex-column-vertical-horizontal{
-      padding-top: 0rem;
-      .mobile-hero{
-        font-size: 1.5em;
-      }
-      .hero-btn{
-        width: 12rem;
-        margin: 1rem;
-        font-size: 1.1em;
-      }
-      .icon-container {
-        & ul li {
-          font-size: 2rem;
-        }
-      }
-    }
-  
-    /*--Projects--*/
-    #myProjects {
-      
-      .project{
-        width: 18rem;
-        height: 43rem;
-        margin: 0rem 4em;
-        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-  
-        .projectImages{
-          width: 16rem;
-          height: 12rem;
-        }
-        .project-container-h2{
-          text-align: center;
-          font-size: 1.2em;
-        }
-        .readMore{
-          font-size: 1.2em;
-          margin-bottom: 0.5em;
-        }
-        .project-link {
-          width: 12em;
-        } 
-      }  
-    }
-  
-
-    .footer.flex-column-vertical-horizontal{
-      /*----Personal Form----*/
-    
-      .form-section{
-        #personal-form {
-          .label {
-            margin: 0.5rem auto;
-            font-size: 1em;
-          }
-    
-          .input,
-          .message-field { 
-            width: 100%;
-            padding: 0.2em;
-            font-size: 1em;
-          }
-        }
-        .submit{
-          width: 10em;
-        }
-      }
-      
-      
-    }
-    
 }
 
+@media screen and (max-width: 360px) {
+  #header {
+    .header-nav {
+      .nav-links li a {
+        font-size: 1.4em;
+      }
+    }
+  }
+  .home a {
+    display: none;
+  }
+}
 
+/*-----------Small Phone Screens-----------*/
 
+@media screen and (max-width: 340px) {
+  .hero-main.flex-column-vertical-horizontal {
+    padding-top: 0rem;
+    .mobile-hero {
+      font-size: 1.5em;
+    }
+    .hero-btn {
+      width: 12rem;
+      margin: 1rem;
+      font-size: 1.1em;
+    }
+    .icon-container {
+      & ul li {
+        font-size: 2rem;
+      }
+    }
+  }
 
+  #about {
+    .resume {
+      width: 11em;
+      margin: 0.5em 0em 0.5em 0em;
+    }
+  }
+  /*--Projects--*/
+  #myProjects {
+    .project {
+      width: 18rem;
+      height: 43rem;
+      margin: 0rem 4em;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+
+      .projectImages {
+        width: 16rem;
+        height: 12rem;
+      }
+      .project-container-h2 {
+        text-align: center;
+        font-size: 1.2em;
+      }
+      .readMore {
+        font-size: 1.2em;
+        margin-bottom: 0.5em;
+      }
+      .project-link {
+        width: 12em;
+      }
+    }
+  }
+
+  .footer.flex-column-vertical-horizontal {
+    /*----Personal Form----*/
+
+    .form-section {
+      #personal-form {
+        .label {
+          margin: 0.5rem auto;
+          font-size: 1em;
+        }
+
+        .input,
+        .message-field {
+          width: 100%;
+          padding: 0.2em;
+          font-size: 1em;
+        }
+      }
+      .submit {
+        width: 10em;
+      }
+    }
+  }
+}

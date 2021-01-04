@@ -71,7 +71,6 @@
   /*------Image animation------*/
   .fade {
     animation: fade 1.5s;
-    
   }
   @keyframes fade {
     from {opacity: .4}
@@ -92,15 +91,15 @@
     display: block;
     width: 0;
     height: 3px;
-    background: $accent;
-    color: $accent;
+    background: $fontColor;
+    color: $fontColor;
     transition: width 0.3s;
     margin: 5px 0px;
   }
   .readMore:hover::after {
     width: 100%;
     transition: width 0.3s;
-    color: $accent;
+    color: $fontColor;
   }
   
   /*----Cv hover link-----*/
@@ -110,13 +109,13 @@
     display: block;
     width: 0;
     height: 3px;
-    background: $accent;
-    color: $accent;
+    background: $fontColor;
+    color: $fontColor;
     transition: width 0.3s;
     margin: 5px 0px;
   }
   .cvLink:hover::after {
     width: 100%;
     transition: width 0.3s;
-    color: $accent;
+    color: $fontColor;
   }

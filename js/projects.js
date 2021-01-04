@@ -61,7 +61,7 @@ const dotFirst = document.getElementsByClassName('first');
   dotFirst[slideIndex -1].className += ' active';
   // dotSecond[slideIndex -1].className += ' active';
 
-  setTimeout(slideShow , 2700);
+  setTimeout(slideShow , 3000);
 };
 
 

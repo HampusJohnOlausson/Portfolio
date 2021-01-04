@@ -6,7 +6,7 @@
   /*----About Text-----*/
   .aboutText {
     text-align: center;
-    padding: 2rem 12rem;
+    padding: 1rem 12rem;
 
     .about.h2 {
       color: $textColor;
@@ -38,9 +38,8 @@
 
     /*-----Cv link-----*/
     .cvLink{
-      color: $fontColor;
+      color: $accent;
       font-size: 1.5rem;
-      margin-top: 1rem;
       text-decoration: none;
       cursor: pointer;
       position: relative;

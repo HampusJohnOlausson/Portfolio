@@ -13,7 +13,7 @@
     padding: 0rem 5rem;
     animation: slideUp 1.4s ease;
     & span {
-      font-size: 4.5rem;
+      font-size: 5rem;
       font-family: 'Mr Dafoe', cursive;
       color: $fontColor;
       font-weight: 200;
@@ -25,6 +25,7 @@
 
   .hero-btn {
     animation: slideUp 2.1s ease;
+    margin-top: 1rem;
   }
 
   /*--------Social media icons-------*/

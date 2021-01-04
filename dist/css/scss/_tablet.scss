@@ -98,12 +98,20 @@
         transition: all 0.8s;
       }
     }
+
+    .hero-main.flex-column-vertical-horizontal{
+      
+      .hero-text {
+        font-size: 2.5rem;
+        & span {
+          font-size: 4rem;
+         
+        }
+      }
+    }
   
     /*--About me Section--*/
     #about {
-      .aboutText {
-        padding: 0em 4em;
-      }
   
       .profile-pic {
         width: 15em;
