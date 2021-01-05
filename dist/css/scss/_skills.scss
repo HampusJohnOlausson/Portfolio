@@ -1,0 +1,25 @@
+#skills{
+    min-height: 100vh;
+    width: 100%;
+
+
+    .skill-containers{
+        padding: 2rem;
+    
+        .container-one{
+            width: 50%;
+        
+            .skills-paragraf{
+                width: 80%; 
+                color: $fontColor;
+                font-size: 2rem;          
+
+            }
+        }
+        .container-two{
+            width: 50%;
+            color: $accent;
+        }
+    }
+
+}

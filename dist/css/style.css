@@ -259,6 +259,30 @@
   margin: 1rem 0rem 2rem 0rem;
 }
 
+#skills {
+  min-height: 100vh;
+  width: 100%;
+}
+
+#skills .skill-containers {
+  padding: 2rem;
+}
+
+#skills .skill-containers .container-one {
+  width: 50%;
+}
+
+#skills .skill-containers .container-one .skills-paragraf {
+  width: 80%;
+  color: #fff;
+  font-size: 2rem;
+}
+
+#skills .skill-containers .container-two {
+  width: 50%;
+  color: #2bc6ae;
+}
+
 /*---------------------Media Queries Tablet----------------------*/
 /*--------Break Point-------*/
 @media screen and (max-width: 1380px) {
