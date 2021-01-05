@@ -64,6 +64,37 @@
     }
   }
 
+/*--Skills section--*/
+  #skills{
+    
+    .skill-containers{
+        padding: 0em;
+    
+        .container-one{
+        
+            .skills-paragraf{
+                text-align: center;
+                padding: 1em;
+                align-items: center;
+                width: 100%; 
+                color: $fontColor;
+                font-size: 1.2em;          
+            }
+        }
+        .container-two{
+
+            .web-icons-container{
+                .web-icons-list {
+                    font-size: 3em;
+                    padding: 0.2em 0.5em;
+
+                }
+            }
+        }
+    }
+
+}
+
   /*--Project Section--*/
   #myProjects {
     .project {

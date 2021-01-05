@@ -168,6 +168,36 @@
         }
       }
     }
+
+    /*--Skills section--*/
+    #skills{
+      min-height: 100vh;
+  
+      .skill-containers{
+          padding: 1rem;
+          display: flex;
+          flex-direction: column;
+      
+          .container-one{
+              width: 100%;
+          
+              .skills-paragraf{
+                  font-size: 2rem;          
+              }
+          }
+          .container-two{
+              width: 100%;
+  
+              .web-icons-container{
+                  .web-icons-list {
+                      font-size: 4rem;
+                      padding: 0.6rem 1rem;
+                  }
+              }
+          }
+      }
+  
+  }
   
   
   /*-------------Project Page------------*/

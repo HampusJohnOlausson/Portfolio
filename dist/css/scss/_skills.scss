@@ -1,5 +1,5 @@
 #skills{
-    min-height: 100vh;
+    min-height: 50vh;
     width: 100%;
 
 
@@ -10,15 +10,26 @@
             width: 50%;
         
             .skills-paragraf{
-                width: 80%; 
+                text-align: center;
+                padding: 2rem;
+                align-items: center;
+                width: 100%; 
                 color: $fontColor;
                 font-size: 2rem;          
-
             }
         }
         .container-two{
             width: 50%;
             color: $accent;
+
+            .web-icons-container{
+                .web-icons-list {
+                    list-style-type: none;
+                    font-size: 5rem;
+                    padding: 0.7rem 2rem;
+                    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+                }
+            }
         }
     }
 

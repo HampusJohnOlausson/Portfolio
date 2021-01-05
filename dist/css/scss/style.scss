@@ -116,6 +116,11 @@ $textColor: #a8a8a8;
   display: flex;
   flex-direction: row;
 }
+.flex-row-evenly{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 .flex-spaceBetween{
   display: flex;
   justify-content: space-between;
