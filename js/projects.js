@@ -11,11 +11,11 @@ const slideShow = () => {
 /**
 * @type {HTMLDivElement}
 */
-const keySlide = document.getElementsByClassName('slideKey');
+const slideTwo = document.getElementsByClassName('slideTwo');
 /**
  * @type {HTMLDivElement}
  */
-const benganSlide = document.getElementsByClassName('slideBengan');
+const slideOne = document.getElementsByClassName('slideOne');
 /**
 * @type {HTMLSpanElement}
 */
@@ -26,22 +26,22 @@ const dotFirst = document.getElementsByClassName('first');
 const dotSecond = document.getElementsByClassName('second');
   
   //FindKeyProject-Loop
-  for(let i = 0; i < keySlide.length; i++){
-      keySlide[i].style.display = 'none';
+  for(let i = 0; i < slideTwo.length; i++){
+    slideTwo[i].style.display = 'none';
   }
 
-  //BenganProject-Loop
-   for(let i = 0; i < benganSlide.length; i++){
-     benganSlide[i].style.display = 'none';
+  //Project-Loop
+   for(let i = 0; i < slideOne.length; i++){
+    slideOne[i].style.display = 'none';
    }
 
   slideIndex++;
 
-  if(slideIndex > keySlide.length){
+  if(slideIndex > slideTwo.length){
     slideIndex = 1;
   }
 
-   if(slideIndex > benganSlide.length){
+   if(slideIndex > slideOne.length){
     slideIndex = 1;
    }
 
@@ -55,11 +55,11 @@ const dotSecond = document.getElementsByClassName('second');
    }
 
 
-  keySlide[slideIndex - 1].style.display = 'block';
-   benganSlide[slideIndex - 1].style.display = 'block';
+  slideTwo[slideIndex - 1].style.display = 'block';
+  slideOne[slideIndex - 1].style.display = 'block';
 
   dotFirst[slideIndex -1].className += ' active';
-   dotSecond[slideIndex -1].className += ' active';
+  dotSecond[slideIndex -1].className += ' active';
 
   setTimeout(slideShow , 3000);
 };
