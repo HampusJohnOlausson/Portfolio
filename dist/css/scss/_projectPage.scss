@@ -20,18 +20,44 @@
         .projectPage-section{
             width: 100%;
             margin: auto;
-            /*-----Video------*/
-            .projectVideos{
-                z-index: 900;
-                position: relative;
+    
+            .projectImages{
+                z-index: 999;
+                box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+                width: 45rem;
+                height: 25rem;
+                border-radius: 7px;
+                margin: 2rem;
                 align-self: center;
-            }
+                animation: fade 2.5s;
+              }
+              /*--Dots under image--*/
+              .dot-container{
+                text-align: center;
+          
+                .dot{
+                  height: 1rem;
+                  width: 1rem;
+                  border-radius: 50%;
+                  margin: 0rem 0.5rem 2rem 0.5rem;
+                  display: inline-block;
+                  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+                  background-color: $textColor;
+                  transition: background-color 0.6s ease;
+                }
+                .active {
+                  background-color: $accent;
+                  height: 1.2rem;
+                  width: 1.2rem;
+                  
+                }
+              }
             /*--Paragraph section--*/
             .projectPage-paragraph{
                 text-align: center;
                 width: 80%;
                 margin: auto;
-                padding: 2rem;
+                padding: 0rem 2rem 1rem 2rem ;
                 font-size: 1.3rem;
                 
                 span{

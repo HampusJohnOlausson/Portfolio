@@ -108,16 +108,20 @@
 
       .projectImages {
         width: 19rem;
-        height: 14rem;
+        height: 12rem;
       }
       .readMore {
         font-size: 1em;
+      }
+      .project-link {
+        width: 10em;
+        
       }
     }
   }
 
   /*-------------Project Page------------*/
-
+.wrapper{
   .projectPage-project {
     .project-h2 {
       font-size: 1.4em;
@@ -128,6 +132,11 @@
     .projectPage-container {
       /*----Each section----*/
       .projectPage-section {
+        .projectImages{
+          width: 18rem;
+          height: 12rem;
+        }
+        
         .projectVideos {
           display: none;
         }
@@ -147,6 +156,7 @@
       }
     }
   }
+}
 
   /*----------footer----------*/
 
@@ -228,7 +238,7 @@
 
       .projectImages {
         width: 16rem;
-        height: 12rem;
+        height: 10rem;
       }
       .project-container-h2 {
         text-align: center;
