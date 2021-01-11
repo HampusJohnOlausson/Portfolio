@@ -137,9 +137,7 @@
           height: 12rem;
         }
         
-        .projectVideos {
-          display: none;
-        }
+      
         .projectPage-btn-container {
           flex-direction: column;
           .project-link {
@@ -147,12 +145,7 @@
             margin: 0.7em;
           }
         }
-        /*--icon section--*/
-        .projectPage-icon-container {
-          li {
-            margin: 0em 1rem 0.5em 1rem;
-          }
-        }
+        
       }
     }
   }

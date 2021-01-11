@@ -18,11 +18,11 @@
     .projectPage-container{
         /*----Each section----*/
         .projectPage-section{
+            position: relative;
             width: 100%;
             margin: auto;
     
             .projectImages{
-                z-index: 999;
                 box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
                 width: 45rem;
                 height: 25rem;
@@ -60,26 +60,12 @@
                 padding: 0rem 2rem 1rem 2rem ;
                 font-size: 1.3rem;
                 
-                span{
+                strong{
                     color: $accent;
                 }
             }
             .project-link{
                 margin: 2rem 1rem 2rem;
-            }
-            /*--icon section--*/
-            .projectPage-icon-container{
-                color: $accent;
-                font-size: 3rem;
-                
-                .projectPage-icon-list{
-                    width: 25%;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-evenly;
-                    list-style-type: none;
-                    text-decoration: none;
-                }
             }
         }
     }
