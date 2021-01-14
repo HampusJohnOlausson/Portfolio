@@ -742,6 +742,22 @@
   resize: vertical;
 }
 
+.footer.flex-column-vertical-horizontal .form-section ::-webkit-input-placeholder {
+  color: #28af9bbe;
+}
+
+.footer.flex-column-vertical-horizontal .form-section :-ms-input-placeholder {
+  color: #28af9bbe;
+}
+
+.footer.flex-column-vertical-horizontal .form-section ::-ms-input-placeholder {
+  color: #28af9bbe;
+}
+
+.footer.flex-column-vertical-horizontal .form-section ::placeholder {
+  color: #28af9bbe;
+}
+
 .footer.flex-column-vertical-horizontal .form-section .submit {
   margin-bottom: 1rem;
   font-weight: 400;
@@ -1151,7 +1167,7 @@
   .footer.flex-column-vertical-horizontal .form-section #personal-form .input,
   .footer.flex-column-vertical-horizontal .form-section #personal-form .message-field {
     width: 100%;
-    padding: 0.2em;
+    padding: 0.3em;
     font-size: 1.1em;
   }
   .footer.flex-column-vertical-horizontal .form-section .submit {
@@ -1224,7 +1240,7 @@
   .footer.flex-column-vertical-horizontal .form-section #personal-form .input,
   .footer.flex-column-vertical-horizontal .form-section #personal-form .message-field {
     width: 100%;
-    padding: 0.2em;
+    padding: 0.3em;
     font-size: 1em;
   }
   .footer.flex-column-vertical-horizontal .form-section .submit {

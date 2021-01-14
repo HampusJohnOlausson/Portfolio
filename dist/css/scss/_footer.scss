@@ -45,10 +45,14 @@
         color: $accent;
         border: 0.15rem solid $accent;
         border-radius: 0.5rem;
+
       }
       .message-field {
         resize: vertical;
       }
+    }
+    ::placeholder{
+      color: #28af9bbe;
     }
     /*---Submit Button---*/
     .submit{
