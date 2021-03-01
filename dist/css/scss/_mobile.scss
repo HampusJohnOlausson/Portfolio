@@ -151,21 +151,7 @@
   }
 }
 
-#myProjects{
-        .modal{
-          height: 70%;
-            padding: 1rem;
 
-            .modal-title{
-                 display: none;
-            }
-
-            .modal-para{
-              font-size: 1rem
-            }
-          }
-      
-    }
 
   /*----------footer----------*/
 
@@ -252,10 +238,6 @@
       .project-container-h2 {
         text-align: center;
         font-size: 1.2em;
-      }
-      .readMore {
-        font-size: 1.2em;
-        margin-bottom: 0.5em;
       }
       .project-link {
         width: 12em;
