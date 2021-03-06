@@ -8,18 +8,28 @@
     
         .container-one{
             width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 4rem 0rem;
         
-            .skills-paragraf{
-                text-align: center;
-                padding: 2rem;
-                align-items: center;
-                width: 100%; 
-                color: $fontColor;
-                font-size: 1.5rem;  
-                
-                strong{
-                    color: $accent;
+            .skill-list{
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                .each-skill{
+                    text-align: center;
+                    font-size: 1.6rem;
+                    background-color: $primary;
+                    border: solid 3px $accent;
+                    padding: 1rem;
+                    border-radius: .5rem;
+                    margin: 1rem;
                 }
+               
             }
         }
         .container-two{
