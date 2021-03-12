@@ -171,6 +171,12 @@
           animation: fade 2.5s;
 }
 
+#myProjects .project .tools-para {
+  margin: 0.5rem auto;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
 #myProjects .project .project-link {
   margin: 1rem;
 }
