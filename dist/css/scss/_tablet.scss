@@ -106,9 +106,9 @@
       
       .hero-text {
         font-size: 2.5rem;
+
         & span {
           font-size: 4rem;
-         
         }
       }
     }
@@ -195,7 +195,6 @@
         display: none;
       }
       .mobile-hero{
-        font-family: 'Mr Dafoe', cursive;
         text-align: center;
         display: flex;
         flex-direction: column;

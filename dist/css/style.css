@@ -68,9 +68,8 @@
 }
 
 .hero-main.flex-column-vertical-horizontal .hero-text {
-  font-weight: 600;
   font-size: 3.5rem;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
   color: #a8a8a8;
   padding: 0rem 5rem;
@@ -476,7 +475,6 @@
     display: none;
   }
   .hero-main.flex-column-vertical-horizontal .mobile-hero {
-    font-family: 'Mr Dafoe', cursive;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
